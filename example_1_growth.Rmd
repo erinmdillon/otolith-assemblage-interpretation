@@ -1,0 +1,169 @@
+---
+title: "example_1_growth"
+author: "Erin Dillon"
+date: "2026-04-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+
+```{r}
+library(tidyverse)
+library(rfishbase)
+```
+
+## Taxa list
+
+rotenone & RLS data
+```{r}
+
+#rotenone
+d1 <- fish_raw %>%
+  select(Family,Genus,Species) %>%
+  distinct()
+
+#rls surveys
+d2 <- rls_fish_expanded %>%
+  select(family,genus,species_name) %>%
+  rename(Family=family,
+         Genus=genus,
+         Species=species_name) %>% 
+  distinct()
+
+#combine taxa list
+survey_taxa <- rbind(d1,d2) %>% 
+  distinct() #118 unique taxa
+
+```
+
+## Compile growth data
+
+a,b coeff (source: FishBase)
+```{r}
+
+#obtain a and b at the species level when possible
+lwr_data <- length_weight(survey_taxa$Species)
+
+#filter for valid non-NA coefficients and TL (total length) values
+lwr_data <- subset(lwr_data, !is.na(a) & !is.na(b))
+lwr_data <- subset(lwr_data, Type == "TL") #just keeping coeff for total length measurements
+
+#how many taxa have data? =63 (around half)
+length(unique(lwr_data$Species))
+
+#take an average for each species when there are multiple records
+lwr_species <- lwr_data %>% 
+  group_by(Species) %>%
+   summarize(a_mean = mean(a,na.rm=T),
+             b_mean = mean(b,na.rm=T))
+
+
+#when species-level data are not available, take an average at the genus-level or family-level
+taxa_data <- load_taxa()
+lwr_all <- length_weight(taxa_data$Species)
+
+#genus-level
+lwr_all_genus <- lwr_all %>%
+   filter(Type=="TL") %>%
+   left_join(taxa_data[,c(2,3,5)],by="Species") %>% #add taxonomic metadata
+   group_by(Genus) %>%
+   summarize(a_mean = mean(a,na.rm=T),
+             b_mean = mean(b,na.rm=T))
+
+#family-level
+lwr_all_family <- lwr_all %>%
+   filter(Type=="TL") %>%
+   left_join(taxa_data[,c(2,3,5)],by="Species") %>% #add taxonomic metadata
+   group_by(Family) %>%
+   summarize(a_mean = mean(a,na.rm=T),
+             b_mean = mean(b,na.rm=T))
+
+
+#compile in growth data table
+growth_data_ab <- survey_taxa %>% 
+  #add species-level
+  left_join(lwr_species) %>% 
+  #fill in genus-level where NAs remain
+  left_join(lwr_all_genus,by="Genus",suffix = c("", ".new")) %>% 
+  mutate(
+    a_mean = coalesce(a_mean, a_mean.new),
+    b_mean = coalesce(b_mean, b_mean.new)) %>%
+  select(-a_mean.new, -b_mean.new) %>% 
+  #fill in family-level where NAs remain
+  left_join(lwr_all_family,by="Family",suffix = c("", ".new")) %>% 
+  mutate(
+    a_mean = coalesce(a_mean, a_mean.new),
+    b_mean = coalesce(b_mean, b_mean.new)) %>%
+  select(-a_mean.new, -b_mean.new)
+
+#input Gramma loreto info (source: https://www.fishbase.se/summary/gramma-loreto)
+growth_data_ab[growth_data_ab$Species=="Gramma loreto","a_mean"] <- 0.01122
+growth_data_ab[growth_data_ab$Species=="Gramma loreto","b_mean"] <- 3.04
+
+```
+Lmax (source: FishBase)
+-4/22/26. this was updated from the popchar function (see v1 for that code)
+```{r}
+
+#obtain Lmax at the species level when possible
+Lmax_species <- species(survey_taxa$Species)[, c("Species", "Length", "LTypeMaxM")]
+
+#filter to keep just TL data
+Lmax_species <- Lmax_species %>% 
+  filter(LTypeMaxM=="TL") %>%
+  rename(Lmax=Length) %>% 
+  select(-LTypeMaxM)
+
+#how many taxa have data? =87
+length(unique(Lmax_species$Species))
+
+#when species-level data are not available, take an average at the genus-level or family-level
+Lmax_all <- species(taxa_data$Species)[, c("Species", "Length", "LTypeMaxM")]
+
+#genus-level
+Lmax_all_genus <- Lmax_all %>%
+   filter(LTypeMaxM=="TL") %>%
+   left_join(taxa_data[,c(2,3,5)],by="Species") %>% #add taxonomic metadata
+   group_by(Genus) %>%
+   summarize(Lmax = mean(Length,na.rm=T))
+
+#family-level
+Lmax_all_family <- Lmax_all %>%
+   filter(LTypeMaxM=="TL") %>%
+   left_join(taxa_data[,c(2,3,5)],by="Species") %>% #add taxonomic metadata
+   group_by(Family) %>%
+   summarize(Lmax = mean(Length,na.rm=T))
+
+#compile in growth data table
+growth_data_Lmax <- survey_taxa %>% 
+  #add species-level
+  left_join(Lmax_species) %>% 
+  #fill in genus-level where NAs remain
+  left_join(Lmax_all_genus,by="Genus",suffix = c("", ".new")) %>% 
+  mutate(Lmax = coalesce(Lmax, Lmax.new)) %>%
+  select(-Lmax.new) %>% 
+  #fill in family-level where NAs remain
+  left_join(Lmax_all_family,by="Family",suffix = c("", ".new")) %>% 
+  mutate(Lmax = coalesce(Lmax, Lmax.new)) %>%
+  select(-Lmax.new)
+
+```
+
+combine growth data into a single look-up table
+```{r}
+
+growth_data <- growth_data_ab %>% 
+  left_join(growth_data_Lmax)
+
+```
+
+save growth look-up table
+```{r}
+
+#write.csv(growth_data,"data_processed/growth_data_4.22.26.csv")
+
+```

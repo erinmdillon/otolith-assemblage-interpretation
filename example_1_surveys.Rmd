@@ -1,0 +1,485 @@
+---
+title: "example_1_surveys"
+author: "Erin Dillon"
+date: "2026-08-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+```{r}
+library(rfishprod)
+library(tidyverse)
+library(rfishbase)
+library(plotrix)
+```
+
+## 0. Read in data
+```{r}
+
+#Rotenone
+fish_raw <- read.csv("data/rotenone_surveys.csv",header=T,na.strings=".")
+
+#Reef Life Survey (RLS)
+rls_fish_raw <- read.csv("data/panama_fish_rsl_6.10.25.csv",skip=71,header=T)
+
+#Growth data (from `example_1_growth.Rmd`)
+growth_data <- read.csv("data_processed/growth_data_4.22.26.csv",header=T) %>% 
+  select(-X)
+
+#Traits
+species_traits <- read.csv("data/species_traits.csv",header=T,na.strings=".")
+
+```
+
+## 1. Prepare survey data and calculate expected fish abundance
+
+### Rotenone
+```{r}
+
+#Convert SL to TL when TL is not available (using FishBase length-length coefficients)
+taxa_data <- load_taxa()
+length_coeff <- length_length(taxa_data$Species)
+
+length_coeff_filt <- length_coeff %>% 
+  filter(Length1 %in% c('TL') & Length2 %in% c('SL')) #filtering to just SL-to-TL conversions
+
+
+#Take genus-level and family-level mean
+length_coeff_genus <- length_coeff_filt %>% 
+  separate(Species, into = c("Genus", "Species"), sep = " ", remove = FALSE) %>% 
+  group_by(Genus) %>%
+  summarize(a_length = mean(a,na.rm=T),
+            b_length = mean(b,na.rm=T))
+
+
+length_coeff_family <- length_coeff_filt %>% 
+  left_join(taxa_data[,c(2,3,5)],by="Species") %>% #add metadata
+  group_by(Family) %>%
+  summarize(a_length = mean(a,na.rm=T),
+            b_length = mean(b,na.rm=T))
+ 
+ 
+#Apply to rotenone dataset
+rotenone_fish <- fish_raw %>% 
+  left_join(length_coeff_genus) %>% 
+  mutate(SL_cm = SL_mm/10) %>% 
+  mutate(TL_cm_est = a_length + SL_cm*b_length) %>% 
+  #fill in with family data where NAs remain
+  left_join(length_coeff_family,by="Family",suffix = c("", ".new")) %>% 
+  mutate(TL_cm_est = case_when(
+    is.na(TL_cm_est) ~ a_length.new + SL_cm*b_length.new,
+    TRUE ~ TL_cm_est)) %>%
+  select(-a_length, -b_length,-a_length.new, -b_length.new,-TL_mm,-SL_mm,-SL_cm) %>% #just keep TL_cm
+  rename(TL_cm=TL_cm_est)
+  
+
+#Calculate sample sizes
+nrow(rotenone_fish)
+length(unique(rotenone_fish$Group))
+
+rotenone_fish %>% 
+  group_by(Site) %>% 
+  summarize(n=length(unique((Depth_m))))
+
+rotenone_fish %>% 
+  group_by(Group) %>% 
+  summarize(n=length(Family))
+
+```
+
+### RLS
+```{r}
+
+#Filter
+rls_fish <- rls_fish_raw %>% 
+  filter(class=="Actinopterygii") %>% #just bony fish
+  filter(area=="Bocas del Toro") %>% #just Bocas del Toro
+  filter(!site_name %in% c("CK14","Crawl Cay","Popa","Rhino Reef","Salt Creek")) %>%  #removing offshore sites for better comparability
+  #updating Scaridae taxonomy
+  mutate(family = case_when(
+    family=="Scaridae" ~ "Labridae",
+    TRUE ~ family))
+    
+
+#Make each row a fish and deal with binned size data
+rls_fish_expanded <- rls_fish %>% 
+  select(site_name,survey_id,block,family, species_name,size_class,total) %>% 
+  uncount(weights = total) %>% 
+  filter(size_class !=0) %>% #remove fish where size was not estimated
+  mutate(TL_cm_mid = case_when( #midpoint of each size class
+         size_class <15 ~ size_class + 1.25, #2.5cm groups
+         size_class >=15 ~ size_class + 2.5))  #jumps to 5cm groups
+
+#Jitter fish sizes within the size class bins
+set.seed(35)
+rls_fish_expanded <- rls_fish_expanded %>% 
+  #lower/upper limits of size classes
+  mutate(bin_lower = case_when(
+    TL_cm_mid < 17.5 ~TL_cm_mid - 1.25,
+    TL_cm_mid >= 17.5 ~TL_cm_mid - 2.5,
+    TRUE ~ NA)) %>% 
+  mutate(bin_upper = case_when(
+    TL_cm_mid < 17.5 ~TL_cm_mid + 1.25,
+    TL_cm_mid >= 17.5 ~TL_cm_mid + 2.5,
+    TRUE ~ NA)) %>% 
+  mutate(TL_cm = runif(n(), bin_lower, bin_upper))
+
+
+#Add genus column
+rls_fish_expanded <- rls_fish_expanded %>% 
+  separate(species_name, into = c("genus", "species"), sep = " ", remove = FALSE)
+
+
+#Calculate sample sizes
+nrow(rls_fish_expanded) 
+length(unique(rls_fish_expanded$survey_id)) 
+table(rls_fish$site_name)
+
+rls_fish_expanded %>% 
+  group_by(survey_id) %>% 
+  summarize(n=length(family)) %>% 
+  arrange(n)
+
+```
+
+
+### Calculate expected number of fish
+
+survey area:
+rotenone - 3.6m2 per grouped station (=1.8*2)
+RLS - 500m2 per survey ID (2 blocks of 250m2)
+
+calculate expected N fish in 100m2 survey, N_exp = N_surv * (A_exp/A_surv)
+```{r}
+
+#Rotenone
+rotenone_expected <- rotenone_fish %>% 
+  group_by(Site,Group) %>% 
+  summarize(N_surv=n()) %>% #number of fish per grouped station
+  mutate(A_surv = 3.6, #area surveyed
+         A_exp = 100, #standardized area
+         N_exp = round(N_surv*(A_exp/A_surv)))
+  
+
+#RLS
+rls_expected <- rls_fish %>% 
+  group_by(site_name,survey_id) %>% 
+  summarize(N_surv=sum(total,na.rm=T)) %>%  #number of fish per survey
+  mutate(A_surv = 500, #area surveyed
+         A_exp = 100, #standardized area
+         N_exp = round(N_surv*(A_exp/A_surv)))
+
+```
+
+## 2. Resample
+
+Source resampling function
+```{r}
+
+source("functions/survey_resampler.R")
+
+```
+
+### Rotenone
+```{r}
+
+#Add expected number of fish
+rotenone_fish_resample <- rotenone_fish %>% 
+  left_join(rotenone_expected %>% select(Group,N_exp)) %>% 
+  rename(survey_id=Group) #rename for consistency
+
+#Resample
+set.seed(23)
+boot_data_rotenone <- resample_surveys(rotenone_fish_resample,n_iter = 10)
+
+```
+
+### RLS
+```{r}
+
+#Add expected number of fish
+rls_fish_resample <- rls_fish_expanded %>% 
+  left_join(rls_expected %>% select(survey_id,N_exp))
+
+#Resample
+set.seed(23)
+boot_data_rls <- resample_surveys(rls_fish_resample,n_iter = 10)
+
+```
+
+### Combine datasets
+```{r}
+
+#Format column names consistently
+boot_data_rotenone_merge <- boot_data_rotenone %>% 
+  mutate(survey_type="rotenone") %>% 
+  mutate(bin_lower=NA) %>%
+  select(Site,survey_id,survey_type,Family,Genus,Species,TL_cm,bin_lower,N_exp,iteration) %>% 
+  rename(site_name=Site)
+
+
+boot_data_rls_merge <- boot_data_rls %>%
+  mutate(survey_type="RLS") %>%
+  select(site_name,survey_id,survey_type,family,genus,species_name,TL_cm,bin_lower,N_exp,iteration) %>% 
+  rename(Family=family,
+         Genus=genus,
+         Species=species_name)
+
+
+#Merge
+fish_combined <- rbind(boot_data_rotenone_merge,boot_data_rls_merge)
+
+```
+
+Save file
+```{r}
+
+write.csv(fish_combined,"data_processed/fish_combined.csv")
+
+```
+
+
+## 3. Calculate production
+
+### Add species growth data and traits
+```{r}
+
+#Add growth and trait data
+fish_combined_traits <- fish_combined %>%
+  left_join(growth_data) %>% 
+  mutate(sstmean = 28.8) %>%  #mean SST for Bocas, Isla Colon 4.5 m STRI monitoring mean, downloaded 3.2.26
+  mutate(Method = "Otolth") %>% 
+  #renaming columns for consistency with rfishprod package inputs
+  rename(MaxSizeTL = Lmax, #cm
+         a = a_mean,
+         b = b_mean) %>% 
+  left_join(species_traits)
+
+#Check for NAs
+anyNA(fish_combined_traits[, c(11:17)]) #FALSE = no NAs
+
+#cleaned version for production estimates
+fish_clean <- fish_combined_traits
+
+```
+
+### Biomass
+```{r}
+
+#Estimate body mass per fish
+fish_clean <- fish_clean %>% 
+  mutate(mass_g = a*TL_cm^b) #fish weight in g
+
+```
+
+### Production 
+
+Predict Kmax
+```{r}
+
+#Prepare levels
+expected_levels_method <- levels(db$Method)
+expected_levels_position <- levels(db$Position)
+expected_levels_diet <- levels(db$Diet)
+
+fish_clean$Method <- factor(fish_clean$Method, levels = expected_levels_method)
+fish_clean$Position <- factor(fish_clean$Position, levels = expected_levels_position)
+fish_clean$Diet <- factor(fish_clean$Diet, levels = expected_levels_diet)
+
+
+#Formula from Morais and Bellwood (2018) #https://onlinelibrary.wiley.com/doi/pdf/10.1111/faf.12297
+fmod <- formula(~ sstmean + MaxSizeTL + Diet + Position + Method)
+
+
+#Predicting Kmax
+fish_pred <- predKmax(fish_clean,
+                   dataset = db,
+                   fmod = fmod,
+                   niter = 100, 
+                   return = 'pred')
+
+fish_pred <- fish_pred$pred
+
+```
+
+Cleaning step to check lengths vs Lmax prior to estimating growth
+```{r}
+
+#Check observations where fish TL>Lmax
+fish_pred$size_check = fish_pred$TL_cm/fish_pred$MaxSizeTL
+nrow(fish_pred[fish_pred$size_check>1,])
+
+check_lmax <- fish_pred[fish_pred$size_check>1,] %>% 
+  select(Family,Genus,Species,TL_cm,MaxSizeTL,survey_type,size_check) %>% 
+  distinct()
+
+#Clean dataset
+fish_pred_size_checked <- fish_pred %>% 
+  filter(size_check<1.8) %>%   #removing some egregious values
+  mutate(TL_cm = case_when( #reduce to lower edge of size class
+    size_check > 1 ~ bin_lower,
+    TRUE~TL_cm)) %>%
+  mutate(TL_cm = case_when( #correcting C. personatus, which is still presenting problems
+    Species=="Coryphopterus personatus" & TL_cm>4 ~ 3.75, #bump down one size class
+    TRUE~TL_cm)) %>%
+  mutate(size_check=TL_cm/MaxSizeTL) 
+  
+nrow(fish_pred_size_checked[fish_pred_size_checked$size_check>1,]) #re-check
+
+#Filter out the remaining problematic values
+fish_pred <- fish_pred_size_checked %>% 
+  filter(size_check <= 1)
+
+```
+
+Estimate somatic growth per day
+```{r}
+
+fish_pred$soma_gain <- with(fish_pred, somaGain(a = a,
+                      b = b,
+                      Lmeas = TL_cm,
+                      Lmax = MaxSizeTL,
+                      Kmax = Kmax))
+
+```
+
+Estimate mortality
+```{r}
+
+#Predict instantaneous mortality rate
+fish_pred$Md <- with(fish_pred,
+                    predM (Lmeas = TL_cm,
+                             Lmax = MaxSizeTL,
+                             Kmax = Kmax,
+                             method = 'Lorenzen'))
+                           
+
+#Estimate mortality, using the stochastic approach to assign survival fate to each individual
+fish_pred$survive <- applyMstoch(fish_pred$Md)
+
+```
+
+Estimate productivity 
+```{r}
+
+#Calculate biomass and growth of the surviving individuals
+fish_pred_final <- fish_pred %>%
+  filter(survive==TRUE) %>% 
+  mutate(biomass_prod_indiv=mass_g+soma_gain)  #fish biomass + somatic growth over m days
+
+```
+
+Save file
+```{r}
+
+write.csv(fish_pred_final,"data_processed/fish_pred_final.csv")
+
+```
+
+Productivity by site
+```{r}
+
+#Calculate assemblage-level standing biomass and production at each site
+fish_productivity <- fish_pred_final %>%
+  group_by(site_name,survey_id,iteration) %>% #by survey id
+  summarize(area_surveyed = 100, #m2, now standardized across survey types
+            biomass_summed = sum(mass_g,na.rm=T)/area_surveyed, #g/m2
+            soma_gain_summed = sum(soma_gain,na.rm=T)/area_surveyed, #g/m2/day
+            n_fish = sum(!is.na(mass_g)),
+            per_cap_biomass = sum(mass_g,na.rm=T)/n_fish, #g/fish
+            production_summed = soma_gain_summed, #production, cum sum. G - D, g per m2 per day
+            production_kg_ha_day = production_summed * 10, #converting to kg/ha/day
+            biomass_t_ha = biomass_summed * 0.01) #converting to t/ha
+
+
+#Plot biomass by productivity
+fish_productivity %>% 
+  group_by(site_name) %>% 
+  summarize(mean_biomass = mean(biomass_t_ha,na.rm=T),
+            mean_production = mean(production_kg_ha_day,na.rm=T)) %>% 
+ggplot(aes(x=mean_biomass,y=mean_production))+
+  geom_point(aes(fill=site_name),size=4,shape=21,color="gray30")+
+  theme_bw()+
+  labs(x="Biomass (t/ha)",y="Productivity (kg/ha/day)",color="Site",fill="Site")+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=16))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans"))+
+  theme(aspect.ratio = 1)
+
+```
+
+## 4. Summarize across resampling iterations
+
+By iteration
+```{r}
+
+fish_productivity_iteration <- fish_pred_final %>%
+  group_by(site_name,survey_id,iteration) %>% 
+  summarize(area_surveyed = 100, #standardized to 100m2 per survey iteration
+            biomass_summed_iter = sum(mass_g,na.rm=T)/area_surveyed, #g/m2
+            soma_gain_summed_iter = sum(soma_gain,na.rm=T)/area_surveyed, #g/m2/day
+            n_fish_iter = sum(!is.na(mass_g)),
+            standing_biomass_summed_iter = biomass_summed_iter+soma_gain_summed_iter, #cum sum M + G - D, g per m2 per day
+            production_summed_iter = soma_gain_summed_iter)
+
+```
+
+By family
+```{r}
+
+fish_productivity_fam <- fish_pred_final %>%
+  group_by(site_name,survey_id,iteration,Family) %>% 
+  summarize(area_surveyed = 100, #standardized to 100m2 per survey iteration
+            biomass_summed = sum(mass_g,na.rm=T)/area_surveyed, #g/m2
+            soma_gain_summed = sum(soma_gain,na.rm=T)/area_surveyed, #g/m2/day
+            n_fish = sum(!is.na(mass_g)),
+            per_cap_biomass = sum(mass_g,na.rm=T)/n_fish, #g/fish
+            standing_biomass_summed = biomass_summed+soma_gain_summed, #standing biomass, cum sum. M + G - D, g/m2/day
+            production_summed = soma_gain_summed, #production, cum sum. G - D, g per m2 per day
+            turnover = (production_summed/biomass_summed)*100, #see Morais et al 2020, % per day
+            production_kg_ha_day = production_summed * 10, #converting to kg/ha/day
+            biomass_t_ha = biomass_summed * 0.01) %>%   #converting to t/ha
+  #calculating % contribution of each family
+  left_join(fish_productivity_iteration %>% select(site_name,survey_id,iteration,biomass_summed_iter,standing_biomass_summed_iter,production_summed_iter,n_fish_iter)) %>% 
+  mutate(perc_biomass_fam = (biomass_summed/biomass_summed_iter)*100,
+         perc_biomass_production_fam = (standing_biomass_summed/standing_biomass_summed_iter)*100,
+         perc_production_fam = (production_summed/production_summed_iter)*100,
+         perc_abundance_fam = (n_fish/n_fish_iter)*100) 
+fish_productivity_fam
+
+
+#summarize across iterations for each survey ID, then across families
+fish_productivity_fam_survey <- fish_productivity_fam %>% 
+  group_by(survey_id,Family) %>%
+  summarize(perc_biomass_production_fam = mean(perc_biomass_production_fam,na.rm=T),
+            perc_production_fam = mean(perc_production_fam,na.rm=T),
+            perc_abundance_fam = mean(perc_abundance_fam,na.rm=T),
+            turnover_fam = mean(turnover,na.rm=T)) 
+
+  
+fish_productivity_fam_summary<- fish_productivity_fam_survey %>%  
+  group_by(Family) %>% 
+  summarize(biomass_production_mean = mean(perc_biomass_production_fam,na.rm=T),
+            biomass_production_sd = sd(perc_biomass_production_fam,na.rm=T),
+            biomass_production_stderr = std.error(perc_biomass_production_fam,na.rm=T),
+            production_mean = mean(perc_production_fam,na.rm=T),
+            production_sd = sd(perc_production_fam,na.rm=T),
+            production_stderr = std.error(perc_production_fam,na.rm=T),
+            abundance_mean = mean(perc_abundance_fam,na.rm=T),
+            abundance_sd = sd(perc_abundance_fam,na.rm=T),
+            abundance_stderr = std.error(perc_abundance_fam,na.rm=T),
+            turnover_mean = mean(turnover_fam,na.rm=T),
+            turnover_sd = sd(turnover_fam,na.rm=T),
+            turnover_stderr = std.error(turnover_fam,na.rm=T))
+
+```
+
+Save file
+```{r}
+
+write.csv(fish_productivity_fam_summary,"data_processed/fish_productivity_fam_summary.csv")
+
+```
