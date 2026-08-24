@@ -1,0 +1,1825 @@
+basin,region,site_name,sample,depth,unique,type,family,family_count,oto_count_total,sed_weight_whole_sample_kg,sed_weight_500_kg
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-1-1,modern_bulk,Paralichthyidae,1,34,0.85,0.1563
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-1-1,modern_bulk,Apogonidae,4,34,0.85,0.1563
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-1-1,modern_bulk,Engraulidae,1,34,0.85,0.1563
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-1-1,modern_bulk,Gobiidae,28,34,0.85,0.1563
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-1,modern_bulk,Apogonidae,15,93,1.15,0.261
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-1,modern_bulk,Atherinidae,3,93,1.15,0.261
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-1,modern_bulk,Bythitidae,1,93,1.15,0.261
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-1,modern_bulk,Engraulidae,7,93,1.15,0.261
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-1,modern_bulk,Gobiidae,61,93,1.15,0.261
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-1,modern_bulk,Labridae,1,93,1.15,0.261
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-1,modern_bulk,Sin_identificar,5,93,1.15,0.261
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Apogonidae,5,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Atherinidae,1,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Atherinidae,1,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Bythitidae,1,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Gobiidae,60,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Labridae,1,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Synodontidae,1,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-2-2,modern_bulk,Sin_identificar,3,73,1.15,0.23893
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-3-1,modern_bulk,Apogonidae,3,62,1.15,0.23809
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-3-1,modern_bulk,Atherinidae,3,62,1.15,0.23809
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-3-1,modern_bulk,Bythitidae,1,62,1.15,0.23809
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-3-1,modern_bulk,Clupeidae,1,62,1.15,0.23809
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-3-1,modern_bulk,Clupeidae,1,62,1.15,0.23809
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-3-1,modern_bulk,Engraulidae,6,62,1.15,0.23809
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-3-1,modern_bulk,Gobiidae,47,62,1.15,0.23809
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-4-1,modern_bulk,Apogonidae,11,85,1.15,0.21289
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-4-1,modern_bulk,Atherinidae,2,85,1.15,0.21289
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-4-1,modern_bulk,Batrachoididae,1,85,1.15,0.21289
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-4-1,modern_bulk,Gobiidae,65,85,1.15,0.21289
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-4-1,modern_bulk,Sin_identificar,6,85,1.15,0.21289
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-5-1,modern_bulk,Apogonidae,1,20,1.1,0.27754
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-5-1,modern_bulk,Atherinidae,2,20,1.1,0.27754
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-5-1,modern_bulk,Bythitidae,1,20,1.1,0.27754
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-5-1,modern_bulk,Engraulidae,4,20,1.1,0.27754
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-5-1,modern_bulk,Gobiidae,10,20,1.1,0.27754
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-5-1,modern_bulk,Sin_identificar,2,20,1.1,0.27754
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-6-1,modern_bulk,Apogonidae,2,16,1.2,0.19713
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-6-1,modern_bulk,Atherinidae,1,16,1.2,0.19713
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-6-1,modern_bulk,Bythitidae,1,16,1.2,0.19713
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-6-1,modern_bulk,Clupeidae,1,16,1.2,0.19713
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-6-1,modern_bulk,Engraulidae,1,16,1.2,0.19713
+Caribbean,Bocas del Toro,STRI Point,AT12-1,.,AT12-1-6-1,modern_bulk,Gobiidae,10,16,1.2,0.19713
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-1,Holocene_bulk,Apogonidae,1,82,1.15,0.05814
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-1,Holocene_bulk,Atherinopsidae,1,82,1.15,0.05814
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-1,Holocene_bulk,Engraulidae,3,82,1.15,0.05814
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-1,Holocene_bulk,Gerreidae,2,82,1.15,0.05814
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-1,Holocene_bulk,Gobiidae,66,82,1.15,0.05814
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-1,Holocene_bulk,Haemulidae,1,82,1.15,0.05814
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-1,Holocene_bulk,Sin_identificar,8,82,1.15,0.05814
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-10,Holocene_bulk,Apogonidae,3,12,1.5,0.13242
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-10,Holocene_bulk,Bythitidae,1,12,1.5,0.13242
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-10,Holocene_bulk,Engraulidae,3,12,1.5,0.13242
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-10,Holocene_bulk,Gobiidae,1,12,1.5,0.13242
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-10,Holocene_bulk,Sin_identificar,4,12,1.5,0.13242
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-2,Holocene_bulk,Apogonidae,1,53,1.1,0.029
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-2,Holocene_bulk,Atherinidae,1,53,1.1,0.029
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-2,Holocene_bulk,Engraulidae,14,53,1.1,0.029
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-2,Holocene_bulk,Gerreidae,1,53,1.1,0.029
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-2,Holocene_bulk,Gobiidae,33,53,1.1,0.029
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-2,Holocene_bulk,Opistognathidae,1,53,1.1,0.029
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-2,Holocene_bulk,Sin_identificar,2,53,1.1,0.029
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Apogonidae,2,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Atherinidae,1,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Atherinidae,1,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Clupeidae,1,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Clupeidae,2,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Engraulidae,40,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Gerreidae,5,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Gobiidae,62,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Labridae,1,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Synodontidae,1,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-3,Holocene_bulk,Sin_identificar,16,132,0.85,0.05566
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Apogonidae,2,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Clupeidae,1,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Engraulidae,15,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Gerreidae,1,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Gerreidae,1,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Gobiidae,51,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Lutjanidae,1,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Pomacentridae,1,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-4,Holocene_bulk,Sin_identificar,16,89,0.9,0.05891
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Apogonidae,10,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Atherinidae,1,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Bregmacerotidae,1,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Engraulidae,26,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Gerreidae,3,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Gobiidae,27,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Labridae,1,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Scaridae,1,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-5,Holocene_bulk,Sin_identificar,8,78,0.85,0.14546
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-6,Holocene_bulk,Clupeidae,1,12,1.2,0.11762
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-6,Holocene_bulk,Engraulidae,3,12,1.2,0.11762
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-6,Holocene_bulk,Gobiidae,5,12,1.2,0.11762
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-6,Holocene_bulk,Sin_identificar,3,12,1.2,0.11762
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-7,Holocene_bulk,Bythitidae,1,15,1.15,0.10883
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-7,Holocene_bulk,Engraulidae,5,15,1.15,0.10883
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-7,Holocene_bulk,Gobiidae,7,15,1.15,0.10883
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-7,Holocene_bulk,Sin_identificar,2,15,1.15,0.10883
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-9,Holocene_bulk,Engraulidae,1,4,1.05,0.11992
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-9,Holocene_bulk,Gobiidae,1,4,1.05,0.11992
+Caribbean,Bocas del Toro,Sunset Point,AT12-2,.,AT12-2-9,Holocene_bulk,Sin_identificar,2,4,1.05,0.11992
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-1-1,modern_bulk,Atherinidae,1,13,0.9,0.03255
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-1-1,modern_bulk,Bythitidae,1,13,0.9,0.03255
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-1-1,modern_bulk,Gobiidae,9,13,0.9,0.03255
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-1-1,modern_bulk,Sin_identificar,2,13,0.9,0.03255
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Apogonidae,1,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Atherinidae,2,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Atherinopsidae,1,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Engraulidae,9,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Gerreidae,2,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Gerreidae,1,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Gobiidae,88,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Opistognathidae,1,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-2-1,modern_bulk,Sin_identificar,19,124,0.95,0.19737
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Apogonidae,1,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Atherinidae,2,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Atherinidae,4,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Bregmacerotidae,2,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Bythitidae,3,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Carapidae,1,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Engraulidae,9,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Gerreidae,1,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Gobiidae,219,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Haemulidae,1,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Haemulidae,4,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Ophidiidae,1,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Opistognathidae,3,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Scaridae,1,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-1,modern_bulk,Sin_identificar,17,269,0.9,0.16892
+Caribbean,Bocas del Toro,Playa Estrella,AT12-3,.,AT12-3-3-2,modern_bulk,Haemulidae,1,1,0.8,.
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-1-1,modern_bulk,Engraulidae,1,5,1.05,0.33829
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-1-1,modern_bulk,Gobiidae,1,5,1.05,0.33829
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-1-1,modern_bulk,Sin_identificar,3,5,1.05,0.33829
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Apogonidae,4,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Atherinidae,4,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Atherinidae,1,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Bythitidae,1,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Engraulidae,3,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Gobiidae,16,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Haemulidae,1,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Hemiramphidae,1,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Lutjanidae,1,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Opistognathidae,1,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Scaridae,1,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-1,modern_bulk,Sin_identificar,3,37,1.25,0.42226
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-2-2,modern_bulk,Haemulidae,2,2,1.3,0.83397
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-1,modern_bulk,Apogonidae,15,48,1.3,0.28267
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-1,modern_bulk,Atherinidae,1,48,1.3,0.28267
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-1,modern_bulk,Gobiidae,24,48,1.3,0.28267
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-1,modern_bulk,Haemulidae,2,48,1.3,0.28267
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-1,modern_bulk,Scaridae,1,48,1.3,0.28267
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-1,modern_bulk,Sin_identificar,5,48,1.3,0.28267
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-2,modern_bulk,Apogonidae,1,2,1.15,0.402436688
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-3-2,modern_bulk,Haemulidae,1,2,1.15,0.402436688
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-4-1,modern_bulk,Apogonidae,1,1,1.1,0.36709
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-4-2,modern_bulk,Apogonidae,5,52,1.15,0.28406
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-4-2,modern_bulk,Batrachoididae,1,52,1.15,0.28406
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-4-2,modern_bulk,Engraulidae,1,52,1.15,0.28406
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-4-2,modern_bulk,Gobiidae,43,52,1.15,0.28406
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-4-2,modern_bulk,Sin_identificar,2,52,1.15,0.28406
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-5-2,modern_bulk,Apogonidae,1,3,1.1,0.384939441
+Caribbean,Bocas del Toro,SW Bocas Island,AT12-4,.,AT12-4-5-2,modern_bulk,Haemulidae,2,3,1.1,0.384939441
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Apogonidae,1,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Atherinidae,1,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Bregmacerotidae,1,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Bythitidae,2,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Engraulidae,7,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Gobiidae,9,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Scaridae,1,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-1,modern_bulk,Sin_identificar,4,26,0.6473,0.26303
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-2,modern_bulk,Apogonidae,2,21,0.9095,0.37675
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-2,modern_bulk,Atherinidae,4,21,0.9095,0.37675
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-2,modern_bulk,Engraulidae,2,21,0.9095,0.37675
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-2,modern_bulk,Gobiidae,9,21,0.9095,0.37675
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-2,modern_bulk,Scaridae,1,21,0.9095,0.37675
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-1-2,modern_bulk,Sin_identificar,3,21,0.9095,0.37675
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-1,modern_bulk,Atherinidae,1,18,0.6821,0.27105
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-1,modern_bulk,Atherinidae,1,18,0.6821,0.27105
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-1,modern_bulk,Atherinidae,2,18,0.6821,0.27105
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-1,modern_bulk,Engraulidae,3,18,0.6821,0.27105
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-1,modern_bulk,Gobiidae,7,18,0.6821,0.27105
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-1,modern_bulk,Scaridae,1,18,0.6821,0.27105
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-1,modern_bulk,Sin_identificar,3,18,0.6821,0.27105
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-2,modern_bulk,Atherinidae,3,7,0.6996,0.33569
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-2,modern_bulk,Engraulidae,2,7,0.6996,0.33569
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-2-2,modern_bulk,Gobiidae,2,7,0.6996,0.33569
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Apogonidae,1,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Atherinidae,1,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Bythitidae,1,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Clupeidae,1,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Engraulidae,5,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Gobiidae,10,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Haemulidae,1,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-1,modern_bulk,Sin_identificar,3,23,0.6704,0.31716
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Apogonidae,2,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Atherinidae,1,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Atherinidae,4,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Bythitidae,2,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Engraulidae,3,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Gerreidae,1,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Gobiidae,13,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Pomacentridae,1,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Scaridae,1,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-3-2,modern_bulk,Sin_identificar,10,38,0.6716,0.31048
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-1,modern_bulk,Apogonidae,2,27,0.7088,0.33121
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-1,modern_bulk,Atherinidae,3,27,0.7088,0.33121
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-1,modern_bulk,Bregmacerotidae,1,27,0.7088,0.33121
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-1,modern_bulk,Clupeidae,1,27,0.7088,0.33121
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-1,modern_bulk,Engraulidae,6,27,0.7088,0.33121
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-1,modern_bulk,Gobiidae,8,27,0.7088,0.33121
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-1,modern_bulk,Sin_identificar,6,27,0.7088,0.33121
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Apogonidae,2,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Atherinidae,1,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Blenniidae,1,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Bythitidae,1,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Clupeidae,1,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Engraulidae,2,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Gobiidae,9,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-4-2,modern_bulk,Sin_identificar,4,21,0.7047,0.29614
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-1,modern_bulk,Atherinidae,3,14,0.5594,0.20766
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-1,modern_bulk,Bythitidae,1,14,0.5594,0.20766
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-1,modern_bulk,Engraulidae,4,14,0.5594,0.20766
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-1,modern_bulk,Gobiidae,3,14,0.5594,0.20766
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-1,modern_bulk,Pomacentridae,1,14,0.5594,0.20766
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-1,modern_bulk,Sin_identificar,2,14,0.5594,0.20766
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-2,modern_bulk,Apogonidae,1,20,0.7013,0.35729
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-2,modern_bulk,Engraulidae,4,20,0.7013,0.35729
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-2,modern_bulk,Gobiidae,10,20,0.7013,0.35729
+Caribbean,Bocas del Toro,Punta Caracol,AT13-10,.,AT13-10-5-2,modern_bulk,Sin_identificar,5,20,0.7013,0.35729
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-1-1,modern_bulk,Apogonidae,2,3,0.4153,0.09181
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-1-1,modern_bulk,Gobiidae,1,3,0.4153,0.09181
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-2-1,modern_bulk,Apogonidae,4,13,0.4023,0.12526
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-2-1,modern_bulk,Atherinidae,1,13,0.4023,0.12526
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-2-1,modern_bulk,Bregmacerotidae,1,13,0.4023,0.12526
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-2-1,modern_bulk,Engraulidae,1,13,0.4023,0.12526
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-2-1,modern_bulk,Gobiidae,4,13,0.4023,0.12526
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-2-1,modern_bulk,Sin_identificar,2,13,0.4023,0.12526
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-3-1,modern_bulk,Apogonidae,1,5,0.4373,0.12953
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-3-1,modern_bulk,Atherinidae,1,5,0.4373,0.12953
+Caribbean,Bocas del Toro,Crawl Cay,AT13-11,.,AT13-11-3-1,modern_bulk,Engraulidae,3,5,0.4373,0.12953
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Apogonidae,3,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Atherinidae,4,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Atherinidae,2,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Clupeidae,2,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Engraulidae,3,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Gerreidae,1,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Gobiidae,17,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-1,modern_bulk,Sin_identificar,12,44,0.5786,0.22898
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-2,modern_bulk,Apogonidae,4,38,0.6281,0.29472
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-2,modern_bulk,Atherinidae,6,38,0.6281,0.29472
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-2,modern_bulk,Atherinidae,2,38,0.6281,0.29472
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-2,modern_bulk,Engraulidae,3,38,0.6281,0.29472
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-2,modern_bulk,Gobiidae,14,38,0.6281,0.29472
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-1-2,modern_bulk,Sin_identificar,9,38,0.6281,0.29472
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-1,modern_bulk,Apogonidae,5,34,0.6656,0.27994
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-1,modern_bulk,Atherinidae,7,34,0.6656,0.27994
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-1,modern_bulk,Batrachoididae,1,34,0.6656,0.27994
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-1,modern_bulk,Engraulidae,5,34,0.6656,0.27994
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-1,modern_bulk,Gobiidae,13,34,0.6656,0.27994
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-1,modern_bulk,Sin_identificar,3,34,0.6656,0.27994
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-2,modern_bulk,Apogonidae,7,40,0.6317,0.27237
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-2,modern_bulk,Atherinidae,1,40,0.6317,0.27237
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-2,modern_bulk,Atherinidae,6,40,0.6317,0.27237
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-2,modern_bulk,Clupeidae,2,40,0.6317,0.27237
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-2,modern_bulk,Engraulidae,10,40,0.6317,0.27237
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-2,modern_bulk,Gobiidae,9,40,0.6317,0.27237
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-2-2,modern_bulk,Sin_identificar,5,40,0.6317,0.27237
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Apogonidae,2,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Atherinidae,1,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Atherinidae,2,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Bythitidae,1,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Engraulidae,8,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Gobiidae,19,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Haemulidae,1,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-1,modern_bulk,Sin_identificar,4,38,0.582,0.26412
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Apogonidae,3,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Atherinidae,6,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Bregmacerotidae,1,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Bythitidae,2,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Clupeidae,2,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Engraulidae,9,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Gobiidae,23,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Labridae,1,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Synodontidae,2,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-3-2,modern_bulk,Sin_identificar,8,57,0.6298,0.33171
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Apogonidae,5,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Atherinidae,3,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Atherinidae,4,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Bythitidae,1,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Clupeidae,1,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Engraulidae,9,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Gobiidae,33,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Haemulidae,1,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Labridae,2,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-1,modern_bulk,Sin_identificar,14,73,0.5885,0.28469
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-2,modern_bulk,Apogonidae,9,48,0.6922,0.28791
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-2,modern_bulk,Bythitidae,1,48,0.6922,0.28791
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-2,modern_bulk,Engraulidae,8,48,0.6922,0.28791
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-2,modern_bulk,Gerreidae,1,48,0.6922,0.28791
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-2,modern_bulk,Gobiidae,18,48,0.6922,0.28791
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-2,modern_bulk,Opistognathidae,1,48,0.6922,0.28791
+Caribbean,Bocas del Toro,Casa Blanca,AT13-12,.,AT13-12-4-2,modern_bulk,Sin_identificar,10,48,0.6922,0.28791
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-1,Holocene_bulk,Apogonidae,1,7,0.65,0.18316
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-1,Holocene_bulk,Bythitidae,1,7,0.65,0.18316
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-1,Holocene_bulk,Bythitidae,1,7,0.65,0.18316
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-1,Holocene_bulk,Sin_identificar,4,7,0.65,0.18316
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-10,Holocene_bulk,Apogonidae,2,8,0.7,0.20235
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-10,Holocene_bulk,Bythitidae,1,8,0.7,0.20235
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-10,Holocene_bulk,Gobiidae,1,8,0.7,0.20235
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-10,Holocene_bulk,Sin_identificar,4,8,0.7,0.20235
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-8,Holocene_bulk,Apogonidae,1,9,0.6,0.211
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-8,Holocene_bulk,Engraulidae,1,9,0.6,0.211
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-8,Holocene_bulk,Gobiidae,5,9,0.6,0.211
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-8,Holocene_bulk,Pomacentridae,1,9,0.6,0.211
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-8,Holocene_bulk,Sin_identificar,1,9,0.6,0.211
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-9,Holocene_bulk,Acanthuridae,1,2,0.65,0.16508
+Caribbean,Bocas del Toro,Sweet Bocas Trench 1,AT13-2,.,AT13-2-9,Holocene_bulk,Apogonidae,1,2,0.65,0.16508
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-10,Holocene_bulk,Apogonidae,1,13,0.5,0.22852
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-10,Holocene_bulk,Bythitidae,1,13,0.5,0.22852
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-10,Holocene_bulk,Engraulidae,5,13,0.5,0.22852
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-10,Holocene_bulk,Gobiidae,2,13,0.5,0.22852
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-10,Holocene_bulk,Sin_identificar,4,13,0.5,0.22852
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-11,Holocene_bulk,Atherinidae,1,4,0.6,0.14227
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-11,Holocene_bulk,Gobiidae,1,4,0.6,0.14227
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-11,Holocene_bulk,Sin_identificar,2,4,0.6,0.14227
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-12,Holocene_bulk,Apogonidae,1,5,0.75,0.14146
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-12,Holocene_bulk,Engraulidae,1,5,0.75,0.14146
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-12,Holocene_bulk,Gobiidae,3,5,0.75,0.14146
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-13,Holocene_bulk,Engraulidae,2,12,0.95,0.19035
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-13,Holocene_bulk,Gobiidae,3,12,0.95,0.19035
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-13,Holocene_bulk,Labridae,1,12,0.95,0.19035
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-13,Holocene_bulk,Sin_identificar,6,12,0.95,0.19035
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-14,Holocene_bulk,Engraulidae,2,7,0.6,0.13263
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-14,Holocene_bulk,Gobiidae,1,7,0.6,0.13263
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-14,Holocene_bulk,Pomacentridae,1,7,0.6,0.13263
+Caribbean,Bocas del Toro,Sweet Bocas Trench 2,AT13-3,.,AT13-3-14,Holocene_bulk,Sin_identificar,3,7,0.6,0.13263
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-2,Holocene_bulk,Gerreidae,1,28,0.4,0.02926
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-2,Holocene_bulk,Gobiidae,27,28,0.4,0.02926
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-3,Holocene_bulk,Apogonidae,5,167,0.6,0.06838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-3,Holocene_bulk,Bregmacerotidae,2,167,0.6,0.06838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-3,Holocene_bulk,Gerreidae,1,167,0.6,0.06838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-3,Holocene_bulk,Gerreidae,1,167,0.6,0.06838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-3,Holocene_bulk,Gobiidae,151,167,0.6,0.06838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-3,Holocene_bulk,Synodontidae,1,167,0.6,0.06838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-3,Holocene_bulk,Sin_identificar,6,167,0.6,0.06838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-4,Holocene_bulk,Engraulidae,1,1,0.6,0.09913
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-5,Holocene_bulk,Engraulidae,1,2,0.6,0.0807
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-5,Holocene_bulk,Gobiidae,1,2,0.6,0.0807
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-6,Holocene_bulk,Engraulidae,2,3,0.4,0.03634
+Caribbean,Bocas del Toro,Sweet Bocas Trench 3,AT13-4,.,AT13-4-6,Holocene_bulk,Gobiidae,1,3,0.4,0.03634
+Caribbean,Bocas del Toro,Sweet Bocas Trench 4,AT13-5,.,AT13-5-1,Holocene_bulk,Apogonidae,1,3,0.55,0.13887
+Caribbean,Bocas del Toro,Sweet Bocas Trench 4,AT13-5,.,AT13-5-1,Holocene_bulk,Engraulidae,1,3,0.55,0.13887
+Caribbean,Bocas del Toro,Sweet Bocas Trench 4,AT13-5,.,AT13-5-1,Holocene_bulk,Gobiidae,1,3,0.55,0.13887
+Caribbean,Bocas del Toro,Sweet Bocas Trench 4,AT13-5,.,AT13-5-2,Holocene_bulk,.,0,0,0.75,0.184581818
+Caribbean,Bocas del Toro,Sweet Bocas Trench 4,AT13-5,.,AT13-5-3,Holocene_bulk,Haemulidae,1,2,0.55,0.13185
+Caribbean,Bocas del Toro,Sweet Bocas Trench 4,AT13-5,.,AT13-5-3,Holocene_bulk,Sin_identificar,1,2,0.55,0.13185
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-1,Holocene_bulk,Engraulidae,2,9,0.6,0.14335
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-1,Holocene_bulk,Scaridae,1,9,0.6,0.14335
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-1,Holocene_bulk,Sin_identificar,6,9,0.6,0.14335
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-2,Holocene_bulk,Engraulidae,1,1,0.6,0.1846
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-3,Holocene_bulk,Apogonidae,1,8,0.6,0.19434
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-3,Holocene_bulk,Bythitidae,1,8,0.6,0.19434
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-3,Holocene_bulk,Engraulidae,3,8,0.6,0.19434
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-3,Holocene_bulk,Gobiidae,2,8,0.6,0.19434
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-3,Holocene_bulk,Sin_identificar,1,8,0.6,0.19434
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-6,Holocene_bulk,Gobiidae,2,3,0.4,0.0741
+Caribbean,Bocas del Toro,Sweet Bocas Trench 5,AT13-6,.,AT13-6-6,Holocene_bulk,Sin_identificar,1,3,0.4,0.0741
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-1,Holocene_bulk,Albulidae,1,13,0.55,0.17862
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-1,Holocene_bulk,Apogonidae,1,13,0.55,0.17862
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-1,Holocene_bulk,Engraulidae,6,13,0.55,0.17862
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-1,Holocene_bulk,Gobiidae,4,13,0.55,0.17862
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-1,Holocene_bulk,Sin_identificar,1,13,0.55,0.17862
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-2,Holocene_bulk,Apogonidae,2,18,0.55,0.16704
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-2,Holocene_bulk,Batrachoididae,1,18,0.55,0.16704
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-2,Holocene_bulk,Bothidae,1,18,0.55,0.16704
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-2,Holocene_bulk,Gobiidae,10,18,0.55,0.16704
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-2,Holocene_bulk,Scaridae,2,18,0.55,0.16704
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-2,Holocene_bulk,Sin_identificar,2,18,0.55,0.16704
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-3,Holocene_bulk,Apogonidae,2,18,0.6,0.13949
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-3,Holocene_bulk,Bythitidae,1,18,0.6,0.13949
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-3,Holocene_bulk,Engraulidae,1,18,0.6,0.13949
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-3,Holocene_bulk,Gobiidae,10,18,0.6,0.13949
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-3,Holocene_bulk,Haemulidae,1,18,0.6,0.13949
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-3,Holocene_bulk,Sin_identificar,3,18,0.6,0.13949
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-4,Holocene_bulk,Apogonidae,1,94,0.65,0.18724
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-4,Holocene_bulk,Engraulidae,4,94,0.65,0.18724
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-4,Holocene_bulk,Gobiidae,82,94,0.65,0.18724
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-4,Holocene_bulk,Opistognathidae,1,94,0.65,0.18724
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-4,Holocene_bulk,Scaridae,1,94,0.65,0.18724
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-4,Holocene_bulk,Serranidae,1,94,0.65,0.18724
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-4,Holocene_bulk,Sin_identificar,4,94,0.65,0.18724
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-5,Holocene_bulk,Apogonidae,6,328,0.6,0.19617
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-5,Holocene_bulk,Bythitidae,1,328,0.6,0.19617
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-5,Holocene_bulk,Clupeidae,1,328,0.6,0.19617
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-5,Holocene_bulk,Engraulidae,10,328,0.6,0.19617
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-5,Holocene_bulk,Gobiidae,207,328,0.6,0.19617
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-5,Holocene_bulk,Labridae,2,328,0.6,0.19617
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-5,Holocene_bulk,Sin_identificar,101,328,0.6,0.19617
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-6,Holocene_bulk,Apogonidae,5,255,0.65,0.15817
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-6,Holocene_bulk,Bregmacerotidae,1,255,0.65,0.15817
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-6,Holocene_bulk,Clupeidae,2,255,0.65,0.15817
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-6,Holocene_bulk,Clupeidae,1,255,0.65,0.15817
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-6,Holocene_bulk,Engraulidae,10,255,0.65,0.15817
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-6,Holocene_bulk,Gobiidae,163,255,0.65,0.15817
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-6,Holocene_bulk,Sin_identificar,73,255,0.65,0.15817
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-7,Holocene_bulk,Apogonidae,12,292,0.6,0.17684
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-7,Holocene_bulk,Bregmacerotidae,1,292,0.6,0.17684
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-7,Holocene_bulk,Bythitidae,1,292,0.6,0.17684
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-7,Holocene_bulk,Engraulidae,12,292,0.6,0.17684
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-7,Holocene_bulk,Gerreidae,1,292,0.6,0.17684
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-7,Holocene_bulk,Gobiidae,187,292,0.6,0.17684
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-7,Holocene_bulk,Sin_identificar,78,292,0.6,0.17684
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-8,Holocene_bulk,Apogonidae,1,17,0.6,0.04407
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-8,Holocene_bulk,Gobiidae,11,17,0.6,0.04407
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-8,Holocene_bulk,Sin_identificar,5,17,0.6,0.04407
+Caribbean,Bocas del Toro,Sweet Bocas Trench 6,AT13-7,.,AT13-7-9,Holocene_bulk,Gobiidae,1,1,0.45,0.00559
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-1,Holocene_bulk,Atherinidae,1,7,0.65,0.13863
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-1,Holocene_bulk,Bregmacerotidae,1,7,0.65,0.13863
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-1,Holocene_bulk,Gobiidae,3,7,0.65,0.13863
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-1,Holocene_bulk,Opistognathidae,1,7,0.65,0.13863
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-1,Holocene_bulk,Sin_identificar,1,7,0.65,0.13863
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-2,Holocene_bulk,Atherinidae,1,7,0.6,0.13529
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-2,Holocene_bulk,Engraulidae,2,7,0.6,0.13529
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-2,Holocene_bulk,Gobiidae,3,7,0.6,0.13529
+Caribbean,Bocas del Toro,Sweet Bocas Trench 7,AT13-8,.,AT13-8-2,Holocene_bulk,Sin_identificar,1,7,0.6,0.13529
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Apogonidae,1,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Batrachoididae,1,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Bythitidae,1,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Bythitidae,1,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Engraulidae,5,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Gobiidae,5,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Scaridae,1,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-1,Holocene_bulk,Sin_identificar,4,19,0.8,0.08838
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-2,Holocene_bulk,Engraulidae,3,7,0.5,0.0566
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-2,Holocene_bulk,Gobiidae,2,7,0.5,0.0566
+Caribbean,Bocas del Toro,Sweet Bocas Trench 8,AT13-9,.,AT13-9-2,Holocene_bulk,Sin_identificar,2,7,0.5,0.0566
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-1,Holocene_bulk,Apogonidae,4,13,0.5584,0.135993
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-1,Holocene_bulk,Gobiidae,3,13,0.5584,0.135993
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-1,Holocene_bulk,Labrisomidae,1,13,0.5584,0.135993
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-1,Holocene_bulk,Sin_identificar,5,13,0.5584,0.135993
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-2,Holocene_bulk,Apogonidae,3,9,0.5324,0.126992
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-2,Holocene_bulk,Engraulidae,1,9,0.5324,0.126992
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-2,Holocene_bulk,Gobiidae,3,9,0.5324,0.126992
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-2,Holocene_bulk,Sin_identificar,2,9,0.5324,0.126992
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-3,Holocene_bulk,Apogonidae,1,12,0.5128,0.168592
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-3,Holocene_bulk,Clupeidae,1,12,0.5128,0.168592
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-3,Holocene_bulk,Engraulidae,2,12,0.5128,0.168592
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-3,Holocene_bulk,Gobiidae,5,12,0.5128,0.168592
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-10,.,AT14-10-3,Holocene_bulk,Sin_identificar,3,12,0.5128,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Apogonidae,4,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Atherinidae,1,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Atherinidae,1,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Clupeidae,2,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Engraulidae,6,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Gobiidae,18,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Labridae,1,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-1,modern_bulk,Sin_identificar,6,39,0.6604,0.168592
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-11,.,AT14-11-1,Holocene_bulk,Apogonidae,1,1,0.50105,0.113417
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-11,.,AT14-11-2,Holocene_bulk,.,0,0,0.4543,0.081919
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-11,.,AT14-11-3,Holocene_bulk,Bregmacerotidae,1,4,0.5395,0.0975
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-11,.,AT14-11-3,Holocene_bulk,Gobiidae,3,4,0.5395,0.0975
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Apogonidae,6,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Atherinidae,4,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Atherinidae,12,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Bregmacerotidae,1,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Bythitidae,2,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Clupeidae,1,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Clupeidae,1,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Engraulidae,15,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Gobiidae,36,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-2,modern_bulk,Sin_identificar,24,102,0.58385,0.255748
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-3,modern_bulk,Apogonidae,5,95,0.6843,0.177701
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-3,modern_bulk,Atherinidae,5,95,0.6843,0.177701
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-3,modern_bulk,Atherinidae,9,95,0.6843,0.177701
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-3,modern_bulk,Clupeidae,2,95,0.6843,0.177701
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-3,modern_bulk,Engraulidae,6,95,0.6843,0.177701
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-3,modern_bulk,Gobiidae,55,95,0.6843,0.177701
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-3,modern_bulk,Sin_identificar,13,95,0.6843,0.177701
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Apogonidae,1,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Atherinidae,2,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Atherinidae,3,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Bythitidae,1,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Engraulidae,2,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Gobiidae,7,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Labrisomidae,1,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Scaridae,1,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-5,modern_bulk,Sin_identificar,5,23,0.4014,0.093953
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Apogonidae,5,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Atherinidae,8,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Atherinidae,8,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Bythitidae,1,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Clupeidae,1,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Engraulidae,5,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Gobiidae,19,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-7,modern_bulk,Sin_identificar,11,58,0.6442,0.178184
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Acanthuridae,1,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Apogonidae,6,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Atherinidae,2,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Atherinidae,3,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Bregmacerotidae,1,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Bythitidae,1,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Clupeidae,2,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Engraulidae,2,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Gobiidae,31,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Serranidae,1,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Casa Blanca new,AT14-1,.,AT14-1-8,modern_bulk,Sin_identificar,13,63,0.6334,0.186586
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Apogonidae,2,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Atherinidae,2,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Bregmacerotidae,1,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Bythitidae,1,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Bythitidae,1,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Engraulidae,3,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Gobiidae,25,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Pomacentridae,1,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-1,modern_bulk,Sin_identificar,3,39,0.6472,0.126321
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-2,modern_bulk,Apogonidae,1,17,0.5441,0.085008
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-2,modern_bulk,Atherinidae,1,17,0.5441,0.085008
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-2,modern_bulk,Engraulidae,1,17,0.5441,0.085008
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-2,modern_bulk,Gobiidae,12,17,0.5441,0.085008
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-2,modern_bulk,Sin_identificar,2,17,0.5441,0.085008
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-4,modern_bulk,Atherinidae,2,30,0.5598,0.074169
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-4,modern_bulk,Atherinidae,1,30,0.5598,0.074169
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-4,modern_bulk,Engraulidae,1,30,0.5598,0.074169
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-4,modern_bulk,Gobiidae,19,30,0.5598,0.074169
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-4,modern_bulk,Haemulidae,1,30,0.5598,0.074169
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-4,modern_bulk,Sin_identificar,6,30,0.5598,0.074169
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-5,modern_bulk,Apogonidae,2,28,0.6014,0.121947
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-5,modern_bulk,Bregmacerotidae,2,28,0.6014,0.121947
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-5,modern_bulk,Clupeidae,1,28,0.6014,0.121947
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-5,modern_bulk,Gobiidae,18,28,0.6014,0.121947
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-5,modern_bulk,Serranidae,1,28,0.6014,0.121947
+Caribbean,Bocas del Toro,Punta Donato,AT14-2,.,AT14-2-5,modern_bulk,Sin_identificar,4,28,0.6014,0.121947
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-1,modern_bulk,Apogonidae,3,23,0.5189,0.193504
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-1,modern_bulk,Bythitidae,2,23,0.5189,0.193504
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-1,modern_bulk,Clupeidae,1,23,0.5189,0.193504
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-1,modern_bulk,Gobiidae,13,23,0.5189,0.193504
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-1,modern_bulk,Haemulidae,1,23,0.5189,0.193504
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-1,modern_bulk,Scaridae,1,23,0.5189,0.193504
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-1,modern_bulk,Sin_identificar,2,23,0.5189,0.193504
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-2,modern_bulk,Apogonidae,1,7,0.4314,0.078406
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-2,modern_bulk,Atherinopsidae,1,7,0.4314,0.078406
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-2,modern_bulk,Engraulidae,1,7,0.4314,0.078406
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-2,modern_bulk,Gobiidae,3,7,0.4314,0.078406
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-2,modern_bulk,Scaridae,1,7,0.4314,0.078406
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Apogonidae,5,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Atherinidae,3,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Atherinidae,2,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Batrachoididae,1,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Bythitidae,3,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Clupeidae,1,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Gobiidae,16,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Serranidae,1,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-3,modern_bulk,Sin_identificar,2,34,0.5768,0.195697
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-4,modern_bulk,Apogonidae,1,27,0.625,0.207246
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-4,modern_bulk,Atherinidae,3,27,0.625,0.207246
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-4,modern_bulk,Engraulidae,3,27,0.625,0.207246
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-4,modern_bulk,Gerreidae,2,27,0.625,0.207246
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-4,modern_bulk,Gobiidae,14,27,0.625,0.207246
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-4,modern_bulk,Labridae,1,27,0.625,0.207246
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-4,modern_bulk,Sin_identificar,3,27,0.625,0.207246
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Apogonidae,2,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Atherinidae,2,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Atherinidae,1,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Bythitidae,1,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Clupeidae,4,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Engraulidae,2,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Gobiidae,33,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Scorpaenidae,1,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-5,modern_bulk,Sin_identificar,14,60,0.6827,0.279638
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Apogonidae,2,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Atherinidae,2,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Batrachoididae,1,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Batrachoididae,1,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Bythitidae,1,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Engraulidae,2,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Gobiidae,24,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Scaridae,1,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Serranidae,1,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Cayo Adriana,AT14-3,.,AT14-3-6,modern_bulk,Sin_identificar,5,40,0.6877,0.31401
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Apogonidae,3,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Atherinidae,2,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Batrachoididae,1,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Bythitidae,1,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Clupeidae,1,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Engraulidae,2,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Gobiidae,9,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Labridae,2,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Serranidae,1,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-1,modern_bulk,Sin_identificar,9,31,0.4467,0.131869
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Apogonidae,2,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Atherinidae,2,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Bregmacerotidae,1,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Clupeidae,5,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Engraulidae,1,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Gerreidae,1,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Gobiidae,16,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Pomacentridae,1,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-2,modern_bulk,Sin_identificar,6,35,0.535,0.13061
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Apogonidae,6,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Atherinidae,3,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Bythitidae,3,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Clupeidae,2,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Clupeidae,1,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Engraulidae,6,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Gerreidae,1,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Gobiidae,20,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Synodontidae,1,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-3,modern_bulk,Sin_identificar,13,56,0.604,0.181854
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Apogonidae,7,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Atherinidae,4,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Atherinidae,1,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Batrachoididae,1,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Bregmacerotidae,1,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Bythitidae,3,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Clupeidae,3,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Engraulidae,5,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Gobiidae,21,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Labrisomidae,1,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-4,modern_bulk,Sin_identificar,14,61,0.5557,0.175348
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Apogonidae,2,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Atherinidae,1,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Bythitidae,1,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Clupeidae,1,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Engraulidae,3,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Gobiidae,16,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Labridae,1,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-5,modern_bulk,Sin_identificar,19,44,0.5742,0.151667
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Apogonidae,2,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Atherinidae,5,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Bythitidae,1,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Clupeidae,1,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Clupeidae,2,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Engraulidae,2,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Gobiidae,16,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Airport Point,AT14-4,.,AT14-4-6,modern_bulk,Sin_identificar,8,37,0.5891,0.162548
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-5,.,AT14-5-1,Holocene_bulk,Pomacentridae,1,1,0.5442,0.100525
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-5,.,AT14-5-2,Holocene_bulk,Apogonidae,1,3,0.4309,0.073918
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-5,.,AT14-5-2,Holocene_bulk,Engraulidae,1,3,0.4309,0.073918
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-5,.,AT14-5-2,Holocene_bulk,Gobiidae,1,3,0.4309,0.073918
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-5,.,AT14-5-3,Holocene_bulk,Engraulidae,1,3,0.4393,0.103568
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-5,.,AT14-5-3,Holocene_bulk,Sin_identificar,2,3,0.4393,0.103568
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-1,Holocene_bulk,Engraulidae,3,6,0.563,0.132093
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-1,Holocene_bulk,Gobiidae,1,6,0.563,0.132093
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-1,Holocene_bulk,Sin_identificar,2,6,0.563,0.132093
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-2,Holocene_bulk,Engraulidae,1,1,0.6379,0.142345
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-3,Holocene_bulk,Apogonidae,1,8,0.6066,0.136416
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-3,Holocene_bulk,Engraulidae,1,8,0.6066,0.136416
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-3,Holocene_bulk,Gobiidae,2,8,0.6066,0.136416
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-3,Holocene_bulk,Scaridae,1,8,0.6066,0.136416
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-6,.,AT14-6-3,Holocene_bulk,Sin_identificar,3,8,0.6066,0.136416
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-7,.,AT14-7-1,Holocene_bulk,Apogonidae,1,4,0.5221,0.131628
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-7,.,AT14-7-1,Holocene_bulk,Clupeidae,1,4,0.5221,0.131628
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-7,.,AT14-7-1,Holocene_bulk,Sin_identificar,2,4,0.5221,0.131628
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-7,.,AT14-7-2,Holocene_bulk,Pomacentridae,1,2,0.5237,0.076114
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-7,.,AT14-7-2,Holocene_bulk,Sin_identificar,1,2,0.5237,0.076114
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-7,.,AT14-7-3,Holocene_bulk,Apogonidae,1,3,0.4433,0.088157
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-7,.,AT14-7-3,Holocene_bulk,Engraulidae,2,3,0.4433,0.088157
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-1,Holocene_bulk,Apogonidae,2,18,0.4646,0.100533
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-1,Holocene_bulk,Gobiidae,14,18,0.4646,0.100533
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-1,Holocene_bulk,Sin_identificar,2,18,0.4646,0.100533
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-2,Holocene_bulk,Engraulidae,1,5,0.6022,0.104355
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-2,Holocene_bulk,Gobiidae,2,5,0.6022,0.104355
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-2,Holocene_bulk,Sin_identificar,2,5,0.6022,0.104355
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-3,Holocene_bulk,Engraulidae,1,13,0.5371,0.114332
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-3,Holocene_bulk,Gobiidae,7,13,0.5371,0.114332
+Caribbean,Bocas del Toro,Sweet Bocas SE Face,AT14-9,.,AT14-9-3,Holocene_bulk,Sin_identificar,5,13,0.5371,0.114332
+Pacific,Gulf of Panama,Saboga,AT19-1-1,5,AT19-1-1-5,core,.,0,0,0.23281,0.019266
+Pacific,Gulf of Panama,Saboga,AT19-1-1,10,AT19-1-1-10,core,Sin_identificar,1,1,0.29162,0.039649
+Pacific,Gulf of Panama,Saboga,AT19-1-1,15,AT19-1-1-15,core,.,0,0,0.26936,0.032041
+Pacific,Gulf of Panama,Saboga,AT19-1-1,20,AT19-1-1-20,core,.,0,0,0.32332,0.039827
+Pacific,Gulf of Panama,Saboga,AT19-1-1,25,AT19-1-1-25,core,Lutjanidae,1,1,0.31811,0.039895
+Pacific,Gulf of Panama,Saboga,AT19-1-1,30,AT19-1-1-30,core,Mullidae,1,1,0.31114,0.042444
+Pacific,Gulf of Panama,Saboga,AT19-1-1,35,AT19-1-1-35,core,Haemulidae,1,2,0.29255,0.046021
+Pacific,Gulf of Panama,Saboga,AT19-1-1,35,AT19-1-1-35,core,Serranidae,1,2,0.29255,0.046021
+Pacific,Gulf of Panama,Saboga,AT19-1-1,40,AT19-1-1-40,core,Apogonidae,1,4,0.29888,0.066425
+Pacific,Gulf of Panama,Saboga,AT19-1-1,40,AT19-1-1-40,core,Gobiidae,2,4,0.29888,0.066425
+Pacific,Gulf of Panama,Saboga,AT19-1-1,40,AT19-1-1-40,core,Sin_identificar,1,4,0.29888,0.066425
+Pacific,Gulf of Panama,Saboga,AT19-1-1,45,AT19-1-1-45,core,Engraulidae,1,1,0.22664,0.055532
+Pacific,Gulf of Panama,Saboga,AT19-1-1,50,AT19-1-1-50,core,Serranidae,3,4,0.31887,0.074606
+Pacific,Gulf of Panama,Saboga,AT19-1-1,50,AT19-1-1-50,core,Sin_identificar,1,4,0.31887,0.074606
+Pacific,Gulf of Panama,Saboga,AT19-1-1,55,AT19-1-1-55,core,Sin_identificar,1,1,0.26917,0.05265
+Pacific,Gulf of Panama,Saboga,AT19-1-1,60,AT19-1-1-60,core,Lutjanidae,1,3,0.29992,0.054302
+Pacific,Gulf of Panama,Saboga,AT19-1-1,60,AT19-1-1-60,core,Gobiidae,1,3,0.29992,0.054302
+Pacific,Gulf of Panama,Saboga,AT19-1-1,60,AT19-1-1-60,core,Sin_identificar,1,3,0.29992,0.054302
+Pacific,Gulf of Panama,Saboga,AT19-1-1,65,AT19-1-1-65,core,Gobiidae,3,6,0.32856,0.062988
+Pacific,Gulf of Panama,Saboga,AT19-1-1,65,AT19-1-1-65,core,Sin_identificar,3,6,0.32856,0.062988
+Pacific,Gulf of Panama,Saboga,AT19-1-1,70,AT19-1-1-70,core,Apogonidae,1,5,0.32333,0.06815
+Pacific,Gulf of Panama,Saboga,AT19-1-1,70,AT19-1-1-70,core,Lutjanidae,2,5,0.32333,0.06815
+Pacific,Gulf of Panama,Saboga,AT19-1-1,70,AT19-1-1-70,core,Gobiidae,1,5,0.32333,0.06815
+Pacific,Gulf of Panama,Saboga,AT19-1-1,70,AT19-1-1-70,core,Sin_identificar,1,5,0.32333,0.06815
+Pacific,Gulf of Panama,Saboga,AT19-1-1,75,AT19-1-1-75,core,Lutjanidae,1,1,0.30911,0.074509
+Pacific,Gulf of Panama,Saboga,AT19-1-1,80,AT19-1-1-80,core,Haemulidae,1,4,0.30217,0.078455
+Pacific,Gulf of Panama,Saboga,AT19-1-1,80,AT19-1-1-80,core,Labridae,1,4,0.30217,0.078455
+Pacific,Gulf of Panama,Saboga,AT19-1-1,80,AT19-1-1-80,core,Gobiidae,1,4,0.30217,0.078455
+Pacific,Gulf of Panama,Saboga,AT19-1-1,80,AT19-1-1-80,core,Sin_identificar,1,4,0.30217,0.078455
+Pacific,Gulf of Panama,Saboga,AT19-1-1,85,AT19-1-1-85,core,.,0,0,0.25863,0.054683
+Pacific,Gulf of Panama,Saboga,AT19-1-1,90,AT19-1-1-90,core,Opistognathidae,1,2,0.26932,0.05839
+Pacific,Gulf of Panama,Saboga,AT19-1-1,90,AT19-1-1-90,core,Sin_identificar,1,2,0.26932,0.05839
+Pacific,Gulf of Panama,Saboga,AT19-1-1,95,AT19-1-1-95,core,Gobiidae,1,1,0.25166,0.055005
+Pacific,Gulf of Panama,Saboga,AT19-1-1,100,AT19-1-1-100,core,Carangidae,1,6,0.20196,0.040146
+Pacific,Gulf of Panama,Saboga,AT19-1-1,100,AT19-1-1-100,core,Ophidiidae,1,6,0.20196,0.040146
+Pacific,Gulf of Panama,Saboga,AT19-1-1,100,AT19-1-1-100,core,Labridae,1,6,0.20196,0.040146
+Pacific,Gulf of Panama,Saboga,AT19-1-1,100,AT19-1-1-100,core,Gobiidae,1,6,0.20196,0.040146
+Pacific,Gulf of Panama,Saboga,AT19-1-1,100,AT19-1-1-100,core,Sin_identificar,2,6,0.20196,0.040146
+Pacific,Gulf of Panama,Saboga,AT19-1-1,105,AT19-1-1-105,core,.,0,0,0.27965,0.059011
+Pacific,Gulf of Panama,Saboga,AT19-1-1,110,AT19-1-1-110,core,Gobiidae,2,5,0.2602,0.064366
+Pacific,Gulf of Panama,Saboga,AT19-1-1,110,AT19-1-1-110,core,Serranidae,1,5,0.2602,0.064366
+Pacific,Gulf of Panama,Saboga,AT19-1-1,110,AT19-1-1-110,core,Lutjanidae,2,5,0.2602,0.064366
+Pacific,Gulf of Panama,Saboga,AT19-1-1,115,AT19-1-1-115,core,.,0,0,0.27041,0.058319
+Pacific,Gulf of Panama,Saboga,AT19-1-1,120,AT19-1-1-120,core,Gobiidae,1,3,0.27712,0.053211
+Pacific,Gulf of Panama,Saboga,AT19-1-1,120,AT19-1-1-120,core,Haemulidae,1,3,0.27712,0.053211
+Pacific,Gulf of Panama,Saboga,AT19-1-1,120,AT19-1-1-120,core,Sin_identificar,1,3,0.27712,0.053211
+Pacific,Gulf of Panama,Saboga,AT19-1-1,125,AT19-1-1-125,core,Sin_identificar,1,1,0.26041,0.053958
+Pacific,Gulf of Panama,Saboga,AT19-1-1,130,AT19-1-1-130,core,Apogonidae,1,6,0.28762,0.054556
+Pacific,Gulf of Panama,Saboga,AT19-1-1,130,AT19-1-1-130,core,Gobiidae,2,6,0.28762,0.054556
+Pacific,Gulf of Panama,Saboga,AT19-1-1,130,AT19-1-1-130,core,Sparidae,1,6,0.28762,0.054556
+Pacific,Gulf of Panama,Saboga,AT19-1-1,130,AT19-1-1-130,core,Sin_identificar,2,6,0.28762,0.054556
+Pacific,Gulf of Panama,Saboga,AT19-1-1,135,AT19-1-1-135,core,Gobiidae,1,3,0.28983,0.075535
+Pacific,Gulf of Panama,Saboga,AT19-1-1,135,AT19-1-1-135,core,Sin_identificar,2,3,0.28983,0.075535
+Pacific,Gulf of Panama,Saboga,AT19-1-1,140,AT19-1-1-140,core,Scorpaenidae,1,10,0.26964,0.071521
+Pacific,Gulf of Panama,Saboga,AT19-1-1,140,AT19-1-1-140,core,Engraulidae,1,10,0.26964,0.071521
+Pacific,Gulf of Panama,Saboga,AT19-1-1,140,AT19-1-1-140,core,Gobiidae,3,10,0.26964,0.071521
+Pacific,Gulf of Panama,Saboga,AT19-1-1,140,AT19-1-1-140,core,Sin_identificar,5,10,0.26964,0.071521
+Pacific,Gulf of Panama,Saboga,AT19-1-1,145,AT19-1-1-145,core,Blenniidae,1,3,0.29116,0.05797
+Pacific,Gulf of Panama,Saboga,AT19-1-1,145,AT19-1-1-145,core,Sin_identificar,2,3,0.29116,0.05797
+Pacific,Gulf of Panama,Saboga,AT19-1-1,150,AT19-1-1-150,core,Ophidiidae,1,11,0.27077,0.077352
+Pacific,Gulf of Panama,Saboga,AT19-1-1,150,AT19-1-1-150,core,Gobiidae,2,11,0.27077,0.077352
+Pacific,Gulf of Panama,Saboga,AT19-1-1,150,AT19-1-1-150,core,Sin_identificar,8,11,0.27077,0.077352
+Pacific,Gulf of Panama,Saboga,AT19-1-1,155,AT19-1-1-155,core,Lutjanidae,2,7,0.24138,0.068996
+Pacific,Gulf of Panama,Saboga,AT19-1-1,155,AT19-1-1-155,core,Haemulidae,1,7,0.24138,0.068996
+Pacific,Gulf of Panama,Saboga,AT19-1-1,155,AT19-1-1-155,core,Serranidae,1,7,0.24138,0.068996
+Pacific,Gulf of Panama,Saboga,AT19-1-1,155,AT19-1-1-155,core,Scorpaenidae,1,7,0.24138,0.068996
+Pacific,Gulf of Panama,Saboga,AT19-1-1,155,AT19-1-1-155,core,Gobiidae,1,7,0.24138,0.068996
+Pacific,Gulf of Panama,Saboga,AT19-1-1,155,AT19-1-1-155,core,Sin_identificar,1,7,0.24138,0.068996
+Pacific,Gulf of Panama,Saboga,AT19-1-1,160,AT19-1-1-160,core,Engraulidae,1,5,0.25249,0.067208
+Pacific,Gulf of Panama,Saboga,AT19-1-1,160,AT19-1-1-160,core,Gobiidae,2,5,0.25249,0.067208
+Pacific,Gulf of Panama,Saboga,AT19-1-1,160,AT19-1-1-160,core,Serranidae,1,5,0.25249,0.067208
+Pacific,Gulf of Panama,Saboga,AT19-1-1,160,AT19-1-1-160,core,Sin_identificar,1,5,0.25249,0.067208
+Pacific,Gulf of Panama,Saboga,AT19-1-1,165,AT19-1-1-165,core,Engraulidae,2,7,0.28912,0.070338
+Pacific,Gulf of Panama,Saboga,AT19-1-1,165,AT19-1-1-165,core,Gobiidae,2,7,0.28912,0.070338
+Pacific,Gulf of Panama,Saboga,AT19-1-1,165,AT19-1-1-165,core,Lutjanidae,1,7,0.28912,0.070338
+Pacific,Gulf of Panama,Saboga,AT19-1-1,165,AT19-1-1-165,core,Sin_identificar,2,7,0.28912,0.070338
+Pacific,Gulf of Panama,Saboga,AT19-1-1,170,AT19-1-1-170,core,Haemulidae,1,10,0.26864,0.070002
+Pacific,Gulf of Panama,Saboga,AT19-1-1,170,AT19-1-1-170,core,Apogonidae,1,10,0.26864,0.070002
+Pacific,Gulf of Panama,Saboga,AT19-1-1,170,AT19-1-1-170,core,Gobiidae,2,10,0.26864,0.070002
+Pacific,Gulf of Panama,Saboga,AT19-1-1,170,AT19-1-1-170,core,Ophidiidae,1,10,0.26864,0.070002
+Pacific,Gulf of Panama,Saboga,AT19-1-1,170,AT19-1-1-170,core,Sin_identificar,5,10,0.26864,0.070002
+Pacific,Gulf of Panama,Saboga,AT19-1-1,175,AT19-1-1-175,core,Lutjanidae,2,4,0.24747,0.060061
+Pacific,Gulf of Panama,Saboga,AT19-1-1,175,AT19-1-1-175,core,Gobiidae,1,4,0.24747,0.060061
+Pacific,Gulf of Panama,Saboga,AT19-1-1,175,AT19-1-1-175,core,Sin_identificar,1,4,0.24747,0.060061
+Pacific,Gulf of Panama,Saboga,AT19-1-1,180,AT19-1-1-180,core,Gobiidae,1,11,0.28221,0.060727
+Pacific,Gulf of Panama,Saboga,AT19-1-1,180,AT19-1-1-180,core,Serranidae,2,11,0.28221,0.060727
+Pacific,Gulf of Panama,Saboga,AT19-1-1,180,AT19-1-1-180,core,Lutjanidae,1,11,0.28221,0.060727
+Pacific,Gulf of Panama,Saboga,AT19-1-1,180,AT19-1-1-180,core,Sin_identificar,7,11,0.28221,0.060727
+Pacific,Gulf of Panama,Saboga,AT19-1-1,185,AT19-1-1-185,core,Carapidae,1,6,0.2695,0.073538
+Pacific,Gulf of Panama,Saboga,AT19-1-1,185,AT19-1-1-185,core,Gobiidae,1,6,0.2695,0.073538
+Pacific,Gulf of Panama,Saboga,AT19-1-1,185,AT19-1-1-185,core,Haemulidae,2,6,0.2695,0.073538
+Pacific,Gulf of Panama,Saboga,AT19-1-1,185,AT19-1-1-185,core,Sin_identificar,3,6,0.2695,0.073538
+Pacific,Gulf of Panama,Saboga,AT19-1-1,190,AT19-1-1-190,core,Scorpaenidae,1,7,0.26787,0.075283
+Pacific,Gulf of Panama,Saboga,AT19-1-1,190,AT19-1-1-190,core,Ophidiidae,1,7,0.26787,0.075283
+Pacific,Gulf of Panama,Saboga,AT19-1-1,190,AT19-1-1-190,core,Gobiidae,3,7,0.26787,0.075283
+Pacific,Gulf of Panama,Saboga,AT19-1-1,190,AT19-1-1-190,core,Sin_identificar,2,7,0.26787,0.075283
+Pacific,Gulf of Panama,Saboga,AT19-1-1,195,AT19-1-1-195,core,Apogonidae,2,7,0.27058,0.064268
+Pacific,Gulf of Panama,Saboga,AT19-1-1,195,AT19-1-1-195,core,Serranidae,1,7,0.27058,0.064268
+Pacific,Gulf of Panama,Saboga,AT19-1-1,195,AT19-1-1-195,core,Sin_identificar,4,7,0.27058,0.064268
+Pacific,Gulf of Panama,Saboga,AT19-1-1,200,AT19-1-1-200,core,Apogonidae,1,3,0.24482,0.048577
+Pacific,Gulf of Panama,Saboga,AT19-1-1,200,AT19-1-1-200,core,Engraulidae,2,3,0.24482,0.048577
+Pacific,Gulf of Panama,Saboga,AT19-1-1,205,AT19-1-1-205,core,Gobiidae,2,7,0.23888,0.068188
+Pacific,Gulf of Panama,Saboga,AT19-1-1,205,AT19-1-1-205,core,Serranidae,1,7,0.23888,0.068188
+Pacific,Gulf of Panama,Saboga,AT19-1-1,205,AT19-1-1-205,core,Scorpaenidae,1,7,0.23888,0.068188
+Pacific,Gulf of Panama,Saboga,AT19-1-1,205,AT19-1-1-205,core,Engraulidae,2,7,0.23888,0.068188
+Pacific,Gulf of Panama,Saboga,AT19-1-1,205,AT19-1-1-205,core,Sin_identificar,1,7,0.23888,0.068188
+Pacific,Gulf of Panama,Saboga,AT19-1-1,210,AT19-1-1-210,core,Clupeidae,1,9,0.27638,0.084677
+Pacific,Gulf of Panama,Saboga,AT19-1-1,210,AT19-1-1-210,core,Engraulidae,2,9,0.27638,0.084677
+Pacific,Gulf of Panama,Saboga,AT19-1-1,210,AT19-1-1-210,core,Gobiidae,2,9,0.27638,0.084677
+Pacific,Gulf of Panama,Saboga,AT19-1-1,210,AT19-1-1-210,core,Sin_identificar,4,9,0.27638,0.084677
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Gobiidae,3,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Labridae,1,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Engraulidae,1,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Pomacanthidae,1,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Scorpaenidae,1,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Haemulidae,1,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Apogonidae,1,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,215,AT19-1-1-215,core,Sin_identificar,2,11,0.28252,0.08127
+Pacific,Gulf of Panama,Saboga,AT19-1-1,220,AT19-1-1-220,core,Carangidae,1,7,0.2338,0.06602
+Pacific,Gulf of Panama,Saboga,AT19-1-1,220,AT19-1-1-220,core,Haemulidae,2,7,0.2338,0.06602
+Pacific,Gulf of Panama,Saboga,AT19-1-1,220,AT19-1-1-220,core,Apogonidae,1,7,0.2338,0.06602
+Pacific,Gulf of Panama,Saboga,AT19-1-1,220,AT19-1-1-220,core,Gobiidae,3,7,0.2338,0.06602
+Pacific,Gulf of Panama,Saboga,AT19-1-1,225,AT19-1-1-225,core,Lutjanidae,1,1,0.30509,0.064881
+Pacific,Gulf of Panama,Saboga,AT19-1-1,230,AT19-1-1-230,core,Scorpaenidae,1,7,0.24886,0.081734
+Pacific,Gulf of Panama,Saboga,AT19-1-1,230,AT19-1-1-230,core,Gerreidae,1,7,0.24886,0.081734
+Pacific,Gulf of Panama,Saboga,AT19-1-1,230,AT19-1-1-230,core,Engraulidae,1,7,0.24886,0.081734
+Pacific,Gulf of Panama,Saboga,AT19-1-1,230,AT19-1-1-230,core,Sin_identificar,4,7,0.24886,0.081734
+Pacific,Gulf of Panama,Saboga,AT19-1-1,235,AT19-1-1-235,core,Pomacentridae,1,10,0.29319,0.063517
+Pacific,Gulf of Panama,Saboga,AT19-1-1,235,AT19-1-1-235,core,Gobiidae,3,10,0.29319,0.063517
+Pacific,Gulf of Panama,Saboga,AT19-1-1,235,AT19-1-1-235,core,Apogonidae,2,10,0.29319,0.063517
+Pacific,Gulf of Panama,Saboga,AT19-1-1,235,AT19-1-1-235,core,Haemulidae,1,10,0.29319,0.063517
+Pacific,Gulf of Panama,Saboga,AT19-1-1,235,AT19-1-1-235,core,Sin_identificar,3,10,0.29319,0.063517
+Pacific,Gulf of Panama,Saboga,AT19-1-1,240,AT19-1-1-240,core,Haemulidae,1,4,0.26557,0.081381
+Pacific,Gulf of Panama,Saboga,AT19-1-1,240,AT19-1-1-240,core,Gobiidae,1,4,0.26557,0.081381
+Pacific,Gulf of Panama,Saboga,AT19-1-1,240,AT19-1-1-240,core,Sin_identificar,2,4,0.26557,0.081381
+Pacific,Gulf of Panama,Saboga,AT19-1-1,245,AT19-1-1-245,core,Mugilidae,1,3,0.27605,0.084485
+Pacific,Gulf of Panama,Saboga,AT19-1-1,245,AT19-1-1-245,core,Scorpaenidae,1,3,0.27605,0.084485
+Pacific,Gulf of Panama,Saboga,AT19-1-1,245,AT19-1-1-245,core,Serranidae,1,3,0.27605,0.084485
+Pacific,Gulf of Panama,Saboga,AT19-1-1,250,AT19-1-1-250,core,Haemulidae,1,8,0.26856,0.083889
+Pacific,Gulf of Panama,Saboga,AT19-1-1,250,AT19-1-1-250,core,Labridae,1,8,0.26856,0.083889
+Pacific,Gulf of Panama,Saboga,AT19-1-1,250,AT19-1-1-250,core,Engraulidae,1,8,0.26856,0.083889
+Pacific,Gulf of Panama,Saboga,AT19-1-1,250,AT19-1-1-250,core,Ophidiidae,1,8,0.26856,0.083889
+Pacific,Gulf of Panama,Saboga,AT19-1-1,250,AT19-1-1-250,core,Apogonidae,1,8,0.26856,0.083889
+Pacific,Gulf of Panama,Saboga,AT19-1-1,250,AT19-1-1-250,core,Gobiidae,1,8,0.26856,0.083889
+Pacific,Gulf of Panama,Saboga,AT19-1-1,250,AT19-1-1-250,core,Sin_identificar,2,8,0.26856,0.083889
+Pacific,Gulf of Panama,Saboga,AT19-1-1,255,AT19-1-1-255,core,Lutjanidae,1,4,0.24253,0.081935
+Pacific,Gulf of Panama,Saboga,AT19-1-1,255,AT19-1-1-255,core,Apogonidae,1,4,0.24253,0.081935
+Pacific,Gulf of Panama,Saboga,AT19-1-1,255,AT19-1-1-255,core,Clupeidae,1,4,0.24253,0.081935
+Pacific,Gulf of Panama,Saboga,AT19-1-1,255,AT19-1-1-255,core,Sin_identificar,1,4,0.24253,0.081935
+Pacific,Gulf of Panama,Saboga,AT19-1-1,260,AT19-1-1-260,core,Serranidae,1,6,0.23916,0.072706
+Pacific,Gulf of Panama,Saboga,AT19-1-1,260,AT19-1-1-260,core,Sin_identificar,5,6,0.23916,0.072706
+Pacific,Gulf of Panama,Saboga,AT19-1-1,265,AT19-1-1-265,core,Serranidae,1,5,0.27193,0.082766
+Pacific,Gulf of Panama,Saboga,AT19-1-1,265,AT19-1-1-265,core,Apogonidae,1,5,0.27193,0.082766
+Pacific,Gulf of Panama,Saboga,AT19-1-1,265,AT19-1-1-265,core,Gobiidae,3,5,0.27193,0.082766
+Pacific,Gulf of Panama,Saboga,AT19-1-1,270,AT19-1-1-270,core,Scorpaenidae,1,7,0.28011,0.079732
+Pacific,Gulf of Panama,Saboga,AT19-1-1,270,AT19-1-1-270,core,Lutjanidae,1,7,0.28011,0.079732
+Pacific,Gulf of Panama,Saboga,AT19-1-1,270,AT19-1-1-270,core,Engraulidae,1,7,0.28011,0.079732
+Pacific,Gulf of Panama,Saboga,AT19-1-1,270,AT19-1-1-270,core,Sin_identificar,4,7,0.28011,0.079732
+Pacific,Gulf of Panama,Saboga,AT19-1-1,275,AT19-1-1-275,core,Apogonidae,1,3,0.26145,0.064417
+Pacific,Gulf of Panama,Saboga,AT19-1-1,275,AT19-1-1-275,core,Engraulidae,1,3,0.26145,0.064417
+Pacific,Gulf of Panama,Saboga,AT19-1-1,275,AT19-1-1-275,core,Sin_identificar,1,3,0.26145,0.064417
+Pacific,Gulf of Panama,Saboga,AT19-1-1,280,AT19-1-1-280,core,Mullidae,1,5,0.24492,0.073325
+Pacific,Gulf of Panama,Saboga,AT19-1-1,280,AT19-1-1-280,core,Gobiidae,1,5,0.24492,0.073325
+Pacific,Gulf of Panama,Saboga,AT19-1-1,280,AT19-1-1-280,core,Sin_identificar,3,5,0.24492,0.073325
+Pacific,Gulf of Panama,Saboga,AT19-1-1,285,AT19-1-1-285,core,Sciaenidae,1,6,0.27282,0.074311
+Pacific,Gulf of Panama,Saboga,AT19-1-1,285,AT19-1-1-285,core,Scorpaenidae,1,6,0.27282,0.074311
+Pacific,Gulf of Panama,Saboga,AT19-1-1,285,AT19-1-1-285,core,Haemulidae,1,6,0.27282,0.074311
+Pacific,Gulf of Panama,Saboga,AT19-1-1,285,AT19-1-1-285,core,Gobiidae,3,6,0.27282,0.074311
+Pacific,Gulf of Panama,Saboga,AT19-1-1,290,AT19-1-1-290,core,Haemulidae,3,9,0.23597,0.068657
+Pacific,Gulf of Panama,Saboga,AT19-1-1,290,AT19-1-1-290,core,Engraulidae,1,9,0.23597,0.068657
+Pacific,Gulf of Panama,Saboga,AT19-1-1,290,AT19-1-1-290,core,Gobiidae,2,9,0.23597,0.068657
+Pacific,Gulf of Panama,Saboga,AT19-1-1,290,AT19-1-1-290,core,Sin_identificar,3,9,0.23597,0.068657
+Pacific,Gulf of Panama,Saboga,AT19-1-1,295,AT19-1-1-295,core,Ophidiidae,1,1,0.25809,0.070912
+Pacific,Gulf of Panama,Saboga,AT19-1-1,300,AT19-1-1-300,core,Engraulidae,1,3,0.24244,0.050012
+Pacific,Gulf of Panama,Saboga,AT19-1-1,300,AT19-1-1-300,core,Sin_identificar,2,3,0.24244,0.050012
+Pacific,Gulf of Panama,Saboga,AT19-1-1,305,AT19-1-1-305,core,Sin_identificar,1,1,0.21187,0.040182
+Pacific,Gulf of Panama,Saboga,AT19-1-1,310,AT19-1-1-310,core,Haemulidae,1,3,0.28017,0.06386
+Pacific,Gulf of Panama,Saboga,AT19-1-1,310,AT19-1-1-310,core,Gobiidae,1,3,0.28017,0.06386
+Pacific,Gulf of Panama,Saboga,AT19-1-1,310,AT19-1-1-310,core,Lutjanidae,1,3,0.28017,0.06386
+Pacific,Gulf of Panama,Saboga,AT19-1-1,315,AT19-1-1-315,core,Apogonidae,1,7,0.30385,0.087797
+Pacific,Gulf of Panama,Saboga,AT19-1-1,315,AT19-1-1-315,core,Gobiidae,1,7,0.30385,0.087797
+Pacific,Gulf of Panama,Saboga,AT19-1-1,315,AT19-1-1-315,core,Bythitidae,1,7,0.30385,0.087797
+Pacific,Gulf of Panama,Saboga,AT19-1-1,315,AT19-1-1-315,core,Haemulidae,1,7,0.30385,0.087797
+Pacific,Gulf of Panama,Saboga,AT19-1-1,315,AT19-1-1-315,core,Sin_identificar,3,7,0.30385,0.087797
+Pacific,Gulf of Panama,Saboga,AT19-1-1,320,AT19-1-1-320,core,Ophidiidae,1,8,0.31294,0.078948
+Pacific,Gulf of Panama,Saboga,AT19-1-1,320,AT19-1-1-320,core,Apogonidae,1,8,0.31294,0.078948
+Pacific,Gulf of Panama,Saboga,AT19-1-1,320,AT19-1-1-320,core,Gobiidae,1,8,0.31294,0.078948
+Pacific,Gulf of Panama,Saboga,AT19-1-1,320,AT19-1-1-320,core,Paralichthyidae,1,8,0.31294,0.078948
+Pacific,Gulf of Panama,Saboga,AT19-1-1,320,AT19-1-1-320,core,Blenniidae,1,8,0.31294,0.078948
+Pacific,Gulf of Panama,Saboga,AT19-1-1,320,AT19-1-1-320,core,Sin_identificar,3,8,0.31294,0.078948
+Pacific,Gulf of Panama,Saboga,AT19-1-1,325,AT19-1-1-325,core,Labridae,1,3,0.31576,0.073186
+Pacific,Gulf of Panama,Saboga,AT19-1-1,325,AT19-1-1-325,core,Engraulidae,1,3,0.31576,0.073186
+Pacific,Gulf of Panama,Saboga,AT19-1-1,325,AT19-1-1-325,core,Gobiidae,1,3,0.31576,0.073186
+Pacific,Gulf of Panama,Saboga,AT19-1-1,330,AT19-1-1-330,core,Gobiidae,3,12,0.3135,0.117263
+Pacific,Gulf of Panama,Saboga,AT19-1-1,330,AT19-1-1-330,core,Ophidiidae,1,12,0.3135,0.117263
+Pacific,Gulf of Panama,Saboga,AT19-1-1,330,AT19-1-1-330,core,Sin_identificar,8,12,0.3135,0.117263
+Pacific,Gulf of Panama,Saboga,AT19-1-1,335,AT19-1-1-335,core,Ophidiidae,2,12,0.28423,0.087737
+Pacific,Gulf of Panama,Saboga,AT19-1-1,335,AT19-1-1-335,core,Gobiidae,2,12,0.28423,0.087737
+Pacific,Gulf of Panama,Saboga,AT19-1-1,335,AT19-1-1-335,core,Apogonidae,1,12,0.28423,0.087737
+Pacific,Gulf of Panama,Saboga,AT19-1-1,335,AT19-1-1-335,core,Lutjanidae,1,12,0.28423,0.087737
+Pacific,Gulf of Panama,Saboga,AT19-1-1,335,AT19-1-1-335,core,Sin_identificar,6,12,0.28423,0.087737
+Pacific,Gulf of Panama,Saboga,AT19-1-1,340,AT19-1-1-340,core,Carapidae,1,5,0.34762,0.085775
+Pacific,Gulf of Panama,Saboga,AT19-1-1,340,AT19-1-1-340,core,Gobiidae,3,5,0.34762,0.085775
+Pacific,Gulf of Panama,Saboga,AT19-1-1,340,AT19-1-1-340,core,Haemulidae,1,5,0.34762,0.085775
+Pacific,Gulf of Panama,Saboga,AT19-1-1,345,AT19-1-1-345,core,Haemulidae,1,15,0.3282,0.112914
+Pacific,Gulf of Panama,Saboga,AT19-1-1,345,AT19-1-1-345,core,Labridae,1,15,0.3282,0.112914
+Pacific,Gulf of Panama,Saboga,AT19-1-1,345,AT19-1-1-345,core,Lutjanidae,1,15,0.3282,0.112914
+Pacific,Gulf of Panama,Saboga,AT19-1-1,345,AT19-1-1-345,core,Apogonidae,1,15,0.3282,0.112914
+Pacific,Gulf of Panama,Saboga,AT19-1-1,345,AT19-1-1-345,core,Gobiidae,4,15,0.3282,0.112914
+Pacific,Gulf of Panama,Saboga,AT19-1-1,345,AT19-1-1-345,core,Sin_identificar,7,15,0.3282,0.112914
+Pacific,Gulf of Panama,Saboga,AT19-1-1,350,AT19-1-1-350,core,Serranidae,1,15,0.31233,0.124884
+Pacific,Gulf of Panama,Saboga,AT19-1-1,350,AT19-1-1-350,core,Haemulidae,1,15,0.31233,0.124884
+Pacific,Gulf of Panama,Saboga,AT19-1-1,350,AT19-1-1-350,core,Gobiidae,6,15,0.31233,0.124884
+Pacific,Gulf of Panama,Saboga,AT19-1-1,350,AT19-1-1-350,core,Sin_identificar,7,15,0.31233,0.124884
+Pacific,Gulf of Panama,Saboga,AT19-1-1,355,AT19-1-1-355,core,Haemulidae,1,11,0.30294,0.111698
+Pacific,Gulf of Panama,Saboga,AT19-1-1,355,AT19-1-1-355,core,Lutjanidae,1,11,0.30294,0.111698
+Pacific,Gulf of Panama,Saboga,AT19-1-1,355,AT19-1-1-355,core,Gobiidae,2,11,0.30294,0.111698
+Pacific,Gulf of Panama,Saboga,AT19-1-1,355,AT19-1-1-355,core,Sin_identificar,7,11,0.30294,0.111698
+Pacific,Gulf of Panama,Saboga,AT19-1-1,360,AT19-1-1-360,core,Gobiidae,8,19,0.31661,0.09655
+Pacific,Gulf of Panama,Saboga,AT19-1-1,360,AT19-1-1-360,core,Engraulidae,1,19,0.31661,0.09655
+Pacific,Gulf of Panama,Saboga,AT19-1-1,360,AT19-1-1-360,core,Sin_identificar,3,19,0.31661,0.09655
+Pacific,Gulf of Panama,Saboga,AT19-1-1,360,AT19-1-1-360,core,Sin_identificar,7,19,0.31661,0.09655
+Pacific,Gulf of Panama,Saboga,AT19-1-1,365,AT19-1-1-365,core,Gobiidae,1,4,0.32083,0.071431
+Pacific,Gulf of Panama,Saboga,AT19-1-1,365,AT19-1-1-365,core,Sin_identificar,3,4,0.32083,0.071431
+Pacific,Gulf of Panama,Saboga,AT19-1-1,370,AT19-1-1-370,core,Gobiidae,1,2,0.32563,0.060309
+Pacific,Gulf of Panama,Saboga,AT19-1-1,370,AT19-1-1-370,core,Sin_identificar,1,2,0.32563,0.060309
+Pacific,Gulf of Panama,Saboga,AT19-1-1,375,AT19-1-1-375,core,.,0,0,0.34166,0.065335
+Pacific,Gulf of Panama,Saboga,AT19-1-2,5,AT19-1-2-5,core,.,.,.,.,.
+Pacific,Gulf of Panama,Saboga,AT19-1-2,10,AT19-1-2-10,core,.,0,0,0.30727,0.025844
+Pacific,Gulf of Panama,Saboga,AT19-1-2,15,AT19-1-2-15,core,Gobiidae,1,1,0.27123,0.03019
+Pacific,Gulf of Panama,Saboga,AT19-1-2,20,AT19-1-2-20,core,Sin_identificar,1,1,0.2867,0.031304
+Pacific,Gulf of Panama,Saboga,AT19-1-2,25,AT19-1-2-25,core,Engraulidae,1,1,0.34524,0.03503
+Pacific,Gulf of Panama,Saboga,AT19-1-2,30,AT19-1-2-30,core,Bregmacerotidae,1,2,0.27967,0.035989
+Pacific,Gulf of Panama,Saboga,AT19-1-2,30,AT19-1-2-30,core,Apogonidae,1,2,0.27967,0.035989
+Pacific,Gulf of Panama,Saboga,AT19-1-2,35,AT19-1-2-35,core,Haemulidae,1,4,0.32641,0.03945
+Pacific,Gulf of Panama,Saboga,AT19-1-2,35,AT19-1-2-35,core,Lutjanidae,1,4,0.32641,0.03945
+Pacific,Gulf of Panama,Saboga,AT19-1-2,35,AT19-1-2-35,core,Sin_identificar,2,4,0.32641,0.03945
+Pacific,Gulf of Panama,Saboga,AT19-1-2,40,AT19-1-2-40,core,Engraulidae,1,3,0.2685,0.037715
+Pacific,Gulf of Panama,Saboga,AT19-1-2,40,AT19-1-2-40,core,Gobiidae,1,3,0.2685,0.037715
+Pacific,Gulf of Panama,Saboga,AT19-1-2,40,AT19-1-2-40,core,Scorpaenidae,1,3,0.2685,0.037715
+Pacific,Gulf of Panama,Saboga,AT19-1-2,45,AT19-1-2-45,core,Scorpaenidae,1,2,0.30996,0.04686
+Pacific,Gulf of Panama,Saboga,AT19-1-2,45,AT19-1-2-45,core,Batrachoididae,1,2,0.30996,0.04686
+Pacific,Gulf of Panama,Saboga,AT19-1-2,50,AT19-1-2-50,core,Clupeidae,1,5,0.28007,0.060799
+Pacific,Gulf of Panama,Saboga,AT19-1-2,50,AT19-1-2-50,core,Apogonidae,1,5,0.28007,0.060799
+Pacific,Gulf of Panama,Saboga,AT19-1-2,50,AT19-1-2-50,core,Atherinopsidae,1,5,0.28007,0.060799
+Pacific,Gulf of Panama,Saboga,AT19-1-2,50,AT19-1-2-50,core,Sin_identificar,2,5,0.28007,0.060799
+Pacific,Gulf of Panama,Saboga,AT19-1-2,55,AT19-1-2-55,core,Gobiidae,1,6,0.29507,0.06322
+Pacific,Gulf of Panama,Saboga,AT19-1-2,55,AT19-1-2-55,core,Sin_identificar,5,6,0.29507,0.06322
+Pacific,Gulf of Panama,Saboga,AT19-1-2,60,AT19-1-2-60,core,Engraulidae,1,4,0.30833,0.067239
+Pacific,Gulf of Panama,Saboga,AT19-1-2,60,AT19-1-2-60,core,Apogonidae,1,4,0.30833,0.067239
+Pacific,Gulf of Panama,Saboga,AT19-1-2,60,AT19-1-2-60,core,Gobiidae,1,4,0.30833,0.067239
+Pacific,Gulf of Panama,Saboga,AT19-1-2,60,AT19-1-2-60,core,Lutjanidae,1,4,0.30833,0.067239
+Pacific,Gulf of Panama,Saboga,AT19-1-2,65,AT19-1-2-65,core,Pomacentridae,1,2,0.31819,0.06243
+Pacific,Gulf of Panama,Saboga,AT19-1-2,65,AT19-1-2-65,core,Sin_identificar,1,2,0.31819,0.06243
+Pacific,Gulf of Panama,Saboga,AT19-1-2,70,AT19-1-2-70,core,.,0,0,0.2685,0.059228
+Pacific,Gulf of Panama,Saboga,AT19-1-2,75,AT19-1-2-75,core,Haemulidae,2,6,0.31357,0.06646
+Pacific,Gulf of Panama,Saboga,AT19-1-2,75,AT19-1-2-75,core,Engraulidae,1,6,0.31357,0.06646
+Pacific,Gulf of Panama,Saboga,AT19-1-2,75,AT19-1-2-75,core,Sciaenidae,1,6,0.31357,0.06646
+Pacific,Gulf of Panama,Saboga,AT19-1-2,75,AT19-1-2-75,core,Paralichthyidae,1,6,0.31357,0.06646
+Pacific,Gulf of Panama,Saboga,AT19-1-2,75,AT19-1-2-75,core,Sin_identificar,1,6,0.31357,0.06646
+Pacific,Gulf of Panama,Saboga,AT19-1-2,80,AT19-1-2-80,core,Gobiidae,1,2,0.3031,0.07486
+Pacific,Gulf of Panama,Saboga,AT19-1-2,80,AT19-1-2-80,core,Sin_identificar,1,2,0.3031,0.07486
+Pacific,Gulf of Panama,Saboga,AT19-1-2,85,AT19-1-2-85,core,Sin_identificar,1,1,0.32332,0.06696
+Pacific,Gulf of Panama,Saboga,AT19-1-2,90,AT19-1-2-90,core,Pomacentridae,1,1,0.28538,0.054202
+Pacific,Gulf of Panama,Saboga,AT19-1-2,95,AT19-1-2-95,core,Pomacentridae,1,1,0.30454,0.05158
+Pacific,Gulf of Panama,Saboga,AT19-1-2,100,AT19-1-2-100,core,Haemulidae,1,4,0.30203,0.056278
+Pacific,Gulf of Panama,Saboga,AT19-1-2,100,AT19-1-2-100,core,Scorpaenidae,1,4,0.30203,0.056278
+Pacific,Gulf of Panama,Saboga,AT19-1-2,100,AT19-1-2-100,core,Apogonidae,1,4,0.30203,0.056278
+Pacific,Gulf of Panama,Saboga,AT19-1-2,100,AT19-1-2-100,core,Sin_identificar,1,4,0.30203,0.056278
+Pacific,Gulf of Panama,Saboga,AT19-1-2,105,AT19-1-2-105,core,Ophidiidae,1,7,0.28818,0.05478
+Pacific,Gulf of Panama,Saboga,AT19-1-2,105,AT19-1-2-105,core,Peristediidae,1,7,0.28818,0.05478
+Pacific,Gulf of Panama,Saboga,AT19-1-2,105,AT19-1-2-105,core,Engraulidae,1,7,0.28818,0.05478
+Pacific,Gulf of Panama,Saboga,AT19-1-2,105,AT19-1-2-105,core,Gobiidae,1,7,0.28818,0.05478
+Pacific,Gulf of Panama,Saboga,AT19-1-2,105,AT19-1-2-105,core,Sin_identificar,3,7,0.28818,0.05478
+Pacific,Gulf of Panama,Saboga,AT19-1-2,110,AT19-1-2-110,core,Scorpaenidae,2,3,0.23451,0.054436
+Pacific,Gulf of Panama,Saboga,AT19-1-2,110,AT19-1-2-110,core,Sin_identificar,1,3,0.23451,0.054436
+Pacific,Gulf of Panama,Saboga,AT19-1-2,115,AT19-1-2-115,core,Serranidae,1,9,0.30364,0.067726
+Pacific,Gulf of Panama,Saboga,AT19-1-2,115,AT19-1-2-115,core,Pomacentridae,1,9,0.30364,0.067726
+Pacific,Gulf of Panama,Saboga,AT19-1-2,115,AT19-1-2-115,core,Gobiidae,3,9,0.30364,0.067726
+Pacific,Gulf of Panama,Saboga,AT19-1-2,115,AT19-1-2-115,core,Engraulidae,2,9,0.30364,0.067726
+Pacific,Gulf of Panama,Saboga,AT19-1-2,115,AT19-1-2-115,core,Labridae,1,9,0.30364,0.067726
+Pacific,Gulf of Panama,Saboga,AT19-1-2,115,AT19-1-2-115,core,Sin_identificar,1,9,0.30364,0.067726
+Pacific,Gulf of Panama,Saboga,AT19-1-2,120,AT19-1-2-120,core,Gobiidae,1,3,0.29226,0.056548
+Pacific,Gulf of Panama,Saboga,AT19-1-2,120,AT19-1-2-120,core,Engraulidae,1,3,0.29226,0.056548
+Pacific,Gulf of Panama,Saboga,AT19-1-2,120,AT19-1-2-120,core,Sin_identificar,1,3,0.29226,0.056548
+Pacific,Gulf of Panama,Saboga,AT19-1-2,125,AT19-1-2-125,core,Sparidae,1,5,0.28633,0.056331
+Pacific,Gulf of Panama,Saboga,AT19-1-2,125,AT19-1-2-125,core,Serranidae,1,5,0.28633,0.056331
+Pacific,Gulf of Panama,Saboga,AT19-1-2,125,AT19-1-2-125,core,Apogonidae,1,5,0.28633,0.056331
+Pacific,Gulf of Panama,Saboga,AT19-1-2,125,AT19-1-2-125,core,Gobiidae,1,5,0.28633,0.056331
+Pacific,Gulf of Panama,Saboga,AT19-1-2,125,AT19-1-2-125,core,Sin_identificar,1,5,0.28633,0.056331
+Pacific,Gulf of Panama,Saboga,AT19-1-2,130,AT19-1-2-130,core,Gobiidae,1,9,0.31089,0.071208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,130,AT19-1-2-130,core,Pomacentridae,1,9,0.31089,0.071208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,130,AT19-1-2-130,core,Engraulidae,2,9,0.31089,0.071208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,130,AT19-1-2-130,core,Paralichthyidae,1,9,0.31089,0.071208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,130,AT19-1-2-130,core,Sin_identificar,4,9,0.31089,0.071208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,135,AT19-1-2-135,core,Sin_identificar,1,4,0.25162,0.057047
+Pacific,Gulf of Panama,Saboga,AT19-1-2,135,AT19-1-2-135,core,Gobiidae,1,4,0.25162,0.057047
+Pacific,Gulf of Panama,Saboga,AT19-1-2,135,AT19-1-2-135,core,Scorpaenidae,1,4,0.25162,0.057047
+Pacific,Gulf of Panama,Saboga,AT19-1-2,135,AT19-1-2-135,core,Sciaenidae,1,4,0.25162,0.057047
+Pacific,Gulf of Panama,Saboga,AT19-1-2,140,AT19-1-2-140,core,Gobiidae,1,7,0.30158,0.069621
+Pacific,Gulf of Panama,Saboga,AT19-1-2,140,AT19-1-2-140,core,Paralichthyidae,1,7,0.30158,0.069621
+Pacific,Gulf of Panama,Saboga,AT19-1-2,140,AT19-1-2-140,core,Pomacentridae,1,7,0.30158,0.069621
+Pacific,Gulf of Panama,Saboga,AT19-1-2,140,AT19-1-2-140,core,Haemulidae,1,7,0.30158,0.069621
+Pacific,Gulf of Panama,Saboga,AT19-1-2,140,AT19-1-2-140,core,Labridae,1,7,0.30158,0.069621
+Pacific,Gulf of Panama,Saboga,AT19-1-2,140,AT19-1-2-140,core,Sin_identificar,2,7,0.30158,0.069621
+Pacific,Gulf of Panama,Saboga,AT19-1-2,145,AT19-1-2-145,core,Gobiidae,4,4,0.29206,0.073618
+Pacific,Gulf of Panama,Saboga,AT19-1-2,150,AT19-1-2-150,core,Apogonidae,1,5,0.2968,0.08938
+Pacific,Gulf of Panama,Saboga,AT19-1-2,150,AT19-1-2-150,core,Engraulidae,1,5,0.2968,0.08938
+Pacific,Gulf of Panama,Saboga,AT19-1-2,150,AT19-1-2-150,core,Sin_identificar,3,5,0.2968,0.08938
+Pacific,Gulf of Panama,Saboga,AT19-1-2,155,AT19-1-2-155,core,Gobiidae,2,7,0.29306,0.08113
+Pacific,Gulf of Panama,Saboga,AT19-1-2,155,AT19-1-2-155,core,Engraulidae,2,7,0.29306,0.08113
+Pacific,Gulf of Panama,Saboga,AT19-1-2,155,AT19-1-2-155,core,Sciaenidae,1,7,0.29306,0.08113
+Pacific,Gulf of Panama,Saboga,AT19-1-2,155,AT19-1-2-155,core,Sin_identificar,2,7,0.29306,0.08113
+Pacific,Gulf of Panama,Saboga,AT19-1-2,160,AT19-1-2-160,core,Sparidae,1,6,0.29773,0.067947
+Pacific,Gulf of Panama,Saboga,AT19-1-2,160,AT19-1-2-160,core,Engraulidae,1,6,0.29773,0.067947
+Pacific,Gulf of Panama,Saboga,AT19-1-2,160,AT19-1-2-160,core,Gobiidae,2,6,0.29773,0.067947
+Pacific,Gulf of Panama,Saboga,AT19-1-2,160,AT19-1-2-160,core,Sin_identificar,2,6,0.29773,0.067947
+Pacific,Gulf of Panama,Saboga,AT19-1-2,165,AT19-1-2-165,core,Pomacentridae,1,6,0.28146,0.066162
+Pacific,Gulf of Panama,Saboga,AT19-1-2,165,AT19-1-2-165,core,Sin_identificar,5,6,0.28146,0.066162
+Pacific,Gulf of Panama,Saboga,AT19-1-2,170,AT19-1-2-170,core,Serranidae,2,9,0.30498,0.089234
+Pacific,Gulf of Panama,Saboga,AT19-1-2,170,AT19-1-2-170,core,Gobiidae,2,9,0.30498,0.089234
+Pacific,Gulf of Panama,Saboga,AT19-1-2,170,AT19-1-2-170,core,Haemulidae,1,9,0.30498,0.089234
+Pacific,Gulf of Panama,Saboga,AT19-1-2,170,AT19-1-2-170,core,Pomacentridae,1,9,0.30498,0.089234
+Pacific,Gulf of Panama,Saboga,AT19-1-2,170,AT19-1-2-170,core,Sin_identificar,3,9,0.30498,0.089234
+Pacific,Gulf of Panama,Saboga,AT19-1-2,175,AT19-1-2-175,core,Engraulidae,1,5,0.31516,0.070878
+Pacific,Gulf of Panama,Saboga,AT19-1-2,175,AT19-1-2-175,core,Sin_identificar,4,5,0.31516,0.070878
+Pacific,Gulf of Panama,Saboga,AT19-1-2,180,AT19-1-2-180,core,Gobiidae,1,6,0.33095,0.074486
+Pacific,Gulf of Panama,Saboga,AT19-1-2,180,AT19-1-2-180,core,Sin_identificar,5,6,0.33095,0.074486
+Pacific,Gulf of Panama,Saboga,AT19-1-2,185,AT19-1-2-185,core,Engraulidae,1,8,0.28814,0.080362
+Pacific,Gulf of Panama,Saboga,AT19-1-2,185,AT19-1-2-185,core,Gobiidae,2,8,0.28814,0.080362
+Pacific,Gulf of Panama,Saboga,AT19-1-2,185,AT19-1-2-185,core,Apogonidae,1,8,0.28814,0.080362
+Pacific,Gulf of Panama,Saboga,AT19-1-2,185,AT19-1-2-185,core,Scorpaenidae,1,8,0.28814,0.080362
+Pacific,Gulf of Panama,Saboga,AT19-1-2,185,AT19-1-2-185,core,Sin_identificar,3,8,0.28814,0.080362
+Pacific,Gulf of Panama,Saboga,AT19-1-2,190,AT19-1-2-190,core,Sciaenidae,1,8,0.32401,0.085062
+Pacific,Gulf of Panama,Saboga,AT19-1-2,190,AT19-1-2-190,core,Labridae,1,8,0.32401,0.085062
+Pacific,Gulf of Panama,Saboga,AT19-1-2,190,AT19-1-2-190,core,Sin_identificar,1,8,0.32401,0.085062
+Pacific,Gulf of Panama,Saboga,AT19-1-2,190,AT19-1-2-190,core,Haemulidae,1,8,0.32401,0.085062
+Pacific,Gulf of Panama,Saboga,AT19-1-2,190,AT19-1-2-190,core,Apogonidae,3,8,0.32401,0.085062
+Pacific,Gulf of Panama,Saboga,AT19-1-2,190,AT19-1-2-190,core,Gobiidae,1,8,0.32401,0.085062
+Pacific,Gulf of Panama,Saboga,AT19-1-2,195,AT19-1-2-195,core,Belonidae,1,8,0.27902,0.068393
+Pacific,Gulf of Panama,Saboga,AT19-1-2,195,AT19-1-2-195,core,Serranidae,1,8,0.27902,0.068393
+Pacific,Gulf of Panama,Saboga,AT19-1-2,195,AT19-1-2-195,core,Labridae,2,8,0.27902,0.068393
+Pacific,Gulf of Panama,Saboga,AT19-1-2,195,AT19-1-2-195,core,Gobiidae,1,8,0.27902,0.068393
+Pacific,Gulf of Panama,Saboga,AT19-1-2,195,AT19-1-2-195,core,Sin_identificar,3,8,0.27902,0.068393
+Pacific,Gulf of Panama,Saboga,AT19-1-2,200,AT19-1-2-200,core,Engraulidae,2,4,0.27157,0.066019
+Pacific,Gulf of Panama,Saboga,AT19-1-2,200,AT19-1-2-200,core,Lutjanidae,1,4,0.27157,0.066019
+Pacific,Gulf of Panama,Saboga,AT19-1-2,200,AT19-1-2-200,core,Sin_identificar,1,4,0.27157,0.066019
+Pacific,Gulf of Panama,Saboga,AT19-1-2,205,AT19-1-2-205,core,Apogonidae,1,6,0.25986,0.066391
+Pacific,Gulf of Panama,Saboga,AT19-1-2,205,AT19-1-2-205,core,Pomacentridae,1,6,0.25986,0.066391
+Pacific,Gulf of Panama,Saboga,AT19-1-2,205,AT19-1-2-205,core,Engraulidae,1,6,0.25986,0.066391
+Pacific,Gulf of Panama,Saboga,AT19-1-2,205,AT19-1-2-205,core,Gobiidae,2,6,0.25986,0.066391
+Pacific,Gulf of Panama,Saboga,AT19-1-2,205,AT19-1-2-205,core,Sin_identificar,1,6,0.25986,0.066391
+Pacific,Gulf of Panama,Saboga,AT19-1-2,210,AT19-1-2-210,core,Gobiidae,1,3,0.28746,0.066611
+Pacific,Gulf of Panama,Saboga,AT19-1-2,210,AT19-1-2-210,core,Sin_identificar,2,3,0.28746,0.066611
+Pacific,Gulf of Panama,Saboga,AT19-1-2,215,AT19-1-2-215,core,Labridae,1,4,0.2443,0.06901
+Pacific,Gulf of Panama,Saboga,AT19-1-2,215,AT19-1-2-215,core,Engraulidae,1,4,0.2443,0.06901
+Pacific,Gulf of Panama,Saboga,AT19-1-2,215,AT19-1-2-215,core,Gobiidae,1,4,0.2443,0.06901
+Pacific,Gulf of Panama,Saboga,AT19-1-2,215,AT19-1-2-215,core,Sin_identificar,1,4,0.2443,0.06901
+Pacific,Gulf of Panama,Saboga,AT19-1-2,220,AT19-1-2-220,core,Pomacentridae,2,4,0.23594,0.069625
+Pacific,Gulf of Panama,Saboga,AT19-1-2,220,AT19-1-2-220,core,Atherinidae,1,4,0.23594,0.069625
+Pacific,Gulf of Panama,Saboga,AT19-1-2,220,AT19-1-2-220,core,Gobiidae,1,4,0.23594,0.069625
+Pacific,Gulf of Panama,Saboga,AT19-1-2,225,AT19-1-2-225,core,Pomacentridae,1,4,0.23299,0.055572
+Pacific,Gulf of Panama,Saboga,AT19-1-2,225,AT19-1-2-225,core,Engraulidae,1,4,0.23299,0.055572
+Pacific,Gulf of Panama,Saboga,AT19-1-2,225,AT19-1-2-225,core,Sin_identificar,2,4,0.23299,0.055572
+Pacific,Gulf of Panama,Saboga,AT19-1-2,230,AT19-1-2-230,core,Sin_identificar,1,4,0.23796,0.063536
+Pacific,Gulf of Panama,Saboga,AT19-1-2,230,AT19-1-2-230,core,Haemulidae,2,4,0.23796,0.063536
+Pacific,Gulf of Panama,Saboga,AT19-1-2,230,AT19-1-2-230,core,Gobiidae,1,4,0.23796,0.063536
+Pacific,Gulf of Panama,Saboga,AT19-1-2,235,AT19-1-2-235,core,Engraulidae,1,7,0.22995,0.087612
+Pacific,Gulf of Panama,Saboga,AT19-1-2,235,AT19-1-2-235,core,Gobiidae,1,7,0.22995,0.087612
+Pacific,Gulf of Panama,Saboga,AT19-1-2,235,AT19-1-2-235,core,Scorpaenidae,2,7,0.22995,0.087612
+Pacific,Gulf of Panama,Saboga,AT19-1-2,235,AT19-1-2-235,core,Pomacentridae,1,7,0.22995,0.087612
+Pacific,Gulf of Panama,Saboga,AT19-1-2,235,AT19-1-2-235,core,Sin_identificar,2,7,0.22995,0.087612
+Pacific,Gulf of Panama,Saboga,AT19-1-2,240,AT19-1-2-240,core,Gobiidae,3,6,0.24335,0.066505
+Pacific,Gulf of Panama,Saboga,AT19-1-2,240,AT19-1-2-240,core,Engraulidae,1,6,0.24335,0.066505
+Pacific,Gulf of Panama,Saboga,AT19-1-2,240,AT19-1-2-240,core,Sin_identificar,2,6,0.24335,0.066505
+Pacific,Gulf of Panama,Saboga,AT19-1-2,245,AT19-1-2-245,core,Gobiidae,1,5,0.24028,0.078147
+Pacific,Gulf of Panama,Saboga,AT19-1-2,245,AT19-1-2-245,core,Engraulidae,1,5,0.24028,0.078147
+Pacific,Gulf of Panama,Saboga,AT19-1-2,245,AT19-1-2-245,core,Sin_identificar,3,5,0.24028,0.078147
+Pacific,Gulf of Panama,Saboga,AT19-1-2,250,AT19-1-2-250,core,Haemulidae,1,6,0.29955,0.078425
+Pacific,Gulf of Panama,Saboga,AT19-1-2,250,AT19-1-2-250,core,Gobiidae,1,6,0.29955,0.078425
+Pacific,Gulf of Panama,Saboga,AT19-1-2,250,AT19-1-2-250,core,Scorpaenidae,1,6,0.29955,0.078425
+Pacific,Gulf of Panama,Saboga,AT19-1-2,250,AT19-1-2-250,core,Sin_identificar,3,6,0.29955,0.078425
+Pacific,Gulf of Panama,Saboga,AT19-1-2,255,AT19-1-2-255,core,Haemulidae,1,3,0.26471,0.091294
+Pacific,Gulf of Panama,Saboga,AT19-1-2,255,AT19-1-2-255,core,Apogonidae,1,3,0.26471,0.091294
+Pacific,Gulf of Panama,Saboga,AT19-1-2,255,AT19-1-2-255,core,Sin_identificar,1,3,0.26471,0.091294
+Pacific,Gulf of Panama,Saboga,AT19-1-2,260,AT19-1-2-260,core,Gobiidae,1,4,0.25116,0.087993
+Pacific,Gulf of Panama,Saboga,AT19-1-2,260,AT19-1-2-260,core,Engraulidae,1,4,0.25116,0.087993
+Pacific,Gulf of Panama,Saboga,AT19-1-2,260,AT19-1-2-260,core,Scorpaenidae,1,4,0.25116,0.087993
+Pacific,Gulf of Panama,Saboga,AT19-1-2,260,AT19-1-2-260,core,Sin_identificar,1,4,0.25116,0.087993
+Pacific,Gulf of Panama,Saboga,AT19-1-2,265,AT19-1-2-265,core,Apogonidae,1,4,0.24754,0.072106
+Pacific,Gulf of Panama,Saboga,AT19-1-2,265,AT19-1-2-265,core,Labridae,1,4,0.24754,0.072106
+Pacific,Gulf of Panama,Saboga,AT19-1-2,265,AT19-1-2-265,core,Sin_identificar,2,4,0.24754,0.072106
+Pacific,Gulf of Panama,Saboga,AT19-1-2,270,AT19-1-2-270,core,Pomacentridae,2,7,0.25437,0.0737
+Pacific,Gulf of Panama,Saboga,AT19-1-2,270,AT19-1-2-270,core,Carapidae,2,7,0.25437,0.0737
+Pacific,Gulf of Panama,Saboga,AT19-1-2,270,AT19-1-2-270,core,Gobiidae,1,7,0.25437,0.0737
+Pacific,Gulf of Panama,Saboga,AT19-1-2,270,AT19-1-2-270,core,Sin_identificar,2,7,0.25437,0.0737
+Pacific,Gulf of Panama,Saboga,AT19-1-2,275,AT19-1-2-275,core,Lutjanidae,1,3,0.25892,0.060009
+Pacific,Gulf of Panama,Saboga,AT19-1-2,275,AT19-1-2-275,core,Engraulidae,1,3,0.25892,0.060009
+Pacific,Gulf of Panama,Saboga,AT19-1-2,275,AT19-1-2-275,core,Sin_identificar,1,3,0.25892,0.060009
+Pacific,Gulf of Panama,Saboga,AT19-1-2,280,AT19-1-2-280,core,Sin_identificar,1,1,0.26036,0.082257
+Pacific,Gulf of Panama,Saboga,AT19-1-2,285,AT19-1-2-285,core,Apogonidae,2,5,0.26176,0.097618
+Pacific,Gulf of Panama,Saboga,AT19-1-2,285,AT19-1-2-285,core,Haemulidae,1,5,0.26176,0.097618
+Pacific,Gulf of Panama,Saboga,AT19-1-2,285,AT19-1-2-285,core,Gobiidae,1,5,0.26176,0.097618
+Pacific,Gulf of Panama,Saboga,AT19-1-2,285,AT19-1-2-285,core,Scorpaenidae,1,5,0.26176,0.097618
+Pacific,Gulf of Panama,Saboga,AT19-1-2,290,AT19-1-2-290,core,Sin_identificar,4,4,0.29635,0.082089
+Pacific,Gulf of Panama,Saboga,AT19-1-2,295,AT19-1-2-295,core,Engraulidae,2,4,0.28811,0.082532
+Pacific,Gulf of Panama,Saboga,AT19-1-2,295,AT19-1-2-295,core,Gobiidae,1,4,0.28811,0.082532
+Pacific,Gulf of Panama,Saboga,AT19-1-2,295,AT19-1-2-295,core,Sin_identificar,1,4,0.28811,0.082532
+Pacific,Gulf of Panama,Saboga,AT19-1-2,300,AT19-1-2-300,core,Gobiidae,3,7,0.28476,0.089793
+Pacific,Gulf of Panama,Saboga,AT19-1-2,300,AT19-1-2-300,core,Engraulidae,1,7,0.28476,0.089793
+Pacific,Gulf of Panama,Saboga,AT19-1-2,300,AT19-1-2-300,core,Scorpaenidae,1,7,0.28476,0.089793
+Pacific,Gulf of Panama,Saboga,AT19-1-2,300,AT19-1-2-300,core,Haemulidae,1,7,0.28476,0.089793
+Pacific,Gulf of Panama,Saboga,AT19-1-2,300,AT19-1-2-300,core,Sin_identificar,1,7,0.28476,0.089793
+Pacific,Gulf of Panama,Saboga,AT19-1-2,305,AT19-1-2-305,core,Lutjanidae,1,2,0.26971,0.07801
+Pacific,Gulf of Panama,Saboga,AT19-1-2,305,AT19-1-2-305,core,Gobiidae,1,2,0.26971,0.07801
+Pacific,Gulf of Panama,Saboga,AT19-1-2,310,AT19-1-2-310,core,Engraulidae,3,4,0.27535,0.068151
+Pacific,Gulf of Panama,Saboga,AT19-1-2,310,AT19-1-2-310,core,Apogonidae,1,4,0.27535,0.068151
+Pacific,Gulf of Panama,Saboga,AT19-1-2,315,AT19-1-2-315,core,Gobiidae,4,7,0.303,0.101208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,315,AT19-1-2-315,core,Engraulidae,1,7,0.303,0.101208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,315,AT19-1-2-315,core,Sin_identificar,2,7,0.303,0.101208
+Pacific,Gulf of Panama,Saboga,AT19-1-2,320,AT19-1-2-320,core,Gobiidae,3,5,0.25687,0.079584
+Pacific,Gulf of Panama,Saboga,AT19-1-2,320,AT19-1-2-320,core,Scorpaenidae,1,5,0.25687,0.079584
+Pacific,Gulf of Panama,Saboga,AT19-1-2,320,AT19-1-2-320,core,Sin_identificar,1,5,0.25687,0.079584
+Pacific,Gulf of Panama,Saboga,AT19-1-2,325,AT19-1-2-325,core,Engraulidae,3,4,0.24675,0.076195
+Pacific,Gulf of Panama,Saboga,AT19-1-2,325,AT19-1-2-325,core,Gobiidae,1,4,0.24675,0.076195
+Pacific,Gulf of Panama,Saboga,AT19-1-2,330,AT19-1-2-330,core,Haemulidae,1,6,0.28129,0.091263
+Pacific,Gulf of Panama,Saboga,AT19-1-2,330,AT19-1-2-330,core,Lutjanidae,1,6,0.28129,0.091263
+Pacific,Gulf of Panama,Saboga,AT19-1-2,330,AT19-1-2-330,core,Gobiidae,1,6,0.28129,0.091263
+Pacific,Gulf of Panama,Saboga,AT19-1-2,330,AT19-1-2-330,core,Sin_identificar,3,6,0.28129,0.091263
+Pacific,Gulf of Panama,Saboga,AT19-1-2,335,AT19-1-2-335,core,Haemulidae,2,4,0.30943,0.105655
+Pacific,Gulf of Panama,Saboga,AT19-1-2,335,AT19-1-2-335,core,Gobiidae,1,4,0.30943,0.105655
+Pacific,Gulf of Panama,Saboga,AT19-1-2,335,AT19-1-2-335,core,Sin_identificar,1,4,0.30943,0.105655
+Pacific,Gulf of Panama,Saboga,AT19-1-2,340,AT19-1-2-340,core,Sin_identificar,3,3,0.21034,0.05254
+Pacific,Gulf of Panama,Saboga,AT19-1-2,345,AT19-1-2-345,core,Apogonidae,1,3,0.12028,0.042752
+Pacific,Gulf of Panama,Saboga,AT19-1-2,345,AT19-1-2-345,core,Gobiidae,1,3,0.12028,0.042752
+Pacific,Gulf of Panama,Saboga,AT19-1-2,345,AT19-1-2-345,core,Engraulidae,1,3,0.12028,0.042752
+Pacific,Gulf of Panama,Saboga,AT19-1-3,5,AT19-1-3-5,core,Gobiidae,2,2,0.26475,0.062328
+Pacific,Gulf of Panama,Saboga,AT19-1-3,10,AT19-1-3-10,core,.,0,0,0.30638,0.061822
+Pacific,Gulf of Panama,Saboga,AT19-1-3,15,AT19-1-3-15,core,.,.,.,.,.
+Pacific,Gulf of Panama,Saboga,AT19-1-3,20,AT19-1-3-20,core,Gobiidae,1,2,0.30006,0.058817
+Pacific,Gulf of Panama,Saboga,AT19-1-3,20,AT19-1-3-20,core,Engraulidae,1,2,0.30006,0.058817
+Pacific,Gulf of Panama,Saboga,AT19-1-3,25,AT19-1-3-25,core,Haemulidae,1,6,0.27276,0.057164
+Pacific,Gulf of Panama,Saboga,AT19-1-3,25,AT19-1-3-25,core,Apogonidae,1,6,0.27276,0.057164
+Pacific,Gulf of Panama,Saboga,AT19-1-3,25,AT19-1-3-25,core,Engraulidae,2,6,0.27276,0.057164
+Pacific,Gulf of Panama,Saboga,AT19-1-3,25,AT19-1-3-25,core,Gobiidae,2,6,0.27276,0.057164
+Pacific,Gulf of Panama,Saboga,AT19-1-3,30,AT19-1-3-30,core,Gobiidae,3,5,0.28651,0.054781
+Pacific,Gulf of Panama,Saboga,AT19-1-3,30,AT19-1-3-30,core,Scorpaenidae,1,5,0.28651,0.054781
+Pacific,Gulf of Panama,Saboga,AT19-1-3,30,AT19-1-3-30,core,Sin_identificar,1,5,0.28651,0.054781
+Pacific,Gulf of Panama,Saboga,AT19-1-3,35,AT19-1-3-35,core,Apogonidae,1,5,0.31711,0.064009
+Pacific,Gulf of Panama,Saboga,AT19-1-3,35,AT19-1-3-35,core,Gobiidae,2,5,0.31711,0.064009
+Pacific,Gulf of Panama,Saboga,AT19-1-3,35,AT19-1-3-35,core,Scorpaenidae,1,5,0.31711,0.064009
+Pacific,Gulf of Panama,Saboga,AT19-1-3,35,AT19-1-3-35,core,Haemulidae,1,5,0.31711,0.064009
+Pacific,Gulf of Panama,Saboga,AT19-1-3,40,AT19-1-3-40,core,Haemulidae,1,5,0.29725,0.067756
+Pacific,Gulf of Panama,Saboga,AT19-1-3,40,AT19-1-3-40,core,Pomacentridae,1,5,0.29725,0.067756
+Pacific,Gulf of Panama,Saboga,AT19-1-3,40,AT19-1-3-40,core,Gobiidae,1,5,0.29725,0.067756
+Pacific,Gulf of Panama,Saboga,AT19-1-3,40,AT19-1-3-40,core,Apogonidae,2,5,0.29725,0.067756
+Pacific,Gulf of Panama,Saboga,AT19-1-3,45,AT19-1-3-45,core,Serranidae,1,6,0.27581,0.037908
+Pacific,Gulf of Panama,Saboga,AT19-1-3,45,AT19-1-3-45,core,Pomacentridae,1,6,0.27581,0.037908
+Pacific,Gulf of Panama,Saboga,AT19-1-3,45,AT19-1-3-45,core,Gobiidae,1,6,0.27581,0.037908
+Pacific,Gulf of Panama,Saboga,AT19-1-3,45,AT19-1-3-45,core,Sin_identificar,3,6,0.27581,0.037908
+Pacific,Gulf of Panama,Saboga,AT19-1-3,50,AT19-1-3-50,core,Haemulidae,1,6,0.30253,0.043713
+Pacific,Gulf of Panama,Saboga,AT19-1-3,50,AT19-1-3-50,core,Gobiidae,3,6,0.30253,0.043713
+Pacific,Gulf of Panama,Saboga,AT19-1-3,50,AT19-1-3-50,core,Sin_identificar,2,6,0.30253,0.043713
+Pacific,Gulf of Panama,Saboga,AT19-1-3,55,AT19-1-3-55,core,Apogonidae,1,3,0.2953,0.053674
+Pacific,Gulf of Panama,Saboga,AT19-1-3,55,AT19-1-3-55,core,Gobiidae,1,3,0.2953,0.053674
+Pacific,Gulf of Panama,Saboga,AT19-1-3,55,AT19-1-3-55,core,Sin_identificar,1,3,0.2953,0.053674
+Pacific,Gulf of Panama,Saboga,AT19-1-3,60,AT19-1-3-60,core,Gobiidae,2,9,0.29403,0.056092
+Pacific,Gulf of Panama,Saboga,AT19-1-3,60,AT19-1-3-60,core,Engraulidae,1,9,0.29403,0.056092
+Pacific,Gulf of Panama,Saboga,AT19-1-3,60,AT19-1-3-60,core,Apogonidae,2,9,0.29403,0.056092
+Pacific,Gulf of Panama,Saboga,AT19-1-3,60,AT19-1-3-60,core,Bregmacerotidae,1,9,0.29403,0.056092
+Pacific,Gulf of Panama,Saboga,AT19-1-3,60,AT19-1-3-60,core,Pomacentridae,1,9,0.29403,0.056092
+Pacific,Gulf of Panama,Saboga,AT19-1-3,60,AT19-1-3-60,core,Sin_identificar,2,9,0.29403,0.056092
+Pacific,Gulf of Panama,Saboga,AT19-1-3,65,AT19-1-3-65,core,Gerreidae,3,8,0.28114,0.062389
+Pacific,Gulf of Panama,Saboga,AT19-1-3,65,AT19-1-3-65,core,Gobiidae,1,8,0.28114,0.062389
+Pacific,Gulf of Panama,Saboga,AT19-1-3,65,AT19-1-3-65,core,Sin_identificar,4,8,0.28114,0.062389
+Pacific,Gulf of Panama,Saboga,AT19-1-3,70,AT19-1-3-70,core,Gobiidae,1,5,0.31532,0.071462
+Pacific,Gulf of Panama,Saboga,AT19-1-3,70,AT19-1-3-70,core,Apogonidae,1,5,0.31532,0.071462
+Pacific,Gulf of Panama,Saboga,AT19-1-3,70,AT19-1-3-70,core,Sin_identificar,3,5,0.31532,0.071462
+Pacific,Gulf of Panama,Saboga,AT19-1-3,75,AT19-1-3-75,core,Gobiidae,2,5,0.30855,0.073627
+Pacific,Gulf of Panama,Saboga,AT19-1-3,75,AT19-1-3-75,core,Bythitidae,1,5,0.30855,0.073627
+Pacific,Gulf of Panama,Saboga,AT19-1-3,75,AT19-1-3-75,core,Sin_identificar,2,5,0.30855,0.073627
+Pacific,Gulf of Panama,Saboga,AT19-1-3,80,AT19-1-3-80,core,Sciaenidae,1,6,0.32986,0.077033
+Pacific,Gulf of Panama,Saboga,AT19-1-3,80,AT19-1-3-80,core,Haemulidae,1,6,0.32986,0.077033
+Pacific,Gulf of Panama,Saboga,AT19-1-3,80,AT19-1-3-80,core,Scorpaenidae,1,6,0.32986,0.077033
+Pacific,Gulf of Panama,Saboga,AT19-1-3,80,AT19-1-3-80,core,Gobiidae,2,6,0.32986,0.077033
+Pacific,Gulf of Panama,Saboga,AT19-1-3,80,AT19-1-3-80,core,Sin_identificar,1,6,0.32986,0.077033
+Pacific,Gulf of Panama,Saboga,AT19-1-3,85,AT19-1-3-85,core,Gobiidae,1,3,0.27583,0.055737
+Pacific,Gulf of Panama,Saboga,AT19-1-3,85,AT19-1-3-85,core,Bythitidae,1,3,0.27583,0.055737
+Pacific,Gulf of Panama,Saboga,AT19-1-3,85,AT19-1-3-85,core,Apogonidae,1,3,0.27583,0.055737
+Pacific,Gulf of Panama,Saboga,AT19-1-3,90,AT19-1-3-90,core,Bythitidae,2,7,0.30121,0.052976
+Pacific,Gulf of Panama,Saboga,AT19-1-3,90,AT19-1-3-90,core,Muraenidae,1,7,0.30121,0.052976
+Pacific,Gulf of Panama,Saboga,AT19-1-3,90,AT19-1-3-90,core,Sin_identificar,4,7,0.30121,0.052976
+Pacific,Gulf of Panama,Saboga,AT19-1-3,95,AT19-1-3-95,core,Labridae,1,2,0.29962,0.055643
+Pacific,Gulf of Panama,Saboga,AT19-1-3,95,AT19-1-3-95,core,Sin_identificar,1,2,0.29962,0.055643
+Pacific,Gulf of Panama,Saboga,AT19-1-3,100,AT19-1-3-100,core,.,0,0,0.31139,0.055397
+Pacific,Gulf of Panama,Saboga,AT19-1-3,105,AT19-1-3-105,core,Pomacentridae,2,4,0.26438,0.048338
+Pacific,Gulf of Panama,Saboga,AT19-1-3,105,AT19-1-3-105,core,Gobiidae,1,4,0.26438,0.048338
+Pacific,Gulf of Panama,Saboga,AT19-1-3,105,AT19-1-3-105,core,Sin_identificar,1,4,0.26438,0.048338
+Pacific,Gulf of Panama,Saboga,AT19-1-3,110,AT19-1-3-110,core,Gobiidae,2,3,0.27426,0.051402
+Pacific,Gulf of Panama,Saboga,AT19-1-3,110,AT19-1-3-110,core,Sin_identificar,1,3,0.27426,0.051402
+Pacific,Gulf of Panama,Saboga,AT19-1-3,115,AT19-1-3-115,core,Pomacentridae,1,1,0.2753,0.043228
+Pacific,Gulf of Panama,Saboga,AT19-1-3,120,AT19-1-3-120,core,Haemulidae,1,5,0.32173,0.042931
+Pacific,Gulf of Panama,Saboga,AT19-1-3,120,AT19-1-3-120,core,Gobiidae,2,5,0.32173,0.042931
+Pacific,Gulf of Panama,Saboga,AT19-1-3,120,AT19-1-3-120,core,Apogonidae,2,5,0.32173,0.042931
+Pacific,Gulf of Panama,Saboga,AT19-1-3,125,AT19-1-3-125,core,Gerreidae,1,3,0.31235,0.036277
+Pacific,Gulf of Panama,Saboga,AT19-1-3,125,AT19-1-3-125,core,Gobiidae,1,3,0.31235,0.036277
+Pacific,Gulf of Panama,Saboga,AT19-1-3,125,AT19-1-3-125,core,Sin_identificar,1,3,0.31235,0.036277
+Pacific,Gulf of Panama,Saboga,AT19-1-3,130,AT19-1-3-130,core,Sin_identificar,1,3,0.2544,0.039688
+Pacific,Gulf of Panama,Saboga,AT19-1-3,130,AT19-1-3-130,core,Apogonidae,1,3,0.2544,0.039688
+Pacific,Gulf of Panama,Saboga,AT19-1-3,130,AT19-1-3-130,core,Gobiidae,1,3,0.2544,0.039688
+Pacific,Gulf of Panama,Saboga,AT19-1-3,135,AT19-1-3-135,core,Haemulidae,1,3,0.24169,0.040165
+Pacific,Gulf of Panama,Saboga,AT19-1-3,135,AT19-1-3-135,core,Sciaenidae,1,3,0.24169,0.040165
+Pacific,Gulf of Panama,Saboga,AT19-1-3,135,AT19-1-3-135,core,Gobiidae,1,3,0.24169,0.040165
+Pacific,Gulf of Panama,Saboga,AT19-1-3,140,AT19-1-3-140,core,Gobiidae,3,8,0.25578,0.041373
+Pacific,Gulf of Panama,Saboga,AT19-1-3,140,AT19-1-3-140,core,Scorpaenidae,1,8,0.25578,0.041373
+Pacific,Gulf of Panama,Saboga,AT19-1-3,140,AT19-1-3-140,core,Haemulidae,2,8,0.25578,0.041373
+Pacific,Gulf of Panama,Saboga,AT19-1-3,140,AT19-1-3-140,core,Sin_identificar,2,8,0.25578,0.041373
+Pacific,Gulf of Panama,Saboga,AT19-1-3,145,AT19-1-3-145,core,Engraulidae,1,2,0.24726,0.04111
+Pacific,Gulf of Panama,Saboga,AT19-1-3,145,AT19-1-3-145,core,Sin_identificar,1,2,0.24726,0.04111
+Pacific,Gulf of Panama,Saboga,AT19-1-3,150,AT19-1-3-150,core,Gerreidae,1,1,0.2873,0.046676
+Pacific,Gulf of Panama,Saboga,AT19-1-3,155,AT19-1-3-155,core,Apogonidae,4,4,0.27396,0.035234
+Pacific,Gulf of Panama,Saboga,AT19-1-3,160,AT19-1-3-160,core,Gobiidae,2,3,0.24312,0.035292
+Pacific,Gulf of Panama,Saboga,AT19-1-3,160,AT19-1-3-160,core,Apogonidae,1,3,0.24312,0.035292
+Pacific,Gulf of Panama,Saboga,AT19-1-3,165,AT19-1-3-165,core,Gobiidae,1,4,0.26069,0.033252
+Pacific,Gulf of Panama,Saboga,AT19-1-3,165,AT19-1-3-165,core,Apogonidae,1,4,0.26069,0.033252
+Pacific,Gulf of Panama,Saboga,AT19-1-3,165,AT19-1-3-165,core,Sin_identificar,2,4,0.26069,0.033252
+Pacific,Gulf of Panama,Saboga,AT19-1-3,170,AT19-1-3-170,core,Scorpaenidae,1,4,0.27285,0.034418
+Pacific,Gulf of Panama,Saboga,AT19-1-3,170,AT19-1-3-170,core,Sin_identificar,3,4,0.27285,0.034418
+Pacific,Gulf of Panama,Saboga,AT19-1-3,175,AT19-1-3-175,core,Gobiidae,1,2,0.28849,0.041644
+Pacific,Gulf of Panama,Saboga,AT19-1-3,175,AT19-1-3-175,core,Apogonidae,1,2,0.28849,0.041644
+Pacific,Gulf of Panama,Saboga,AT19-1-3,180,AT19-1-3-180,core,Sin_identificar,2,2,0.28908,0.040177
+Pacific,Gulf of Panama,Saboga,AT19-1-3,185,AT19-1-3-185,core,Apogonidae,2,5,0.26568,0.050785
+Pacific,Gulf of Panama,Saboga,AT19-1-3,185,AT19-1-3-185,core,Gobiidae,1,5,0.26568,0.050785
+Pacific,Gulf of Panama,Saboga,AT19-1-3,185,AT19-1-3-185,core,Sin_identificar,1,5,0.26568,0.050785
+Pacific,Gulf of Panama,Saboga,AT19-1-3,185,AT19-1-3-185,core,Congridae,1,5,0.26568,0.050785
+Pacific,Gulf of Panama,Saboga,AT19-1-3,190,AT19-1-3-190,core,Sin_identificar,2,2,0.26254,0.04536
+Pacific,Gulf of Panama,Saboga,AT19-1-3,195,AT19-1-3-195,core,Scorpaenidae,1,5,0.29595,0.050239
+Pacific,Gulf of Panama,Saboga,AT19-1-3,195,AT19-1-3-195,core,Haemulidae,1,5,0.29595,0.050239
+Pacific,Gulf of Panama,Saboga,AT19-1-3,195,AT19-1-3-195,core,Gobiidae,3,5,0.29595,0.050239
+Pacific,Gulf of Panama,Saboga,AT19-1-3,200,AT19-1-3-200,core,Gobiidae,9,15,0.2921,0.060369
+Pacific,Gulf of Panama,Saboga,AT19-1-3,200,AT19-1-3-200,core,Sin_identificar,6,15,0.2921,0.060369
+Pacific,Gulf of Panama,Saboga,AT19-1-3,205,AT19-1-3-205,core,Apogonidae,1,2,0.27875,0.048102
+Pacific,Gulf of Panama,Saboga,AT19-1-3,205,AT19-1-3-205,core,Sin_identificar,1,2,0.27875,0.048102
+Pacific,Gulf of Panama,Saboga,AT19-1-3,210,AT19-1-3-210,core,Engraulidae,1,7,0.29989,0.046283
+Pacific,Gulf of Panama,Saboga,AT19-1-3,210,AT19-1-3-210,core,Apogonidae,1,7,0.29989,0.046283
+Pacific,Gulf of Panama,Saboga,AT19-1-3,210,AT19-1-3-210,core,Scorpaenidae,1,7,0.29989,0.046283
+Pacific,Gulf of Panama,Saboga,AT19-1-3,210,AT19-1-3-210,core,Bythitidae,1,7,0.29989,0.046283
+Pacific,Gulf of Panama,Saboga,AT19-1-3,210,AT19-1-3-210,core,Pomacentridae,1,7,0.29989,0.046283
+Pacific,Gulf of Panama,Saboga,AT19-1-3,210,AT19-1-3-210,core,Sin_identificar,2,7,0.29989,0.046283
+Pacific,Gulf of Panama,Saboga,AT19-1-3,215,AT19-1-3-215,core,Gerreidae,1,2,0.29278,0.045988
+Pacific,Gulf of Panama,Saboga,AT19-1-3,215,AT19-1-3-215,core,Gobiidae,1,2,0.29278,0.045988
+Pacific,Gulf of Panama,Saboga,AT19-1-3,220,AT19-1-3-220,core,Gobiidae,4,7,0.31945,0.047674
+Pacific,Gulf of Panama,Saboga,AT19-1-3,220,AT19-1-3-220,core,Haemulidae,1,7,0.31945,0.047674
+Pacific,Gulf of Panama,Saboga,AT19-1-3,220,AT19-1-3-220,core,Apogonidae,1,7,0.31945,0.047674
+Pacific,Gulf of Panama,Saboga,AT19-1-3,220,AT19-1-3-220,core,Sin_identificar,1,7,0.31945,0.047674
+Pacific,Gulf of Panama,Saboga,AT19-1-3,225,AT19-1-3-225,core,Haemulidae,1,5,0.29565,0.041024
+Pacific,Gulf of Panama,Saboga,AT19-1-3,225,AT19-1-3-225,core,Apogonidae,1,5,0.29565,0.041024
+Pacific,Gulf of Panama,Saboga,AT19-1-3,225,AT19-1-3-225,core,Bythitidae,1,5,0.29565,0.041024
+Pacific,Gulf of Panama,Saboga,AT19-1-3,225,AT19-1-3-225,core,Sin_identificar,2,5,0.29565,0.041024
+Pacific,Gulf of Panama,Saboga,AT19-1-3,230,AT19-1-3-230,core,Labridae,1,4,0.28036,0.038102
+Pacific,Gulf of Panama,Saboga,AT19-1-3,230,AT19-1-3-230,core,Gobiidae,2,4,0.28036,0.038102
+Pacific,Gulf of Panama,Saboga,AT19-1-3,230,AT19-1-3-230,core,Sin_identificar,1,4,0.28036,0.038102
+Pacific,Gulf of Panama,Saboga,AT19-1-3,235,AT19-1-3-235,core,Sin_identificar,1,1,0.28898,0.039828
+Pacific,Gulf of Panama,Saboga,AT19-1-3,240,AT19-1-3-240,core,Gobiidae,1,3,0.28972,0.041084
+Pacific,Gulf of Panama,Saboga,AT19-1-3,240,AT19-1-3-240,core,Pomacentridae,2,3,0.28972,0.041084
+Pacific,Gulf of Panama,Saboga,AT19-1-3,245,AT19-1-3-245,core,Sin_identificar,1,5,0.24547,0.040011
+Pacific,Gulf of Panama,Saboga,AT19-1-3,245,AT19-1-3-245,core,Engraulidae,1,5,0.24547,0.040011
+Pacific,Gulf of Panama,Saboga,AT19-1-3,245,AT19-1-3-245,core,Gobiidae,2,5,0.24547,0.040011
+Pacific,Gulf of Panama,Saboga,AT19-1-3,245,AT19-1-3-245,core,Apogonidae,1,5,0.24547,0.040011
+Pacific,Gulf of Panama,Saboga,AT19-1-3,250,AT19-1-3-250,core,Gobiidae,1,2,0.24871,0.042736
+Pacific,Gulf of Panama,Saboga,AT19-1-3,250,AT19-1-3-250,core,Sin_identificar,1,2,0.24871,0.042736
+Pacific,Gulf of Panama,Saboga,AT19-1-3,255,AT19-1-3-255,core,Apogonidae,1,2,0.2425,0.038454
+Pacific,Gulf of Panama,Saboga,AT19-1-3,255,AT19-1-3-255,core,Scorpaenidae,1,2,0.2425,0.038454
+Pacific,Gulf of Panama,Saboga,AT19-1-3,260,AT19-1-3-260,core,Serranidae,1,4,0.27868,0.045996
+Pacific,Gulf of Panama,Saboga,AT19-1-3,260,AT19-1-3-260,core,Scorpaenidae,1,4,0.27868,0.045996
+Pacific,Gulf of Panama,Saboga,AT19-1-3,260,AT19-1-3-260,core,Gobiidae,2,4,0.27868,0.045996
+Pacific,Gulf of Panama,Saboga,AT19-1-3,265,AT19-1-3-265,core,Gobiidae,1,2,0.23025,0.039296
+Pacific,Gulf of Panama,Saboga,AT19-1-3,265,AT19-1-3-265,core,Sin_identificar,1,2,0.23025,0.039296
+Pacific,Gulf of Panama,Saboga,AT19-1-3,270,AT19-1-3-270,core,Gobiidae,2,3,0.25157,0.040719
+Pacific,Gulf of Panama,Saboga,AT19-1-3,270,AT19-1-3-270,core,Apogonidae,1,3,0.25157,0.040719
+Pacific,Gulf of Panama,Saboga,AT19-1-3,275,AT19-1-3-275,core,Sin_identificar,2,2,0.25224,0.044787
+Pacific,Gulf of Panama,Saboga,AT19-1-3,280,AT19-1-3-280,core,Mullidae,1,1,0.24245,0.044772
+Pacific,Gulf of Panama,Saboga,AT19-1-3,285,AT19-1-3-285,core,Bregmacerotidae,1,7,0.2274,0.045404
+Pacific,Gulf of Panama,Saboga,AT19-1-3,285,AT19-1-3-285,core,Labridae,1,7,0.2274,0.045404
+Pacific,Gulf of Panama,Saboga,AT19-1-3,285,AT19-1-3-285,core,Haemulidae,2,7,0.2274,0.045404
+Pacific,Gulf of Panama,Saboga,AT19-1-3,285,AT19-1-3-285,core,Engraulidae,2,7,0.2274,0.045404
+Pacific,Gulf of Panama,Saboga,AT19-1-3,285,AT19-1-3-285,core,Apogonidae,1,7,0.2274,0.045404
+Pacific,Gulf of Panama,Saboga,AT19-1-3,290,AT19-1-3-290,core,Engraulidae,1,4,0.25278,0.049462
+Pacific,Gulf of Panama,Saboga,AT19-1-3,290,AT19-1-3-290,core,Apogonidae,1,4,0.25278,0.049462
+Pacific,Gulf of Panama,Saboga,AT19-1-3,290,AT19-1-3-290,core,Gobiidae,2,4,0.25278,0.049462
+Pacific,Gulf of Panama,Saboga,AT19-1-3,295,AT19-1-3-295,core,Ophidiidae,1,9,0.26349,0.054593
+Pacific,Gulf of Panama,Saboga,AT19-1-3,295,AT19-1-3-295,core,Gobiidae,2,9,0.26349,0.054593
+Pacific,Gulf of Panama,Saboga,AT19-1-3,295,AT19-1-3-295,core,Apogonidae,1,9,0.26349,0.054593
+Pacific,Gulf of Panama,Saboga,AT19-1-3,295,AT19-1-3-295,core,Carangidae,1,9,0.26349,0.054593
+Pacific,Gulf of Panama,Saboga,AT19-1-3,295,AT19-1-3-295,core,Sin_identificar,4,9,0.26349,0.054593
+Pacific,Gulf of Panama,Saboga,AT19-1-3,300,AT19-1-3-300,core,Pomacentridae,4,6,0.28356,0.055804
+Pacific,Gulf of Panama,Saboga,AT19-1-3,300,AT19-1-3-300,core,Sin_identificar,1,6,0.28356,0.055804
+Pacific,Gulf of Panama,Saboga,AT19-1-3,300,AT19-1-3-300,core,Ophidiidae,1,6,0.28356,0.055804
+Pacific,Gulf of Panama,Saboga,AT19-1-3,305,AT19-1-3-305,core,Gobiidae,4,8,0.26212,0.055944
+Pacific,Gulf of Panama,Saboga,AT19-1-3,305,AT19-1-3-305,core,Apogonidae,1,8,0.26212,0.055944
+Pacific,Gulf of Panama,Saboga,AT19-1-3,305,AT19-1-3-305,core,Haemulidae,2,8,0.26212,0.055944
+Pacific,Gulf of Panama,Saboga,AT19-1-3,305,AT19-1-3-305,core,Sin_identificar,1,8,0.26212,0.055944
+Pacific,Gulf of Panama,Saboga,AT19-1-3,310,AT19-1-3-310,core,Gobiidae,3,8,0.25084,0.052557
+Pacific,Gulf of Panama,Saboga,AT19-1-3,310,AT19-1-3-310,core,Labridae,1,8,0.25084,0.052557
+Pacific,Gulf of Panama,Saboga,AT19-1-3,310,AT19-1-3-310,core,Sin_identificar,4,8,0.25084,0.052557
+Pacific,Gulf of Panama,Saboga,AT19-1-3,315,AT19-1-3-315,core,Gobiidae,2,6,0.30082,0.060443
+Pacific,Gulf of Panama,Saboga,AT19-1-3,315,AT19-1-3-315,core,Pomacentridae,1,6,0.30082,0.060443
+Pacific,Gulf of Panama,Saboga,AT19-1-3,315,AT19-1-3-315,core,Engraulidae,1,6,0.30082,0.060443
+Pacific,Gulf of Panama,Saboga,AT19-1-3,315,AT19-1-3-315,core,Apogonidae,1,6,0.30082,0.060443
+Pacific,Gulf of Panama,Saboga,AT19-1-3,315,AT19-1-3-315,core,Sin_identificar,1,6,0.30082,0.060443
+Pacific,Gulf of Panama,Saboga,AT19-1-3,320,AT19-1-3-320,core,Haemulidae,1,7,0.26091,0.061267
+Pacific,Gulf of Panama,Saboga,AT19-1-3,320,AT19-1-3-320,core,Pomacentridae,1,7,0.26091,0.061267
+Pacific,Gulf of Panama,Saboga,AT19-1-3,320,AT19-1-3-320,core,Engraulidae,2,7,0.26091,0.061267
+Pacific,Gulf of Panama,Saboga,AT19-1-3,320,AT19-1-3-320,core,Gobiidae,2,7,0.26091,0.061267
+Pacific,Gulf of Panama,Saboga,AT19-1-3,320,AT19-1-3-320,core,Sin_identificar,1,7,0.26091,0.061267
+Pacific,Gulf of Panama,Saboga,AT19-1-3,325,AT19-1-3-325,core,Scorpaenidae,1,6,0.31289,0.049144
+Pacific,Gulf of Panama,Saboga,AT19-1-3,325,AT19-1-3-325,core,Apogonidae,1,6,0.31289,0.049144
+Pacific,Gulf of Panama,Saboga,AT19-1-3,325,AT19-1-3-325,core,Engraulidae,1,6,0.31289,0.049144
+Pacific,Gulf of Panama,Saboga,AT19-1-3,325,AT19-1-3-325,core,Gobiidae,3,6,0.31289,0.049144
+Pacific,Gulf of Panama,Saboga,AT19-1-3,330,AT19-1-3-330,core,Apogonidae,1,5,0.26827,0.05618
+Pacific,Gulf of Panama,Saboga,AT19-1-3,330,AT19-1-3-330,core,Gobiidae,2,5,0.26827,0.05618
+Pacific,Gulf of Panama,Saboga,AT19-1-3,330,AT19-1-3-330,core,Haemulidae,1,5,0.26827,0.05618
+Pacific,Gulf of Panama,Saboga,AT19-1-3,330,AT19-1-3-330,core,Sin_identificar,1,5,0.26827,0.05618
+Pacific,Gulf of Panama,Saboga,AT19-1-3,335,AT19-1-3-335,core,Gobiidae,3,7,0.30761,0.068204
+Pacific,Gulf of Panama,Saboga,AT19-1-3,335,AT19-1-3-335,core,Scorpaenidae,1,7,0.30761,0.068204
+Pacific,Gulf of Panama,Saboga,AT19-1-3,335,AT19-1-3-335,core,Sin_identificar,1,7,0.30761,0.068204
+Pacific,Gulf of Panama,Saboga,AT19-1-3,335,AT19-1-3-335,core,Sin_identificar,2,7,0.30761,0.068204
+Pacific,Gulf of Panama,Saboga,AT19-1-3,340,AT19-1-3-340,core,Gobiidae,8,15,0.30505,0.066394
+Pacific,Gulf of Panama,Saboga,AT19-1-3,340,AT19-1-3-340,core,Scorpaenidae,1,15,0.30505,0.066394
+Pacific,Gulf of Panama,Saboga,AT19-1-3,340,AT19-1-3-340,core,Pomacentridae,4,15,0.30505,0.066394
+Pacific,Gulf of Panama,Saboga,AT19-1-3,340,AT19-1-3-340,core,Apogonidae,1,15,0.30505,0.066394
+Pacific,Gulf of Panama,Saboga,AT19-1-3,340,AT19-1-3-340,core,Engraulidae,1,15,0.30505,0.066394
+Pacific,Gulf of Panama,Saboga,AT19-1-3,345,AT19-1-3-345,core,Gobiidae,4,9,0.29898,0.083216
+Pacific,Gulf of Panama,Saboga,AT19-1-3,345,AT19-1-3-345,core,Apogonidae,1,9,0.29898,0.083216
+Pacific,Gulf of Panama,Saboga,AT19-1-3,345,AT19-1-3-345,core,Labridae,1,9,0.29898,0.083216
+Pacific,Gulf of Panama,Saboga,AT19-1-3,345,AT19-1-3-345,core,Sin_identificar,3,9,0.29898,0.083216
+Pacific,Gulf of Panama,Saboga,AT19-1-3,350,AT19-1-3-350,core,Apogonidae,4,10,0.35712,0.071602
+Pacific,Gulf of Panama,Saboga,AT19-1-3,350,AT19-1-3-350,core,Pomacentridae,1,10,0.35712,0.071602
+Pacific,Gulf of Panama,Saboga,AT19-1-3,350,AT19-1-3-350,core,Albulidae,1,10,0.35712,0.071602
+Pacific,Gulf of Panama,Saboga,AT19-1-3,350,AT19-1-3-350,core,Gobiidae,3,10,0.35712,0.071602
+Pacific,Gulf of Panama,Saboga,AT19-1-3,350,AT19-1-3-350,core,Engraulidae,1,10,0.35712,0.071602
+Pacific,Gulf of Panama,Saboga,AT19-1-3,355,AT19-1-3-355,core,Apogonidae,3,6,0.32493,0.052363
+Pacific,Gulf of Panama,Saboga,AT19-1-3,355,AT19-1-3-355,core,Sin_identificar,2,6,0.32493,0.052363
+Pacific,Gulf of Panama,Saboga,AT19-1-3,355,AT19-1-3-355,core,Sciaenidae,1,6,0.32493,0.052363
+Pacific,Gulf of Panama,Saboga,AT19-1-3,360,AT19-1-3-360,core,Gobiidae,1,2,0.29408,0.051453
+Pacific,Gulf of Panama,Saboga,AT19-1-3,360,AT19-1-3-360,core,Sin_identificar,1,2,0.29408,0.051453
+Pacific,Gulf of Panama,Saboga,AT19-1-3,365,AT19-1-3-365,core,Gobiidae,3,3,0.30506,0.045389
+Pacific,Gulf of Panama,Saboga,AT19-1-3,370,AT19-1-3-370,core,Gerreidae,1,4,0.27698,0.03025
+Pacific,Gulf of Panama,Saboga,AT19-1-3,370,AT19-1-3-370,core,Atherinopsidae,1,4,0.27698,0.03025
+Pacific,Gulf of Panama,Saboga,AT19-1-3,370,AT19-1-3-370,core,Sin_identificar,2,4,0.27698,0.03025
+Pacific,Gulf of Panama,Saboga,AT19-1-3,375,AT19-1-3-375,core,Pomacentridae,1,7,0.3235,0.048466
+Pacific,Gulf of Panama,Saboga,AT19-1-3,375,AT19-1-3-375,core,Haemulidae,1,7,0.3235,0.048466
+Pacific,Gulf of Panama,Saboga,AT19-1-3,375,AT19-1-3-375,core,Gobiidae,4,7,0.3235,0.048466
+Pacific,Gulf of Panama,Saboga,AT19-1-3,375,AT19-1-3-375,core,Sin_identificar,1,7,0.3235,0.048466
+Pacific,Gulf of Panama,Saboga,AT19-1-3,380,AT19-1-3-380,core,Ophidiidae,1,5,0.29584,0.047448
+Pacific,Gulf of Panama,Saboga,AT19-1-3,380,AT19-1-3-380,core,Gobiidae,2,5,0.29584,0.047448
+Pacific,Gulf of Panama,Saboga,AT19-1-3,380,AT19-1-3-380,core,Gerreidae,1,5,0.29584,0.047448
+Pacific,Gulf of Panama,Saboga,AT19-1-3,380,AT19-1-3-380,core,Sin_identificar,1,5,0.29584,0.047448
+Pacific,Gulf of Panama,Saboga,AT19-1-3,385,AT19-1-3-385,core,.,0,0,0.27229,0.04911
+Pacific,Gulf of Panama,Contadora,BF18-1-11,20,BF18-1-11-20,core,Gobiidae,1,3,0.29427,0.08379
+Pacific,Gulf of Panama,Contadora,BF18-1-11,20,BF18-1-11-20,core,Haemulidae,2,3,0.29427,0.08379
+Pacific,Gulf of Panama,Contadora,BF18-1-11,35,BF18-1-11-35,core,Ophidiidae,1,3,0.31098,0.0795
+Pacific,Gulf of Panama,Contadora,BF18-1-11,35,BF18-1-11-35,core,Sciaenidae,1,3,0.31098,0.0795
+Pacific,Gulf of Panama,Contadora,BF18-1-11,35,BF18-1-11-35,core,Gobiidae,1,3,0.31098,0.0795
+Pacific,Gulf of Panama,Contadora,BF18-1-11,50,BF18-1-11-50,core,Gobiidae,1,1,0.28933,0.08208
+Pacific,Gulf of Panama,Contadora,BF18-1-11,81,BF18-1-11-81,core,Apogonidae,1,1,0.15327,0.04217
+Pacific,Gulf of Panama,Contadora,BF18-1-11,96,BF18-1-11-96,core,Scorpaenidae,1,8,0.28241,0.09161
+Pacific,Gulf of Panama,Contadora,BF18-1-11,96,BF18-1-11-96,core,Labridae,1,8,0.28241,0.09161
+Pacific,Gulf of Panama,Contadora,BF18-1-11,96,BF18-1-11-96,core,Gobiidae,1,8,0.28241,0.09161
+Pacific,Gulf of Panama,Contadora,BF18-1-11,96,BF18-1-11-96,core,Apogonidae,1,8,0.28241,0.09161
+Pacific,Gulf of Panama,Contadora,BF18-1-11,96,BF18-1-11-96,core,Engraulidae,1,8,0.28241,0.09161
+Pacific,Gulf of Panama,Contadora,BF18-1-11,96,BF18-1-11-96,core,Sin_identificar,3,8,0.28241,0.09161
+Pacific,Gulf of Panama,Contadora,BF18-1-11,111,BF18-1-11-111,core,Engraulidae,1,5,0.12292,0.07294
+Pacific,Gulf of Panama,Contadora,BF18-1-11,111,BF18-1-11-111,core,Gobiidae,2,5,0.12292,0.07294
+Pacific,Gulf of Panama,Contadora,BF18-1-11,111,BF18-1-11-111,core,Apogonidae,1,5,0.12292,0.07294
+Pacific,Gulf of Panama,Contadora,BF18-1-11,111,BF18-1-11-111,core,Sin_identificar,1,5,0.12292,0.07294
+Pacific,Gulf of Panama,Contadora,BF18-1-11,126,BF18-1-11-126,core,Engraulidae,1,8,0.34691,0.10379
+Pacific,Gulf of Panama,Contadora,BF18-1-11,126,BF18-1-11-126,core,Gobiidae,2,8,0.34691,0.10379
+Pacific,Gulf of Panama,Contadora,BF18-1-11,126,BF18-1-11-126,core,Sin_identificar,5,8,0.34691,0.10379
+Pacific,Gulf of Panama,Contadora,BF18-1-11,141,BF18-1-11-141,core,Haemulidae,1,4,0.31251,0.08458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,141,BF18-1-11-141,core,Bythitidae,1,4,0.31251,0.08458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,141,BF18-1-11-141,core,Ophidiidae,1,4,0.31251,0.08458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,141,BF18-1-11-141,core,Sin_identificar,1,4,0.31251,0.08458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,156,BF18-1-11-156,core,Engraulidae,1,1,0.13994,0.0362
+Pacific,Gulf of Panama,Contadora,BF18-1-11,171,BF18-1-11-171,core,Bythitidae,1,6,0.27874,0.0888
+Pacific,Gulf of Panama,Contadora,BF18-1-11,171,BF18-1-11-171,core,Apogonidae,2,6,0.27874,0.0888
+Pacific,Gulf of Panama,Contadora,BF18-1-11,171,BF18-1-11-171,core,Gobiidae,1,6,0.27874,0.0888
+Pacific,Gulf of Panama,Contadora,BF18-1-11,171,BF18-1-11-171,core,Sin_identificar,2,6,0.27874,0.0888
+Pacific,Gulf of Panama,Contadora,BF18-1-11,186,BF18-1-11-186,core,Gobiidae,5,12,0.28086,0.09091
+Pacific,Gulf of Panama,Contadora,BF18-1-11,186,BF18-1-11-186,core,Sin_identificar,4,12,0.28086,0.09091
+Pacific,Gulf of Panama,Contadora,BF18-1-11,186,BF18-1-11-186,core,Sin_identificar,3,12,0.28086,0.09091
+Pacific,Gulf of Panama,Contadora,BF18-1-11,201,BF18-1-11-201,core,Carangidae,1,10,0.26957,0.09337
+Pacific,Gulf of Panama,Contadora,BF18-1-11,201,BF18-1-11-201,core,Sin_identificar,1,10,0.26957,0.09337
+Pacific,Gulf of Panama,Contadora,BF18-1-11,201,BF18-1-11-201,core,Gobiidae,2,10,0.26957,0.09337
+Pacific,Gulf of Panama,Contadora,BF18-1-11,201,BF18-1-11-201,core,Apogonidae,3,10,0.26957,0.09337
+Pacific,Gulf of Panama,Contadora,BF18-1-11,201,BF18-1-11-201,core,Bythitidae,2,10,0.26957,0.09337
+Pacific,Gulf of Panama,Contadora,BF18-1-11,201,BF18-1-11-201,core,Engraulidae,1,10,0.26957,0.09337
+Pacific,Gulf of Panama,Contadora,BF18-1-11,216,BF18-1-11-216,core,Apogonidae,1,7,0.29876,0.08588
+Pacific,Gulf of Panama,Contadora,BF18-1-11,216,BF18-1-11-216,core,Gobiidae,3,7,0.29876,0.08588
+Pacific,Gulf of Panama,Contadora,BF18-1-11,216,BF18-1-11-216,core,Sin_identificar,3,7,0.29876,0.08588
+Pacific,Gulf of Panama,Contadora,BF18-1-11,231,BF18-1-11-231,core,Sciaenidae,1,7,0.31804,0.10458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,231,BF18-1-11-231,core,Pomacentridae,1,7,0.31804,0.10458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,231,BF18-1-11-231,core,Gobiidae,2,7,0.31804,0.10458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,231,BF18-1-11-231,core,Sin_identificar,3,7,0.31804,0.10458
+Pacific,Gulf of Panama,Contadora,BF18-1-11,246,BF18-1-11-246,core,Gobiidae,1,3,0.29353,0.08041
+Pacific,Gulf of Panama,Contadora,BF18-1-11,246,BF18-1-11-246,core,Serranidae,1,3,0.29353,0.08041
+Pacific,Gulf of Panama,Contadora,BF18-1-11,246,BF18-1-11-246,core,Sin_identificar,1,3,0.29353,0.08041
+Pacific,Gulf of Panama,Contadora,BF18-1-11,261,BF18-1-11-261,core,Gobiidae,3,7,0.30785,0.08747
+Pacific,Gulf of Panama,Contadora,BF18-1-11,261,BF18-1-11-261,core,Haemulidae,1,7,0.30785,0.08747
+Pacific,Gulf of Panama,Contadora,BF18-1-11,261,BF18-1-11-261,core,Apogonidae,1,7,0.30785,0.08747
+Pacific,Gulf of Panama,Contadora,BF18-1-11,261,BF18-1-11-261,core,Sin_identificar,2,7,0.30785,0.08747
+Pacific,Gulf of Panama,Contadora,BF18-1-11,276,BF18-1-11-276,core,Engraulidae,1,6,0.14505,0.0594
+Pacific,Gulf of Panama,Contadora,BF18-1-11,276,BF18-1-11-276,core,Haemulidae,1,6,0.14505,0.0594
+Pacific,Gulf of Panama,Contadora,BF18-1-11,276,BF18-1-11-276,core,Pomacentridae,1,6,0.14505,0.0594
+Pacific,Gulf of Panama,Contadora,BF18-1-11,276,BF18-1-11-276,core,Gobiidae,3,6,0.14505,0.0594
+Pacific,Gulf of Panama,Contadora,BF18-1-11,291,BF18-1-11-291,core,Gobiidae,6,12,0.25551,0.08688
+Pacific,Gulf of Panama,Contadora,BF18-1-11,291,BF18-1-11-291,core,Apogonidae,1,12,0.25551,0.08688
+Pacific,Gulf of Panama,Contadora,BF18-1-11,291,BF18-1-11-291,core,Ophidiidae,1,12,0.25551,0.08688
+Pacific,Gulf of Panama,Contadora,BF18-1-11,291,BF18-1-11-291,core,Sin_identificar,4,12,0.25551,0.08688
+Pacific,Gulf of Panama,Contadora,BF18-1-11,306,BF18-1-11-306,core,Gobiidae,8,13,0.26891,0.08111
+Pacific,Gulf of Panama,Contadora,BF18-1-11,306,BF18-1-11-306,core,Ophidiidae,1,13,0.26891,0.08111
+Pacific,Gulf of Panama,Contadora,BF18-1-11,306,BF18-1-11-306,core,Sin_identificar,4,13,0.26891,0.08111
+Pacific,Gulf of Panama,Contadora,BF18-1-11,321,BF18-1-11-321,core,Apogonidae,1,11,0.18332,0.04929
+Pacific,Gulf of Panama,Contadora,BF18-1-11,321,BF18-1-11-321,core,Gobiidae,4,11,0.18332,0.04929
+Pacific,Gulf of Panama,Contadora,BF18-1-11,321,BF18-1-11-321,core,Sin_identificar,6,11,0.18332,0.04929
+Pacific,Gulf of Panama,Contadora,BF18-1-11,336,BF18-1-11-336,core,Apogonidae,3,14,0.29977,0.07923
+Pacific,Gulf of Panama,Contadora,BF18-1-11,336,BF18-1-11-336,core,Haemulidae,1,14,0.29977,0.07923
+Pacific,Gulf of Panama,Contadora,BF18-1-11,336,BF18-1-11-336,core,Scorpaenidae,1,14,0.29977,0.07923
+Pacific,Gulf of Panama,Contadora,BF18-1-11,336,BF18-1-11-336,core,Gobiidae,5,14,0.29977,0.07923
+Pacific,Gulf of Panama,Contadora,BF18-1-11,336,BF18-1-11-336,core,Sin_identificar,4,14,0.29977,0.07923
+Pacific,Gulf of Panama,Contadora,BF18-1-11,351,BF18-1-11-351,core,Gobiidae,2,3,0.15435,0.03413
+Pacific,Gulf of Panama,Contadora,BF18-1-11,351,BF18-1-11-351,core,Labridae,1,3,0.15435,0.03413
+Pacific,Gulf of Panama,Contadora,BF18-1-11,366,BF18-1-11-366,core,Gobiidae,6,13,0.27278,0.06835
+Pacific,Gulf of Panama,Contadora,BF18-1-11,366,BF18-1-11-366,core,Apogonidae,1,13,0.27278,0.06835
+Pacific,Gulf of Panama,Contadora,BF18-1-11,366,BF18-1-11-366,core,Scorpaenidae,1,13,0.27278,0.06835
+Pacific,Gulf of Panama,Contadora,BF18-1-11,366,BF18-1-11-366,core,Engraulidae,1,13,0.27278,0.06835
+Pacific,Gulf of Panama,Contadora,BF18-1-11,366,BF18-1-11-366,core,Sciaenidae,1,13,0.27278,0.06835
+Pacific,Gulf of Panama,Contadora,BF18-1-11,366,BF18-1-11-366,core,Pomacentridae,1,13,0.27278,0.06835
+Pacific,Gulf of Panama,Contadora,BF18-1-11,366,BF18-1-11-366,core,Sin_identificar,2,13,0.27278,0.06835
+Pacific,Gulf of Panama,Contadora,BF18-1-12,5,BF18-1-12-5,core,.,0,0,0.15943,0.00331
+Pacific,Gulf of Panama,Contadora,BF18-1-12,11,BF18-1-12-11,core,.,0,0,0.22598,0.02531
+Pacific,Gulf of Panama,Contadora,BF18-1-12,15,BF18-1-12-15,core,Engraulidae,1,2,0.20039,0.0396
+Pacific,Gulf of Panama,Contadora,BF18-1-12,15,BF18-1-12-15,core,Sin_identificar,1,2,0.20039,0.0396
+Pacific,Gulf of Panama,Contadora,BF18-1-12,20,BF18-1-12-20,core,Engraulidae,1,1,0.26526,0.06479
+Pacific,Gulf of Panama,Contadora,BF18-1-12,25,BF18-1-12-25,core,Pomacentridae,1,8,0.31031,0.06504
+Pacific,Gulf of Panama,Contadora,BF18-1-12,25,BF18-1-12-25,core,Scorpaenidae,1,8,0.31031,0.06504
+Pacific,Gulf of Panama,Contadora,BF18-1-12,25,BF18-1-12-25,core,Clupeidae,1,8,0.31031,0.06504
+Pacific,Gulf of Panama,Contadora,BF18-1-12,25,BF18-1-12-25,core,Gobiidae,2,8,0.31031,0.06504
+Pacific,Gulf of Panama,Contadora,BF18-1-12,25,BF18-1-12-25,core,Apogonidae,1,8,0.31031,0.06504
+Pacific,Gulf of Panama,Contadora,BF18-1-12,25,BF18-1-12-25,core,Bregmacerotidae,1,8,0.31031,0.06504
+Pacific,Gulf of Panama,Contadora,BF18-1-12,25,BF18-1-12-25,core,Sin_identificar,1,8,0.31031,0.06504
+Pacific,Gulf of Panama,Contadora,BF18-1-12,30,BF18-1-12-30,core,Scorpaenidae,2,5,0.32292,0.08058
+Pacific,Gulf of Panama,Contadora,BF18-1-12,30,BF18-1-12-30,core,Apogonidae,1,5,0.32292,0.08058
+Pacific,Gulf of Panama,Contadora,BF18-1-12,30,BF18-1-12-30,core,Sin_identificar,1,5,0.32292,0.08058
+Pacific,Gulf of Panama,Contadora,BF18-1-12,30,BF18-1-12-30,core,Engraulidae,1,5,0.32292,0.08058
+Pacific,Gulf of Panama,Contadora,BF18-1-12,35,BF18-1-12-35,core,Pomacentridae,1,5,0.28143,0.07936
+Pacific,Gulf of Panama,Contadora,BF18-1-12,35,BF18-1-12-35,core,Apogonidae,1,5,0.28143,0.07936
+Pacific,Gulf of Panama,Contadora,BF18-1-12,35,BF18-1-12-35,core,Clupeidae,1,5,0.28143,0.07936
+Pacific,Gulf of Panama,Contadora,BF18-1-12,35,BF18-1-12-35,core,Scorpaenidae,1,5,0.28143,0.07936
+Pacific,Gulf of Panama,Contadora,BF18-1-12,35,BF18-1-12-35,core,Bythitidae,1,5,0.28143,0.07936
+Pacific,Gulf of Panama,Contadora,BF18-1-12,40,BF18-1-12-40,core,Pomacentridae,4,5,0.41376,0.10816
+Pacific,Gulf of Panama,Contadora,BF18-1-12,40,BF18-1-12-40,core,Sin_identificar,1,5,0.41376,0.10816
+Pacific,Gulf of Panama,Contadora,BF18-1-12,45,BF18-1-12-45,core,Serranidae,1,2,0.26778,0.07312
+Pacific,Gulf of Panama,Contadora,BF18-1-12,45,BF18-1-12-45,core,Sin_identificar,1,2,0.26778,0.07312
+Pacific,Gulf of Panama,Contadora,BF18-1-12,50,BF18-1-12-50,core,Engraulidae,1,2,0.31307,0.09736
+Pacific,Gulf of Panama,Contadora,BF18-1-12,50,BF18-1-12-50,core,Sin_identificar,1,2,0.31307,0.09736
+Pacific,Gulf of Panama,Contadora,BF18-1-12,55,BF18-1-12-55,core,Scorpaenidae,1,3,0.29961,0.09197
+Pacific,Gulf of Panama,Contadora,BF18-1-12,55,BF18-1-12-55,core,Gobiidae,1,3,0.29961,0.09197
+Pacific,Gulf of Panama,Contadora,BF18-1-12,55,BF18-1-12-55,core,Sin_identificar,1,3,0.29961,0.09197
+Pacific,Gulf of Panama,Contadora,BF18-1-12,60,BF18-1-12-60,core,Engraulidae,2,4,0.32914,0.08786
+Pacific,Gulf of Panama,Contadora,BF18-1-12,60,BF18-1-12-60,core,Gobiidae,1,4,0.32914,0.08786
+Pacific,Gulf of Panama,Contadora,BF18-1-12,60,BF18-1-12-60,core,Apogonidae,1,4,0.32914,0.08786
+Pacific,Gulf of Panama,Contadora,BF18-1-12,65,BF18-1-12-65,core,Muraenidae,1,4,0.31904,0.08169
+Pacific,Gulf of Panama,Contadora,BF18-1-12,65,BF18-1-12-65,core,Apogonidae,1,4,0.31904,0.08169
+Pacific,Gulf of Panama,Contadora,BF18-1-12,65,BF18-1-12-65,core,Sin_identificar,2,4,0.31904,0.08169
+Pacific,Gulf of Panama,Contadora,BF18-1-12,70,BF18-1-12-70,core,Engraulidae,1,5,0.26741,0.06917
+Pacific,Gulf of Panama,Contadora,BF18-1-12,70,BF18-1-12-70,core,Gobiidae,2,5,0.26741,0.06917
+Pacific,Gulf of Panama,Contadora,BF18-1-12,70,BF18-1-12-70,core,Pomacentridae,1,5,0.26741,0.06917
+Pacific,Gulf of Panama,Contadora,BF18-1-12,70,BF18-1-12-70,core,Scorpaenidae,1,5,0.26741,0.06917
+Pacific,Gulf of Panama,Contadora,BF18-1-12,75,BF18-1-12-75,core,.,0,0,0.31806,0.07009
+Pacific,Gulf of Panama,Contadora,BF18-1-12,80,BF18-1-12-80,core,Pomacentridae,1,7,0.299,0.07208
+Pacific,Gulf of Panama,Contadora,BF18-1-12,80,BF18-1-12-80,core,Gobiidae,4,7,0.299,0.07208
+Pacific,Gulf of Panama,Contadora,BF18-1-12,80,BF18-1-12-80,core,Apogonidae,2,7,0.299,0.07208
+Pacific,Gulf of Panama,Contadora,BF18-1-12,85,BF18-1-12-85,core,.,0,0,0.30703,0.07739
+Pacific,Gulf of Panama,Contadora,BF18-1-12,90,BF18-1-12-90,core,Sin_identificar,2,2,0.30186,0.07576
+Pacific,Gulf of Panama,Contadora,BF18-1-12,95,BF18-1-12-95,core,Apogonidae,1,2,0.34017,0.08806
+Pacific,Gulf of Panama,Contadora,BF18-1-12,95,BF18-1-12-95,core,Sin_identificar,3,2,0.34017,0.08806
+Pacific,Gulf of Panama,Contadora,BF18-1-12,100,BF18-1-12-100,core,Gobiidae,3,12,0.31419,0.07327
+Pacific,Gulf of Panama,Contadora,BF18-1-12,100,BF18-1-12-100,core,Bythitidae,1,12,0.31419,0.07327
+Pacific,Gulf of Panama,Contadora,BF18-1-12,100,BF18-1-12-100,core,Engraulidae,1,12,0.31419,0.07327
+Pacific,Gulf of Panama,Contadora,BF18-1-12,100,BF18-1-12-100,core,Pomacentridae,1,12,0.31419,0.07327
+Pacific,Gulf of Panama,Contadora,BF18-1-12,100,BF18-1-12-100,core,Sin_identificar,6,12,0.31419,0.07327
+Pacific,Gulf of Panama,Contadora,BF18-1-12,105,BF18-1-12-105,core,Pomacentridae,1,2,0.2952,0.08023
+Pacific,Gulf of Panama,Contadora,BF18-1-12,105,BF18-1-12-105,core,Gobiidae,1,2,0.2952,0.08023
+Pacific,Gulf of Panama,Contadora,BF18-1-12,110,BF18-1-12-110,core,Pomacentridae,1,10,0.28475,0.08502
+Pacific,Gulf of Panama,Contadora,BF18-1-12,110,BF18-1-12-110,core,Scorpaenidae,1,10,0.28475,0.08502
+Pacific,Gulf of Panama,Contadora,BF18-1-12,110,BF18-1-12-110,core,Gobiidae,1,10,0.28475,0.08502
+Pacific,Gulf of Panama,Contadora,BF18-1-12,110,BF18-1-12-110,core,Engraulidae,1,10,0.28475,0.08502
+Pacific,Gulf of Panama,Contadora,BF18-1-12,110,BF18-1-12-110,core,Sin_identificar,6,10,0.28475,0.08502
+Pacific,Gulf of Panama,Contadora,BF18-1-12,115,BF18-1-12-115,core,Engraulidae,1,7,0.29545,0.06707
+Pacific,Gulf of Panama,Contadora,BF18-1-12,115,BF18-1-12-115,core,Gobiidae,2,7,0.29545,0.06707
+Pacific,Gulf of Panama,Contadora,BF18-1-12,115,BF18-1-12-115,core,Scorpaenidae,1,7,0.29545,0.06707
+Pacific,Gulf of Panama,Contadora,BF18-1-12,115,BF18-1-12-115,core,Apogonidae,1,7,0.29545,0.06707
+Pacific,Gulf of Panama,Contadora,BF18-1-12,115,BF18-1-12-115,core,Sin_identificar,2,7,0.29545,0.06707
+Pacific,Gulf of Panama,Contadora,BF18-1-12,120,BF18-1-12-120,core,Congridae,1,7,0.28738,0.09627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,120,BF18-1-12-120,core,Ophidiidae,1,7,0.28738,0.09627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,120,BF18-1-12-120,core,Haemulidae,1,7,0.28738,0.09627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,120,BF18-1-12-120,core,Apogonidae,1,7,0.28738,0.09627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,120,BF18-1-12-120,core,Gobiidae,1,7,0.28738,0.09627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,120,BF18-1-12-120,core,Sin_identificar,2,7,0.28738,0.09627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,125,BF18-1-12-125,core,Carapidae,1,8,0.30867,0.10465
+Pacific,Gulf of Panama,Contadora,BF18-1-12,125,BF18-1-12-125,core,Gobiidae,2,8,0.30867,0.10465
+Pacific,Gulf of Panama,Contadora,BF18-1-12,125,BF18-1-12-125,core,Sin_identificar,5,8,0.30867,0.10465
+Pacific,Gulf of Panama,Contadora,BF18-1-12,130,BF18-1-12-130,core,Haemulidae,1,8,0.30616,0.09179
+Pacific,Gulf of Panama,Contadora,BF18-1-12,130,BF18-1-12-130,core,Gobiidae,3,8,0.30616,0.09179
+Pacific,Gulf of Panama,Contadora,BF18-1-12,130,BF18-1-12-130,core,Apogonidae,1,8,0.30616,0.09179
+Pacific,Gulf of Panama,Contadora,BF18-1-12,130,BF18-1-12-130,core,Engraulidae,1,8,0.30616,0.09179
+Pacific,Gulf of Panama,Contadora,BF18-1-12,130,BF18-1-12-130,core,Sin_identificar,2,8,0.30616,0.09179
+Pacific,Gulf of Panama,Contadora,BF18-1-12,135,BF18-1-12-135,core,Gobiidae,2,5,0.29673,0.08337
+Pacific,Gulf of Panama,Contadora,BF18-1-12,135,BF18-1-12-135,core,Engraulidae,1,5,0.29673,0.08337
+Pacific,Gulf of Panama,Contadora,BF18-1-12,135,BF18-1-12-135,core,Sin_identificar,2,5,0.29673,0.08337
+Pacific,Gulf of Panama,Contadora,BF18-1-12,139,BF18-1-12-139,core,Bregmacerotidae,1,14,0.27471,0.07979
+Pacific,Gulf of Panama,Contadora,BF18-1-12,139,BF18-1-12-139,core,Apogonidae,1,14,0.27471,0.07979
+Pacific,Gulf of Panama,Contadora,BF18-1-12,139,BF18-1-12-139,core,Labridae,1,14,0.27471,0.07979
+Pacific,Gulf of Panama,Contadora,BF18-1-12,139,BF18-1-12-139,core,Gobiidae,2,14,0.27471,0.07979
+Pacific,Gulf of Panama,Contadora,BF18-1-12,139,BF18-1-12-139,core,Serranidae,1,14,0.27471,0.07979
+Pacific,Gulf of Panama,Contadora,BF18-1-12,139,BF18-1-12-139,core,Ophidiidae,1,14,0.27471,0.07979
+Pacific,Gulf of Panama,Contadora,BF18-1-12,139,BF18-1-12-139,core,Sin_identificar,7,14,0.27471,0.07979
+Pacific,Gulf of Panama,Contadora,BF18-1-12,144,BF18-1-12-144,core,Haemulidae,1,19,0.35606,0.0962
+Pacific,Gulf of Panama,Contadora,BF18-1-12,144,BF18-1-12-144,core,Ophidiidae,2,19,0.35606,0.0962
+Pacific,Gulf of Panama,Contadora,BF18-1-12,144,BF18-1-12-144,core,Scorpaenidae,2,19,0.35606,0.0962
+Pacific,Gulf of Panama,Contadora,BF18-1-12,144,BF18-1-12-144,core,Apogonidae,4,19,0.35606,0.0962
+Pacific,Gulf of Panama,Contadora,BF18-1-12,144,BF18-1-12-144,core,Engraulidae,1,19,0.35606,0.0962
+Pacific,Gulf of Panama,Contadora,BF18-1-12,144,BF18-1-12-144,core,Gobiidae,3,19,0.35606,0.0962
+Pacific,Gulf of Panama,Contadora,BF18-1-12,144,BF18-1-12-144,core,Sin_identificar,6,19,0.35606,0.0962
+Pacific,Gulf of Panama,Contadora,BF18-1-12,149,BF18-1-12-149,core,Gobiidae,1,7,0.29749,0.09608
+Pacific,Gulf of Panama,Contadora,BF18-1-12,149,BF18-1-12-149,core,Apogonidae,1,7,0.29749,0.09608
+Pacific,Gulf of Panama,Contadora,BF18-1-12,149,BF18-1-12-149,core,Chaetodontidae,1,7,0.29749,0.09608
+Pacific,Gulf of Panama,Contadora,BF18-1-12,149,BF18-1-12-149,core,Sin_identificar,4,7,0.29749,0.09608
+Pacific,Gulf of Panama,Contadora,BF18-1-12,154,BF18-1-12-154,core,Gobiidae,6,12,0.32333,0.10932
+Pacific,Gulf of Panama,Contadora,BF18-1-12,154,BF18-1-12-154,core,Labridae,1,12,0.32333,0.10932
+Pacific,Gulf of Panama,Contadora,BF18-1-12,154,BF18-1-12-154,core,Scorpaenidae,1,12,0.32333,0.10932
+Pacific,Gulf of Panama,Contadora,BF18-1-12,154,BF18-1-12-154,core,Engraulidae,1,12,0.32333,0.10932
+Pacific,Gulf of Panama,Contadora,BF18-1-12,154,BF18-1-12-154,core,Sin_identificar,3,12,0.32333,0.10932
+Pacific,Gulf of Panama,Contadora,BF18-1-12,159,BF18-1-12-159,core,Chaetodontidae,1,8,0.33175,0.10225
+Pacific,Gulf of Panama,Contadora,BF18-1-12,159,BF18-1-12-159,core,Ophidiidae,1,8,0.33175,0.10225
+Pacific,Gulf of Panama,Contadora,BF18-1-12,159,BF18-1-12-159,core,Gobiidae,1,8,0.33175,0.10225
+Pacific,Gulf of Panama,Contadora,BF18-1-12,159,BF18-1-12-159,core,Sin_identificar,5,8,0.33175,0.10225
+Pacific,Gulf of Panama,Contadora,BF18-1-12,164,BF18-1-12-164,core,Congridae,1,7,0.34137,0.10558
+Pacific,Gulf of Panama,Contadora,BF18-1-12,164,BF18-1-12-164,core,Gobiidae,1,7,0.34137,0.10558
+Pacific,Gulf of Panama,Contadora,BF18-1-12,164,BF18-1-12-164,core,Sin_identificar,5,7,0.34137,0.10558
+Pacific,Gulf of Panama,Contadora,BF18-1-12,169,BF18-1-12-169,core,Gobiidae,1,11,0.3094,0.06841
+Pacific,Gulf of Panama,Contadora,BF18-1-12,169,BF18-1-12-169,core,Bregmacerotidae,1,11,0.3094,0.06841
+Pacific,Gulf of Panama,Contadora,BF18-1-12,169,BF18-1-12-169,core,Sin_identificar,9,11,0.3094,0.06841
+Pacific,Gulf of Panama,Contadora,BF18-1-12,174,BF18-1-12-174,core,Apogonidae,1,4,0.31246,0.07847
+Pacific,Gulf of Panama,Contadora,BF18-1-12,174,BF18-1-12-174,core,Ophidiidae,1,4,0.31246,0.07847
+Pacific,Gulf of Panama,Contadora,BF18-1-12,174,BF18-1-12-174,core,Sin_identificar,2,4,0.31246,0.07847
+Pacific,Gulf of Panama,Contadora,BF18-1-12,179,BF18-1-12-179,core,Scorpaenidae,1,5,0.34093,0.09741
+Pacific,Gulf of Panama,Contadora,BF18-1-12,179,BF18-1-12-179,core,Sin_identificar,4,5,0.34093,0.09741
+Pacific,Gulf of Panama,Contadora,BF18-1-12,184,BF18-1-12-184,core,Gobiidae,5,23,0.33694,0.10931
+Pacific,Gulf of Panama,Contadora,BF18-1-12,184,BF18-1-12-184,core,Bregmacerotidae,1,23,0.33694,0.10931
+Pacific,Gulf of Panama,Contadora,BF18-1-12,184,BF18-1-12-184,core,Gerreidae,1,23,0.33694,0.10931
+Pacific,Gulf of Panama,Contadora,BF18-1-12,184,BF18-1-12-184,core,Sin_identificar,16,23,0.33694,0.10931
+Pacific,Gulf of Panama,Contadora,BF18-1-12,189,BF18-1-12-189,core,Sciaenidae,1,14,0.33826,0.10702
+Pacific,Gulf of Panama,Contadora,BF18-1-12,189,BF18-1-12-189,core,Apogonidae,2,14,0.33826,0.10702
+Pacific,Gulf of Panama,Contadora,BF18-1-12,189,BF18-1-12-189,core,Scorpaenidae,2,14,0.33826,0.10702
+Pacific,Gulf of Panama,Contadora,BF18-1-12,189,BF18-1-12-189,core,Engraulidae,1,14,0.33826,0.10702
+Pacific,Gulf of Panama,Contadora,BF18-1-12,189,BF18-1-12-189,core,Gobiidae,4,14,0.33826,0.10702
+Pacific,Gulf of Panama,Contadora,BF18-1-12,189,BF18-1-12-189,core,Sin_identificar,4,14,0.33826,0.10702
+Pacific,Gulf of Panama,Contadora,BF18-1-12,194,BF18-1-12-194,core,Scorpaenidae,2,12,0.29352,0.09605
+Pacific,Gulf of Panama,Contadora,BF18-1-12,194,BF18-1-12-194,core,Gobiidae,1,12,0.29352,0.09605
+Pacific,Gulf of Panama,Contadora,BF18-1-12,194,BF18-1-12-194,core,Sin_identificar,9,12,0.29352,0.09605
+Pacific,Gulf of Panama,Contadora,BF18-1-12,199,BF18-1-12-199,core,Engraulidae,1,10,0.33685,0.08513
+Pacific,Gulf of Panama,Contadora,BF18-1-12,199,BF18-1-12-199,core,Apogonidae,1,10,0.33685,0.08513
+Pacific,Gulf of Panama,Contadora,BF18-1-12,199,BF18-1-12-199,core,Labridae,1,10,0.33685,0.08513
+Pacific,Gulf of Panama,Contadora,BF18-1-12,199,BF18-1-12-199,core,Gobiidae,2,10,0.33685,0.08513
+Pacific,Gulf of Panama,Contadora,BF18-1-12,199,BF18-1-12-199,core,Sin_identificar,5,10,0.33685,0.08513
+Pacific,Gulf of Panama,Contadora,BF18-1-12,204,BF18-1-12-204,core,Gobiidae,3,5,0.30993,0.07731
+Pacific,Gulf of Panama,Contadora,BF18-1-12,204,BF18-1-12-204,core,Sin_identificar,2,5,0.30993,0.07731
+Pacific,Gulf of Panama,Contadora,BF18-1-12,209,BF18-1-12-209,core,Gobiidae,4,16,0.35633,0.1037
+Pacific,Gulf of Panama,Contadora,BF18-1-12,209,BF18-1-12-209,core,Bregmacerotidae,1,16,0.35633,0.1037
+Pacific,Gulf of Panama,Contadora,BF18-1-12,209,BF18-1-12-209,core,Engraulidae,1,16,0.35633,0.1037
+Pacific,Gulf of Panama,Contadora,BF18-1-12,209,BF18-1-12-209,core,Pomacentridae,1,16,0.35633,0.1037
+Pacific,Gulf of Panama,Contadora,BF18-1-12,209,BF18-1-12-209,core,Sin_identificar,8,16,0.35633,0.1037
+Pacific,Gulf of Panama,Contadora,BF18-1-12,214,BF18-1-12-214,core,Gobiidae,8,25,0.32503,0.10014
+Pacific,Gulf of Panama,Contadora,BF18-1-12,214,BF18-1-12-214,core,Apogonidae,2,25,0.32503,0.10014
+Pacific,Gulf of Panama,Contadora,BF18-1-12,214,BF18-1-12-214,core,Scorpaenidae,1,25,0.32503,0.10014
+Pacific,Gulf of Panama,Contadora,BF18-1-12,214,BF18-1-12-214,core,Sin_identificar,14,25,0.32503,0.10014
+Pacific,Gulf of Panama,Contadora,BF18-1-12,219,BF18-1-12-219,core,Apogonidae,2,15,0.35464,0.09105
+Pacific,Gulf of Panama,Contadora,BF18-1-12,219,BF18-1-12-219,core,Labridae,1,15,0.35464,0.09105
+Pacific,Gulf of Panama,Contadora,BF18-1-12,219,BF18-1-12-219,core,Gobiidae,9,15,0.35464,0.09105
+Pacific,Gulf of Panama,Contadora,BF18-1-12,219,BF18-1-12-219,core,Sin_identificar,2,15,0.35464,0.09105
+Pacific,Gulf of Panama,Contadora,BF18-1-12,224,BF18-1-12-224,core,Bythitidae,1,12,0.37243,0.10243
+Pacific,Gulf of Panama,Contadora,BF18-1-12,224,BF18-1-12-224,core,Haemulidae,2,12,0.37243,0.10243
+Pacific,Gulf of Panama,Contadora,BF18-1-12,224,BF18-1-12-224,core,Gobiidae,2,12,0.37243,0.10243
+Pacific,Gulf of Panama,Contadora,BF18-1-12,224,BF18-1-12-224,core,Engraulidae,2,12,0.37243,0.10243
+Pacific,Gulf of Panama,Contadora,BF18-1-12,224,BF18-1-12-224,core,Sin_identificar,5,12,0.37243,0.10243
+Pacific,Gulf of Panama,Contadora,BF18-1-12,229,BF18-1-12-229,core,Batrachoididae,1,7,0.3296,0.08627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,229,BF18-1-12-229,core,Sciaenidae,1,7,0.3296,0.08627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,229,BF18-1-12-229,core,Scorpaenidae,1,7,0.3296,0.08627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,229,BF18-1-12-229,core,Engraulidae,1,7,0.3296,0.08627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,229,BF18-1-12-229,core,Gobiidae,1,7,0.3296,0.08627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,229,BF18-1-12-229,core,Sin_identificar,2,7,0.3296,0.08627
+Pacific,Gulf of Panama,Contadora,BF18-1-12,234,BF18-1-12-234,core,Pomacentridae,1,4,0.33851,0.08362
+Pacific,Gulf of Panama,Contadora,BF18-1-12,234,BF18-1-12-234,core,Scorpaenidae,1,4,0.33851,0.08362
+Pacific,Gulf of Panama,Contadora,BF18-1-12,234,BF18-1-12-234,core,Gobiidae,1,4,0.33851,0.08362
+Pacific,Gulf of Panama,Contadora,BF18-1-12,234,BF18-1-12-234,core,Sin_identificar,1,4,0.33851,0.08362
+Pacific,Gulf of Panama,Contadora,BF18-1-12,239,BF18-1-12-239,core,Gobiidae,5,9,0.33637,0.10361
+Pacific,Gulf of Panama,Contadora,BF18-1-12,239,BF18-1-12-239,core,Apogonidae,3,9,0.33637,0.10361
+Pacific,Gulf of Panama,Contadora,BF18-1-12,239,BF18-1-12-239,core,Sin_identificar,1,9,0.33637,0.10361
+Pacific,Gulf of Panama,Contadora,BF18-1-13,5,BF18-1-13-5,core,.,0,0,0.14837,0.01814
+Pacific,Gulf of Panama,Contadora,BF18-1-13,20,BF18-1-13-20,core,Pomacentridae,1,4,0.24985,0.04733
+Pacific,Gulf of Panama,Contadora,BF18-1-13,20,BF18-1-13-20,core,Gobiidae,2,4,0.24985,0.04733
+Pacific,Gulf of Panama,Contadora,BF18-1-13,20,BF18-1-13-20,core,Sin_identificar,1,4,0.24985,0.04733
+Pacific,Gulf of Panama,Contadora,BF18-1-13,35,BF18-1-13-35,core,.,0,0,0.29215,0.04834
+Pacific,Gulf of Panama,Contadora,BF18-1-13,50,BF18-1-13-50,core,Scorpaenidae,2,3,0.32595,0.08023
+Pacific,Gulf of Panama,Contadora,BF18-1-13,50,BF18-1-13-50,core,Sin_identificar,1,3,0.32595,0.08023
+Pacific,Gulf of Panama,Contadora,BF18-1-13,65,BF18-1-13-65,core,Apogonidae,1,1,0.28259,0.06553
+Pacific,Gulf of Panama,Contadora,BF18-1-13,80,BF18-1-13-80,core,Sin_identificar,1,1,0.293,0.055
+Pacific,Gulf of Panama,Contadora,BF18-1-13,95,BF18-1-13-95,core,Scorpaenidae,2,2,0.24677,0.06261
+Pacific,Gulf of Panama,Contadora,BF18-1-13,110,BF18-1-13-110,core,Haemulidae,3,5,0.23829,0.05785
+Pacific,Gulf of Panama,Contadora,BF18-1-13,110,BF18-1-13-110,core,Sin_identificar,1,5,0.23829,0.05785
+Pacific,Gulf of Panama,Contadora,BF18-1-13,110,BF18-1-13-110,core,Bythitidae,1,5,0.23829,0.05785
+Pacific,Gulf of Panama,Contadora,BF18-1-13,125,BF18-1-13-125,core,Apogonidae,1,1,0.26946,0.06856
+Pacific,Gulf of Panama,Contadora,BF18-1-13,140,BF18-1-13-140,core,.,0,0,0.27457,0.06981
+Pacific,Gulf of Panama,Contadora,BF18-1-13,155,BF18-1-13-155,core,Scorpaenidae,2,6,0.32118,0.08739
+Pacific,Gulf of Panama,Contadora,BF18-1-13,155,BF18-1-13-155,core,Sin_identificar,4,6,0.32118,0.08739
+Pacific,Gulf of Panama,Contadora,BF18-1-13,170,BF18-1-13-170,core,Scorpaenidae,1,6,0.29808,0.07614
+Pacific,Gulf of Panama,Contadora,BF18-1-13,170,BF18-1-13-170,core,Engraulidae,1,6,0.29808,0.07614
+Pacific,Gulf of Panama,Contadora,BF18-1-13,170,BF18-1-13-170,core,Gobiidae,1,6,0.29808,0.07614
+Pacific,Gulf of Panama,Contadora,BF18-1-13,170,BF18-1-13-170,core,Ophidiidae,1,6,0.29808,0.07614
+Pacific,Gulf of Panama,Contadora,BF18-1-13,170,BF18-1-13-170,core,Haemulidae,1,6,0.29808,0.07614
+Pacific,Gulf of Panama,Contadora,BF18-1-13,170,BF18-1-13-170,core,Apogonidae,1,6,0.29808,0.07614
+Pacific,Gulf of Panama,Contadora,BF18-1-13,185,BF18-1-13-185,core,Sin_identificar,1,1,0.29822,0.06254
+Pacific,Gulf of Panama,Contadora,BF18-1-13,200,BF18-1-13-200,core,Pomacentridae,1,10,0.34281,0.07249
+Pacific,Gulf of Panama,Contadora,BF18-1-13,200,BF18-1-13-200,core,Labridae,1,10,0.34281,0.07249
+Pacific,Gulf of Panama,Contadora,BF18-1-13,200,BF18-1-13-200,core,Gobiidae,1,10,0.34281,0.07249
+Pacific,Gulf of Panama,Contadora,BF18-1-13,200,BF18-1-13-200,core,Ophidiidae,2,10,0.34281,0.07249
+Pacific,Gulf of Panama,Contadora,BF18-1-13,200,BF18-1-13-200,core,Apogonidae,1,10,0.34281,0.07249
+Pacific,Gulf of Panama,Contadora,BF18-1-13,200,BF18-1-13-200,core,Sin_identificar,4,10,0.34281,0.07249
+Pacific,Gulf of Panama,Contadora,BF18-1-13,215,BF18-1-13-215,core,Pomacentridae,1,6,0.32357,0.06468
+Pacific,Gulf of Panama,Contadora,BF18-1-13,215,BF18-1-13-215,core,Gobiidae,2,6,0.32357,0.06468
+Pacific,Gulf of Panama,Contadora,BF18-1-13,215,BF18-1-13-215,core,Sin_identificar,3,6,0.32357,0.06468
+Pacific,Gulf of Panama,Contadora,BF18-1-13,230,BF18-1-13-230,core,Pomacentridae,1,10,0.25096,0.08171
+Pacific,Gulf of Panama,Contadora,BF18-1-13,230,BF18-1-13-230,core,Carangidae,1,10,0.25096,0.08171
+Pacific,Gulf of Panama,Contadora,BF18-1-13,230,BF18-1-13-230,core,Scorpaenidae,1,10,0.25096,0.08171
+Pacific,Gulf of Panama,Contadora,BF18-1-13,230,BF18-1-13-230,core,Clupeidae,1,10,0.25096,0.08171
+Pacific,Gulf of Panama,Contadora,BF18-1-13,230,BF18-1-13-230,core,Gobiidae,1,10,0.25096,0.08171
+Pacific,Gulf of Panama,Contadora,BF18-1-13,230,BF18-1-13-230,core,Batrachoididae,1,10,0.25096,0.08171
+Pacific,Gulf of Panama,Contadora,BF18-1-13,230,BF18-1-13-230,core,Sin_identificar,4,10,0.25096,0.08171
+Pacific,Gulf of Panama,Contadora,BF18-1-13,245,BF18-1-13-245,core,Apogonidae,2,6,0.27824,0.06246
+Pacific,Gulf of Panama,Contadora,BF18-1-13,245,BF18-1-13-245,core,Pomacentridae,1,6,0.27824,0.06246
+Pacific,Gulf of Panama,Contadora,BF18-1-13,245,BF18-1-13-245,core,Gobiidae,1,6,0.27824,0.06246
+Pacific,Gulf of Panama,Contadora,BF18-1-13,245,BF18-1-13-245,core,Gerreidae,1,6,0.27824,0.06246
+Pacific,Gulf of Panama,Contadora,BF18-1-13,245,BF18-1-13-245,core,Sin_identificar,1,6,0.27824,0.06246
+Pacific,Gulf of Panama,Contadora,BF18-1-13,260,BF18-1-13-260,core,Gobiidae,1,6,0.28617,0.07983
+Pacific,Gulf of Panama,Contadora,BF18-1-13,260,BF18-1-13-260,core,Scorpaenidae,1,6,0.28617,0.07983
+Pacific,Gulf of Panama,Contadora,BF18-1-13,260,BF18-1-13-260,core,Sin_identificar,4,6,0.28617,0.07983
+Pacific,Gulf of Panama,Contadora,BF18-1-13,275,BF18-1-13-275,core,Apogonidae,4,15,0.31752,0.08369
+Pacific,Gulf of Panama,Contadora,BF18-1-13,275,BF18-1-13-275,core,Gobiidae,5,15,0.31752,0.08369
+Pacific,Gulf of Panama,Contadora,BF18-1-13,275,BF18-1-13-275,core,Sin_identificar,6,15,0.31752,0.08369
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,5,JC22-2-1-5,core,.,0,0,0.22595,0.00215
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,10,JC22-2-1-10,core,.,0,0,0.19027,0.00222
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,15,JC22-2-1-15,core,.,0,0,0.18995,0.00344
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,20,JC22-2-1-20,core,.,0,0,0.21912,0.00466
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,25,JC22-2-1-25,core,.,0,0,0.17045,0.00542
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,30,JC22-2-1-30,core,.,0,0,0.26116,0.01312
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,35,JC22-2-1-35,core,Sin_identificar,1,1,0.30645,0.0348
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,40,JC22-2-1-40,core,Serranidae,1,2,0.32091,0.04282
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,40,JC22-2-1-40,core,Sin_identificar,1,2,0.32091,0.04282
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,45,JC22-2-1-45,core,Mullidae,1,6,0.27913,0.04118
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,45,JC22-2-1-45,core,Ophidiidae,2,6,0.27913,0.04118
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,45,JC22-2-1-45,core,Gobiidae,1,6,0.27913,0.04118
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,45,JC22-2-1-45,core,Serranidae,1,6,0.27913,0.04118
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,45,JC22-2-1-45,core,Apogonidae,1,6,0.27913,0.04118
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,50,JC22-2-1-50,core,Apogonidae,1,11,0.22212,0.04636
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,50,JC22-2-1-50,core,Engraulidae,1,11,0.22212,0.04636
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,50,JC22-2-1-50,core,Scorpaenidae,1,11,0.22212,0.04636
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,50,JC22-2-1-50,core,Serranidae,1,11,0.22212,0.04636
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,50,JC22-2-1-50,core,Congridae,1,11,0.22212,0.04636
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,50,JC22-2-1-50,core,Haemulidae,2,11,0.22212,0.04636
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,50,JC22-2-1-50,core,Sin_identificar,4,11,0.22212,0.04636
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,55,JC22-2-1-55,core,Serranidae,1,4,0.22625,0.03297
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,55,JC22-2-1-55,core,Ophidiidae,1,4,0.22625,0.03297
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,55,JC22-2-1-55,core,Engraulidae,1,4,0.22625,0.03297
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,55,JC22-2-1-55,core,Congridae,1,4,0.22625,0.03297
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,160,JC22-2-1-160,core,Ophidiidae,1,17,0.3382,0.08823
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,160,JC22-2-1-160,core,Gobiidae,1,17,0.3382,0.08823
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,160,JC22-2-1-160,core,Serranidae,4,17,0.3382,0.08823
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,160,JC22-2-1-160,core,Labridae,1,17,0.3382,0.08823
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,160,JC22-2-1-160,core,Pomacentridae,1,17,0.3382,0.08823
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,160,JC22-2-1-160,core,Lutjanidae,1,17,0.3382,0.08823
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,160,JC22-2-1-160,core,Sin_identificar,8,17,0.3382,0.08823
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Labridae,1,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Ophidiidae,2,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Serranidae,11,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Bregmacerotidae,1,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Lutjanidae,6,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Pomacentridae,1,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Apogonidae,1,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Sciaenidae,1,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,165,JC22-2-1-165,core,Sin_identificar,3,27,0.32298,0.08187
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Ophidiidae,1,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Gobiidae,1,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Clupeidae,1,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Serranidae,10,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Apogonidae,2,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Labridae,1,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Lutjanidae,2,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Batrachoididae,1,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,170,JC22-2-1-170,core,Sin_identificar,2,21,0.32524,0.04389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,175,JC22-2-1-175,core,Serranidae,5,16,0.31188,0.04642
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,175,JC22-2-1-175,core,Lutjanidae,6,16,0.31188,0.04642
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,175,JC22-2-1-175,core,Scaridae,1,16,0.31188,0.04642
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,175,JC22-2-1-175,core,Ophidiidae,1,16,0.31188,0.04642
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,175,JC22-2-1-175,core,Apogonidae,2,16,0.31188,0.04642
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,175,JC22-2-1-175,core,Muraenidae,1,16,0.31188,0.04642
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Gobiidae,2,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Pomacentridae,2,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Engraulidae,1,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Labridae,3,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Serranidae,9,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Lutjanidae,5,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Ophidiidae,2,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Scorpaenidae,1,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,180,JC22-2-1-180,core,Sin_identificar,5,30,0.3519,0.05003
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,185,JC22-2-1-185,core,Engraulidae,1,11,0.27702,0.0451
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,185,JC22-2-1-185,core,Haemulidae,1,11,0.27702,0.0451
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,185,JC22-2-1-185,core,Lutjanidae,2,11,0.27702,0.0451
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,185,JC22-2-1-185,core,Apogonidae,2,11,0.27702,0.0451
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,185,JC22-2-1-185,core,Serranidae,4,11,0.27702,0.0451
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,185,JC22-2-1-185,core,Bregmacerotidae,1,11,0.27702,0.0451
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,190,JC22-2-1-190,core,Ophidiidae,4,12,0.28817,0.05158
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,190,JC22-2-1-190,core,Haemulidae,2,12,0.28817,0.05158
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,190,JC22-2-1-190,core,Pomacentridae,1,12,0.28817,0.05158
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,190,JC22-2-1-190,core,Apogonidae,2,12,0.28817,0.05158
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,190,JC22-2-1-190,core,Engraulidae,1,12,0.28817,0.05158
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,190,JC22-2-1-190,core,Serranidae,2,12,0.28817,0.05158
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,195,JC22-2-1-195,core,Paralichthyidae,1,21,0.28943,0.04379
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,195,JC22-2-1-195,core,Gobiidae,2,21,0.28943,0.04379
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,195,JC22-2-1-195,core,Engraulidae,6,21,0.28943,0.04379
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,195,JC22-2-1-195,core,Serranidae,2,21,0.28943,0.04379
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,195,JC22-2-1-195,core,Lutjanidae,1,21,0.28943,0.04379
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,195,JC22-2-1-195,core,Ophidiidae,5,21,0.28943,0.04379
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,195,JC22-2-1-195,core,Sin_identificar,4,21,0.28943,0.04379
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Gerreidae,1,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Engraulidae,3,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Clupeidae,1,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Bregmacerotidae,1,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Gobiidae,1,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Labridae,1,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Lutjanidae,3,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Serranidae,9,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Opistognathidae,1,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Pomacentridae,1,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Ophidiidae,9,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,200,JC22-2-1-200,core,Sin_identificar,8,39,0.2694,0.03777
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Serranidae,8,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Ophidiidae,13,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Bythitidae,1,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Batrachoididae,1,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Scorpaenidae,1,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Congridae,1,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Engraulidae,7,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Lutjanidae,1,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,205,JC22-2-1-205,core,Sin_identificar,5,38,0.2875,0.05496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Ophidiidae,10,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Serranidae,5,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Lutjanidae,3,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Engraulidae,5,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Apogonidae,2,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Gerreidae,1,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Bythitidae,1,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Haemulidae,1,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-1,212,JC22-2-1-212,core,Sin_identificar,2,30,0.38415,0.08168
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,5,JC22-2-2-5,core,.,0,0,0.13594,0.00075
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,10,JC22-2-2-10,core,.,0,0,0.2071,0.00488
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,15,JC22-2-2-15,core,.,0,0,0.20464,0.00552
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,20,JC22-2-2-20,core,.,0,0,0.22221,0.00602
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,25,JC22-2-2-25,core,.,0,0,0.26671,0.00639
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,30,JC22-2-2-30,core,.,0,0,0.33907,0.02605
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,35,JC22-2-2-35,core,Sin_identificar,1,1,0.2461,0.02884
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,40,JC22-2-2-40,core,Serranidae,2,4,0.32089,0.03393
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,40,JC22-2-2-40,core,Ophidiidae,1,4,0.32089,0.03393
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,40,JC22-2-2-40,core,Sin_identificar,1,4,0.32089,0.03393
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,45,JC22-2-2-45,core,Labridae,2,4,0.28879,0.03568
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,45,JC22-2-2-45,core,Priacanthidae,1,4,0.28879,0.03568
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,45,JC22-2-2-45,core,Sin_identificar,1,4,0.28879,0.03568
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,50,JC22-2-2-50,core,Serranidae,2,4,0.32597,0.03597
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,50,JC22-2-2-50,core,Ophidiidae,1,4,0.32597,0.03597
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,50,JC22-2-2-50,core,Gobiidae,1,4,0.32597,0.03597
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,55,JC22-2-2-55,core,Serranidae,4,6,0.27058,0.03624
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,55,JC22-2-2-55,core,Sin_identificar,2,6,0.27058,0.03624
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,60,JC22-2-2-60,core,Serranidae,2,12,0.29829,0.0496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,60,JC22-2-2-60,core,Gobiidae,2,12,0.29829,0.0496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,60,JC22-2-2-60,core,Scorpaenidae,1,12,0.29829,0.0496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,60,JC22-2-2-60,core,Apogonidae,1,12,0.29829,0.0496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,60,JC22-2-2-60,core,Engraulidae,2,12,0.29829,0.0496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,60,JC22-2-2-60,core,Congridae,1,12,0.29829,0.0496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,60,JC22-2-2-60,core,Sin_identificar,3,12,0.29829,0.0496
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,65,JC22-2-2-65,core,Serranidae,5,7,0.30398,0.02882
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,65,JC22-2-2-65,core,Gobiidae,1,7,0.30398,0.02882
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,65,JC22-2-2-65,core,Clupeidae,1,7,0.30398,0.02882
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,70,JC22-2-2-70,core,Serranidae,2,4,0.27765,0.0275
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,70,JC22-2-2-70,core,Ophidiidae,1,4,0.27765,0.0275
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,70,JC22-2-2-70,core,Congridae,1,4,0.27765,0.0275
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,130,JC22-2-2-130,core,Gobiidae,3,28,0.35243,0.08171
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,130,JC22-2-2-130,core,Serranidae,8,28,0.35243,0.08171
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,130,JC22-2-2-130,core,Haemulidae,1,28,0.35243,0.08171
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,130,JC22-2-2-130,core,Congridae,2,28,0.35243,0.08171
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,130,JC22-2-2-130,core,Ophidiidae,3,28,0.35243,0.08171
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,130,JC22-2-2-130,core,Lutjanidae,2,28,0.35243,0.08171
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,130,JC22-2-2-130,core,Sin_identificar,9,28,0.35243,0.08171
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Serranidae,6,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Lutjanidae,1,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Ophidiidae,1,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Gobiidae,1,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Engraulidae,1,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Scorpaenidae,2,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Albulidae,1,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,135,JC22-2-2-135,core,Sin_identificar,8,21,0.35401,0.08753
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,142,JC22-2-2-142,core,Ophidiidae,4,26,0.51274,0.11745
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,142,JC22-2-2-142,core,Gobiidae,3,26,0.51274,0.11745
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,142,JC22-2-2-142,core,Muraenidae,1,26,0.51274,0.11745
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,142,JC22-2-2-142,core,Serranidae,4,26,0.51274,0.11745
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,142,JC22-2-2-142,core,Haemulidae,2,26,0.51274,0.11745
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,142,JC22-2-2-142,core,Apogonidae,1,26,0.51274,0.11745
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-2,142,JC22-2-2-142,core,Sin_identificar,11,26,0.51274,0.11745
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,5,JC22-2-3-5,core,.,0,0,0.20426,0.00619
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,10,JC22-2-3-10,core,.,0,0,0.18682,0.0069
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,15,JC22-2-3-15,core,.,0,0,0.25806,0.00945
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,20,JC22-2-3-20,core,Sin_identificar,3,3,0.22085,0.01005
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,25,JC22-2-3-25,core,.,0,0,0.29548,0.0235
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,30,JC22-2-3-30,core,Serranidae,2,2,0.33966,0.05359
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,35,JC22-2-3-35,core,Scorpaenidae,1,4,0.28756,0.05137
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,35,JC22-2-3-35,core,Engraulidae,1,4,0.28756,0.05137
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,35,JC22-2-3-35,core,Apogonidae,1,4,0.28756,0.05137
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,35,JC22-2-3-35,core,Sin_identificar,1,4,0.28756,0.05137
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,135,JC22-2-3-135,core,Serranidae,7,29,0.36029,0.09067
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,135,JC22-2-3-135,core,Lutjanidae,1,29,0.36029,0.09067
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,135,JC22-2-3-135,core,Ophidiidae,4,29,0.36029,0.09067
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,135,JC22-2-3-135,core,Apogonidae,5,29,0.36029,0.09067
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,135,JC22-2-3-135,core,Congridae,2,29,0.36029,0.09067
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,135,JC22-2-3-135,core,Sin_identificar,10,29,0.36029,0.09067
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,140,JC22-2-3-140,core,Congridae,1,22,0.37723,0.11349
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,140,JC22-2-3-140,core,Serranidae,2,22,0.37723,0.11349
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,140,JC22-2-3-140,core,Gobiidae,2,22,0.37723,0.11349
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,140,JC22-2-3-140,core,Apogonidae,4,22,0.37723,0.11349
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,140,JC22-2-3-140,core,Lutjanidae,3,22,0.37723,0.11349
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,140,JC22-2-3-140,core,Muraenidae,1,22,0.37723,0.11349
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,140,JC22-2-3-140,core,Sin_identificar,9,22,0.37723,0.11349
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,147,JC22-2-3-147,core,Serranidae,14,40,0.34772,0.08389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,147,JC22-2-3-147,core,Ophidiidae,2,40,0.34772,0.08389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,147,JC22-2-3-147,core,Lutjanidae,3,40,0.34772,0.08389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,147,JC22-2-3-147,core,Apogonidae,4,40,0.34772,0.08389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,147,JC22-2-3-147,core,Gobiidae,2,40,0.34772,0.08389
+Pacific,Gulf of Panama,Isla Iguana,JC22-2-3,147,JC22-2-3-147,core,Sin_identificar,15,40,0.34772,0.08389

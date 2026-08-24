@@ -1,0 +1,124 @@
+basin,region,sample,unique,site_name,type,group,group_name,sed_weight_500_kg,sed_weight_whole_sample_kg,total_oto_count
+Caribbean,Bocas del Toro,AT12-1,AT12-1-1-1,STRI Point,modern_bulk,1,AT12-1_1,0.1563,0.85,34
+Caribbean,Bocas del Toro,AT12-1,AT12-1-2-1,STRI Point,modern_bulk,2,AT12-1_2,0.261,1.15,93
+Caribbean,Bocas del Toro,AT12-1,AT12-1-2-2,STRI Point,modern_bulk,3,AT12-1_3,0.23893,1.15,73
+Caribbean,Bocas del Toro,AT12-1,AT12-1-3-1,STRI Point,modern_bulk,4,AT12-1_4,0.23809,1.15,62
+Caribbean,Bocas del Toro,AT12-1,AT12-1-4-1,STRI Point,modern_bulk,5,AT12-1_5,0.21289,1.15,85
+Caribbean,Bocas del Toro,AT12-1,AT12-1-5-1,STRI Point,modern_bulk,6,AT12-1_6,0.27754,1.1,20
+Caribbean,Bocas del Toro,AT12-1,AT12-1-6-1,STRI Point,modern_bulk,7,AT12-1_7,0.19713,1.2,16
+Caribbean,Bocas del Toro,AT12-2,AT12-2-1,Sunset Point,Holocene_bulk,1,AT12-2_1,0.05814,1.15,82
+Caribbean,Bocas del Toro,AT12-2,AT12-2-10,Sunset Point,Holocene_bulk,7,AT12-2_7,0.13242,1.5,12
+Caribbean,Bocas del Toro,AT12-2,AT12-2-2,Sunset Point,Holocene_bulk,2,AT12-2_2,0.029,1.1,53
+Caribbean,Bocas del Toro,AT12-2,AT12-2-3,Sunset Point,Holocene_bulk,3,AT12-2_3,0.05566,0.85,132
+Caribbean,Bocas del Toro,AT12-2,AT12-2-4,Sunset Point,Holocene_bulk,4,AT12-2_4,0.05891,0.9,89
+Caribbean,Bocas del Toro,AT12-2,AT12-2-5,Sunset Point,Holocene_bulk,5,AT12-2_5,0.14546,0.85,78
+Caribbean,Bocas del Toro,AT12-2,AT12-2-6,Sunset Point,Holocene_bulk,6,AT12-2_6,0.11762,1.2,12
+Caribbean,Bocas del Toro,AT12-2,AT12-2-7,Sunset Point,Holocene_bulk,6,AT12-2_6,0.10883,1.15,15
+Caribbean,Bocas del Toro,AT12-2,AT12-2-9,Sunset Point,Holocene_bulk,7,AT12-2_7,0.11992,1.05,4
+Caribbean,Bocas del Toro,AT12-3,AT12-3-1-1,Playa Estrella,modern_bulk,1,AT12-3_1,0.03255,0.9,13
+Caribbean,Bocas del Toro,AT12-3,AT12-3-2-1,Playa Estrella,modern_bulk,2,AT12-3_2,0.19737,0.95,124
+Caribbean,Bocas del Toro,AT12-3,AT12-3-3-1,Playa Estrella,modern_bulk,3,AT12-3_3,0.16892,0.9,269
+Caribbean,Bocas del Toro,AT12-3,AT12-3-3-2,Playa Estrella,modern_bulk,3,AT12-3_3,.,0.8,1
+Caribbean,Bocas del Toro,AT12-4,AT12-4-1-1,SW Bocas Island,modern_bulk,1,AT12-4_1,0.33829,1.05,5
+Caribbean,Bocas del Toro,AT12-4,AT12-4-2-1,SW Bocas Island,modern_bulk,1,AT12-4_1,0.42226,1.25,37
+Caribbean,Bocas del Toro,AT12-4,AT12-4-2-2,SW Bocas Island,modern_bulk,1,AT12-4_1,0.83397,1.3,2
+Caribbean,Bocas del Toro,AT12-4,AT12-4-3-1,SW Bocas Island,modern_bulk,2,AT12-4_2,0.28267,1.3,48
+Caribbean,Bocas del Toro,AT12-4,AT12-4-3-2,SW Bocas Island,modern_bulk,2,AT12-4_2,0.402436688,1.15,2
+Caribbean,Bocas del Toro,AT12-4,AT12-4-4-1,SW Bocas Island,modern_bulk,3,AT12-4_3,0.36709,1.1,1
+Caribbean,Bocas del Toro,AT12-4,AT12-4-4-2,SW Bocas Island,modern_bulk,3,AT12-4_3,0.28406,1.15,52
+Caribbean,Bocas del Toro,AT12-4,AT12-4-5-2,SW Bocas Island,modern_bulk,3,AT12-4_3,0.384939441,1.1,3
+Caribbean,Bocas del Toro,AT13-10,AT13-10-1-1,Punta Caracol,modern_bulk,1,AT13-10_1,0.26303,0.6473,26
+Caribbean,Bocas del Toro,AT13-10,AT13-10-1-2,Punta Caracol,modern_bulk,2,AT13-10_2,0.37675,0.9095,21
+Caribbean,Bocas del Toro,AT13-10,AT13-10-2-1,Punta Caracol,modern_bulk,3,AT13-10_3,0.27105,0.6821,18
+Caribbean,Bocas del Toro,AT13-10,AT13-10-2-2,Punta Caracol,modern_bulk,3,AT13-10_3,0.33569,0.6996,7
+Caribbean,Bocas del Toro,AT13-10,AT13-10-3-1,Punta Caracol,modern_bulk,4,AT13-10_4,0.31716,0.6704,23
+Caribbean,Bocas del Toro,AT13-10,AT13-10-3-2,Punta Caracol,modern_bulk,5,AT13-10_5,0.31048,0.6716,38
+Caribbean,Bocas del Toro,AT13-10,AT13-10-4-1,Punta Caracol,modern_bulk,6,AT13-10_6,0.33121,0.7088,27
+Caribbean,Bocas del Toro,AT13-10,AT13-10-4-2,Punta Caracol,modern_bulk,7,AT13-10_7,0.29614,0.7047,21
+Caribbean,Bocas del Toro,AT13-10,AT13-10-5-1,Punta Caracol,modern_bulk,8,AT13-10_8,0.20766,0.5594,14
+Caribbean,Bocas del Toro,AT13-10,AT13-10-5-2,Punta Caracol,modern_bulk,9,AT13-10_9,0.35729,0.7013,20
+Caribbean,Bocas del Toro,AT13-11,AT13-11-1-1,Crawl Cay,modern_bulk,1,AT13-11_1,0.09181,0.4153,3
+Caribbean,Bocas del Toro,AT13-11,AT13-11-2-1,Crawl Cay,modern_bulk,1,AT13-11_1,0.12526,0.4023,13
+Caribbean,Bocas del Toro,AT13-11,AT13-11-3-1,Crawl Cay,modern_bulk,1,AT13-11_1,0.12953,0.4373,5
+Caribbean,Bocas del Toro,AT13-12,AT13-12-1-1,Casa Blanca,modern_bulk,1,AT13-12_1,0.22898,0.5786,44
+Caribbean,Bocas del Toro,AT13-12,AT13-12-1-2,Casa Blanca,modern_bulk,2,AT13-12_2,0.29472,0.6281,38
+Caribbean,Bocas del Toro,AT13-12,AT13-12-2-1,Casa Blanca,modern_bulk,3,AT13-12_3,0.27994,0.6656,34
+Caribbean,Bocas del Toro,AT13-12,AT13-12-2-2,Casa Blanca,modern_bulk,4,AT13-12_4,0.27237,0.6317,40
+Caribbean,Bocas del Toro,AT13-12,AT13-12-3-1,Casa Blanca,modern_bulk,5,AT13-12_5,0.26412,0.582,38
+Caribbean,Bocas del Toro,AT13-12,AT13-12-3-2,Casa Blanca,modern_bulk,6,AT13-12_6,0.33171,0.6298,57
+Caribbean,Bocas del Toro,AT13-12,AT13-12-4-1,Casa Blanca,modern_bulk,7,AT13-12_7,0.28469,0.5885,73
+Caribbean,Bocas del Toro,AT13-12,AT13-12-4-2,Casa Blanca,modern_bulk,8,AT13-12_8,0.28791,0.6922,48
+Caribbean,Bocas del Toro,AT13-2,AT13-2-1,Sweet Bocas Trench 1,Holocene_bulk,1,AT13-2_1,0.18316,0.65,7
+Caribbean,Bocas del Toro,AT13-2,AT13-2-10,Sweet Bocas Trench 1,Holocene_bulk,1,AT13-2_1,0.20235,0.7,8
+Caribbean,Bocas del Toro,AT13-2,AT13-2-8,Sweet Bocas Trench 1,Holocene_bulk,2,AT13-2_2,0.211,0.6,9
+Caribbean,Bocas del Toro,AT13-2,AT13-2-9,Sweet Bocas Trench 1,Holocene_bulk,2,AT13-2_2,0.16508,0.65,2
+Caribbean,Bocas del Toro,AT13-3,AT13-3-10,Sweet Bocas Trench 2,Holocene_bulk,1,AT13-3_1,0.22852,0.5,13
+Caribbean,Bocas del Toro,AT13-3,AT13-3-11,Sweet Bocas Trench 2,Holocene_bulk,1,AT13-3_1,0.14227,0.6,4
+Caribbean,Bocas del Toro,AT13-3,AT13-3-12,Sweet Bocas Trench 2,Holocene_bulk,1,AT13-3_1,0.14146,0.75,5
+Caribbean,Bocas del Toro,AT13-3,AT13-3-13,Sweet Bocas Trench 2,Holocene_bulk,2,AT13-3_2,0.19035,0.95,12
+Caribbean,Bocas del Toro,AT13-3,AT13-3-14,Sweet Bocas Trench 2,Holocene_bulk,2,AT13-3_2,0.13263,0.6,7
+Caribbean,Bocas del Toro,AT13-4,AT13-4-2,Sweet Bocas Trench 3,Holocene_bulk,1,AT13-4_1,0.02926,0.4,28
+Caribbean,Bocas del Toro,AT13-4,AT13-4-3,Sweet Bocas Trench 3,Holocene_bulk,2,AT13-4_2,0.06838,0.6,167
+Caribbean,Bocas del Toro,AT13-4,AT13-4-4,Sweet Bocas Trench 3,Holocene_bulk,1,AT13-4_1,0.09913,0.6,1
+Caribbean,Bocas del Toro,AT13-4,AT13-4-5,Sweet Bocas Trench 3,Holocene_bulk,1,AT13-4_1,0.0807,0.6,2
+Caribbean,Bocas del Toro,AT13-4,AT13-4-6,Sweet Bocas Trench 3,Holocene_bulk,1,AT13-4_1,0.03634,0.4,3
+Caribbean,Bocas del Toro,AT13-5,AT13-5-1,Sweet Bocas Trench 4,Holocene_bulk,1,AT13-5_1,0.13887,0.55,3
+Caribbean,Bocas del Toro,AT13-5,AT13-5-2,Sweet Bocas Trench 4,Holocene_bulk,1,AT13-5_1,0.184581818,0.75,0
+Caribbean,Bocas del Toro,AT13-5,AT13-5-3,Sweet Bocas Trench 4,Holocene_bulk,1,AT13-5_1,0.13185,0.55,2
+Caribbean,Bocas del Toro,AT13-6,AT13-6-1,Sweet Bocas Trench 5,Holocene_bulk,1,AT13-6_1,0.14335,0.6,9
+Caribbean,Bocas del Toro,AT13-6,AT13-6-2,Sweet Bocas Trench 5,Holocene_bulk,1,AT13-6_1,0.1846,0.6,1
+Caribbean,Bocas del Toro,AT13-6,AT13-6-3,Sweet Bocas Trench 5,Holocene_bulk,1,AT13-6_1,0.19434,0.6,8
+Caribbean,Bocas del Toro,AT13-6,AT13-6-6,Sweet Bocas Trench 5,Holocene_bulk,1,AT13-6_1,0.0741,0.4,3
+Caribbean,Bocas del Toro,AT13-7,AT13-7-1,Sweet Bocas Trench 6,Holocene_bulk,1,AT13-7_1,0.17862,0.55,13
+Caribbean,Bocas del Toro,AT13-7,AT13-7-2,Sweet Bocas Trench 6,Holocene_bulk,2,AT13-7_2,0.16704,0.55,18
+Caribbean,Bocas del Toro,AT13-7,AT13-7-3,Sweet Bocas Trench 6,Holocene_bulk,3,AT13-7_3,0.13949,0.6,18
+Caribbean,Bocas del Toro,AT13-7,AT13-7-4,Sweet Bocas Trench 6,Holocene_bulk,4,AT13-7_4,0.18724,0.65,94
+Caribbean,Bocas del Toro,AT13-7,AT13-7-5,Sweet Bocas Trench 6,Holocene_bulk,5,AT13-7_5,0.19617,0.6,328
+Caribbean,Bocas del Toro,AT13-7,AT13-7-6,Sweet Bocas Trench 6,Holocene_bulk,6,AT13-7_6,0.15817,0.65,255
+Caribbean,Bocas del Toro,AT13-7,AT13-7-7,Sweet Bocas Trench 6,Holocene_bulk,7,AT13-7_7,0.17684,0.6,292
+Caribbean,Bocas del Toro,AT13-7,AT13-7-8,Sweet Bocas Trench 6,Holocene_bulk,8,AT13-7_8,0.04407,0.6,17
+Caribbean,Bocas del Toro,AT13-7,AT13-7-9,Sweet Bocas Trench 6,Holocene_bulk,8,AT13-7_8,0.00559,0.45,1
+Caribbean,Bocas del Toro,AT13-8,AT13-8-1,Sweet Bocas Trench 7,Holocene_bulk,1,AT13-8_1,0.13863,0.65,7
+Caribbean,Bocas del Toro,AT13-8,AT13-8-2,Sweet Bocas Trench 7,Holocene_bulk,1,AT13-8_1,0.13529,0.6,7
+Caribbean,Bocas del Toro,AT13-9,AT13-9-1,Sweet Bocas Trench 8,Holocene_bulk,1,AT13-9_1,0.08838,0.8,19
+Caribbean,Bocas del Toro,AT13-9,AT13-9-2,Sweet Bocas Trench 8,Holocene_bulk,1,AT13-9_1,0.0566,0.5,7
+Caribbean,Bocas del Toro,AT14-10,AT14-10-1,Sweet Bocas SE Face,Holocene_bulk,1,AT14-10_1,0.135993,0.5584,13
+Caribbean,Bocas del Toro,AT14-10,AT14-10-2,Sweet Bocas SE Face,Holocene_bulk,2,AT14-10_2,0.126992,0.5324,9
+Caribbean,Bocas del Toro,AT14-10,AT14-10-3,Sweet Bocas SE Face,Holocene_bulk,2,AT14-10_2,0.168592,0.5128,12
+Caribbean,Bocas del Toro,AT14-11,AT14-11-1,Sweet Bocas SE Face,Holocene_bulk,1,AT14-11_1,0.113417,0.50105,1
+Caribbean,Bocas del Toro,AT14-11,AT14-11-2,Sweet Bocas SE Face,Holocene_bulk,1,AT14-11_1,0.081919,0.4543,0
+Caribbean,Bocas del Toro,AT14-11,AT14-11-3,Sweet Bocas SE Face,Holocene_bulk,1,AT14-11_1,0.0975,0.5395,4
+Caribbean,Bocas del Toro,AT14-1,AT14-1-1,Casa Blanca new,modern_bulk,1,AT14-1_1,0.235586,0.6604,39
+Caribbean,Bocas del Toro,AT14-1,AT14-1-2,Casa Blanca new,modern_bulk,2,AT14-1_2,0.255748,0.58385,102
+Caribbean,Bocas del Toro,AT14-1,AT14-1-3,Casa Blanca new,modern_bulk,3,AT14-1_3,0.177701,0.6843,95
+Caribbean,Bocas del Toro,AT14-1,AT14-1-5,Casa Blanca new,modern_bulk,4,AT14-1_1,0.093953,0.4014,23
+Caribbean,Bocas del Toro,AT14-1,AT14-1-7,Casa Blanca new,modern_bulk,5,AT14-1_4,0.178184,0.6442,58
+Caribbean,Bocas del Toro,AT14-1,AT14-1-8,Casa Blanca new,modern_bulk,6,AT14-1_5,0.186586,0.6334,63
+Caribbean,Bocas del Toro,AT14-2,AT14-2-1,Punta Donato,modern_bulk,1,AT14-2_1,0.126321,0.6472,39
+Caribbean,Bocas del Toro,AT14-2,AT14-2-2,Punta Donato,modern_bulk,2,AT14-2_2,0.085008,0.5441,17
+Caribbean,Bocas del Toro,AT14-2,AT14-2-4,Punta Donato,modern_bulk,3,AT14-2_3,0.074169,0.5598,30
+Caribbean,Bocas del Toro,AT14-2,AT14-2-5,Punta Donato,modern_bulk,4,AT14-2_4,0.121947,0.6014,28
+Caribbean,Bocas del Toro,AT14-3,AT14-3-1,Cayo Adriana,modern_bulk,1,AT14-3_1,0.193504,0.5189,23
+Caribbean,Bocas del Toro,AT14-3,AT14-3-2,Cayo Adriana,modern_bulk,1,AT14-3_1,0.078406,0.4314,7
+Caribbean,Bocas del Toro,AT14-3,AT14-3-3,Cayo Adriana,modern_bulk,2,AT14-3_2,0.195697,0.5768,34
+Caribbean,Bocas del Toro,AT14-3,AT14-3-4,Cayo Adriana,modern_bulk,3,AT14-3_3,0.207246,0.625,27
+Caribbean,Bocas del Toro,AT14-3,AT14-3-5,Cayo Adriana,modern_bulk,4,AT14-3_4,0.279638,0.6827,60
+Caribbean,Bocas del Toro,AT14-3,AT14-3-6,Cayo Adriana,modern_bulk,5,AT14-3_5,0.31401,0.6877,40
+Caribbean,Bocas del Toro,AT14-4,AT14-4-1,Airport Point,modern_bulk,1,AT14-4_1,0.131869,0.4467,31
+Caribbean,Bocas del Toro,AT14-4,AT14-4-2,Airport Point,modern_bulk,1,AT14-4_1,0.13061,0.535,35
+Caribbean,Bocas del Toro,AT14-4,AT14-4-3,Airport Point,modern_bulk,1,AT14-4_1,0.181854,0.604,56
+Caribbean,Bocas del Toro,AT14-4,AT14-4-4,Airport Point,modern_bulk,2,AT14-4_2,0.175348,0.5557,61
+Caribbean,Bocas del Toro,AT14-4,AT14-4-5,Airport Point,modern_bulk,2,AT14-4_2,0.151667,0.5742,44
+Caribbean,Bocas del Toro,AT14-4,AT14-4-6,Airport Point,modern_bulk,2,AT14-4_2,0.162548,0.5891,37
+Caribbean,Bocas del Toro,AT14-5,AT14-5-1,Sweet Bocas SE Face,Holocene_bulk,1,AT14-5_1,0.100525,0.5442,1
+Caribbean,Bocas del Toro,AT14-5,AT14-5-2,Sweet Bocas SE Face,Holocene_bulk,1,AT14-5_1,0.073918,0.4309,3
+Caribbean,Bocas del Toro,AT14-5,AT14-5-3,Sweet Bocas SE Face,Holocene_bulk,1,AT14-5_1,0.103568,0.4393,3
+Caribbean,Bocas del Toro,AT14-6,AT14-6-1,Sweet Bocas SE Face,Holocene_bulk,1,AT14-6_1,0.132093,0.563,6
+Caribbean,Bocas del Toro,AT14-6,AT14-6-2,Sweet Bocas SE Face,Holocene_bulk,1,AT14-6_1,0.142345,0.6379,1
+Caribbean,Bocas del Toro,AT14-6,AT14-6-3,Sweet Bocas SE Face,Holocene_bulk,1,AT14-6_1,0.136416,0.6066,8
+Caribbean,Bocas del Toro,AT14-7,AT14-7-1,Sweet Bocas SE Face,Holocene_bulk,1,AT14-7_1,0.131628,0.5221,4
+Caribbean,Bocas del Toro,AT14-7,AT14-7-2,Sweet Bocas SE Face,Holocene_bulk,1,AT14-7_1,0.076114,0.5237,2
+Caribbean,Bocas del Toro,AT14-7,AT14-7-3,Sweet Bocas SE Face,Holocene_bulk,1,AT14-7_1,0.088157,0.4433,3
+Caribbean,Bocas del Toro,AT14-9,AT14-9-1,Sweet Bocas SE Face,Holocene_bulk,1,AT14-9_1,0.100533,0.4646,18
+Caribbean,Bocas del Toro,AT14-9,AT14-9-2,Sweet Bocas SE Face,Holocene_bulk,2,AT14-9_2,0.104355,0.6022,5
+Caribbean,Bocas del Toro,AT14-9,AT14-9-3,Sweet Bocas SE Face,Holocene_bulk,2,AT14-9_2,0.114332,0.5371,13
