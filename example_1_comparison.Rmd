@@ -1,0 +1,437 @@
+---
+title: "example_1_fig"
+author: "Erin Dillon"
+date: "2026-08-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+```{r}
+library(tidyverse)
+library(ggrepel)
+library(patchwork)
+```
+
+## Read in outputs for plotting
+```{r}
+
+#otoliths (death assemblage)
+perc_biomass_fam_summary <- read.csv("data_processed/perc_biomass_fam_summary.csv",header=T,na.strings="NA") %>% 
+  select(-X)
+oto_families_summary <- read.csv("data_processed/oto_families_summary.csv",header=T,na.strings="NA")%>% 
+  select(-X)
+oto_carib_size_length <- read.csv("data_processed/oto_carib_size_length.csv",header=T,na.strings="NA")%>% 
+  select(-X)
+
+
+#surveys (living assemblage)
+fish_productivity_fam_summary <- read.csv("data_processed/fish_productivity_fam_summary.csv",header=T,na.strings="NA") %>% 
+  select(-X)
+fish_combined <- read.csv("data_processed/fish_combined.csv",header=T,na.strings="NA") %>%
+  select(-X)
+
+```
+
+## Fig 4
+
+Level order for plotting
+```{r}
+
+#levels from oto data
+ordered_levels_oto <- perc_biomass_fam_summary %>%
+  arrange(desc(biomass_mean)) %>% #using the rank order of otolith assemblage as the baseline
+  pull(family)
+
+#levels from survey data
+ordered_levels_survey <- fish_productivity_fam_summary %>%
+  arrange(desc(biomass_production_mean)) %>% #rank order from surveys
+  filter(!Family %in% ordered_levels_oto) %>% #remove families already in oto levels
+  pull(Family)
+
+#then adding survey families on top
+ordered_levels <- c(ordered_levels_oto, ordered_levels_survey)
+
+
+#20 most abundant families
+examplar_families <- c("Gobiidae","Engraulidae","Atherinidae","Clupeidae","Pomacentridae","Apogonidae","Labridae","Serranidae","Bythitidae","Haemulidae","Bregmacerotidae","Batrachoididae","Labrisomidae","Gerreidae","Carangidae","Synodontidae","Lutjanidae","Acanthuridae","Sciaenidae","Chaetodontidae")
+
+
+ordered_levels <- ordered_levels[ordered_levels %in% examplar_families]
+
+```
+
+Combine relative abundance and production dfs
+```{r}
+
+#otoliths
+oto_merge <- perc_biomass_fam_summary %>% 
+  left_join(oto_families_summary) %>%
+  rename(Family=family) %>% 
+  #rename metrics to be consistent with survey df
+  rename(production_mean=biomass_mean,
+         production_sd=biomass_sd,
+         production_stderr=biomass_stderr,
+         abundance_mean=abund_mean,
+         abundance_stderr=abund_stderr) %>%
+  mutate(type="Death") %>% 
+  select(Family,type,production_mean,production_stderr,abundance_mean,abundance_stderr)
+oto_merge
+
+#surveys
+survey_merge <- fish_productivity_fam_summary %>% 
+  mutate(type="Living") %>%
+  select(Family,type,production_mean,production_stderr,abundance_mean,abundance_stderr)
+survey_merge
+
+#combine
+assemblages_combined <- rbind(oto_merge,survey_merge)
+
+```
+
+### Fig 4A - abundance
+```{r}
+
+pd <- position_dodge2(width = 0.9, preserve = "single") #even bars
+
+fig4A <- assemblages_combined %>% 
+  filter(Family %in% examplar_families) %>% 
+ggplot(aes(y=reorder(Family, -production_mean), x=abundance_mean))+
+  geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
+  geom_errorbarh(aes(xmin=abundance_mean-abundance_stderr, xmax=abundance_mean+abundance_stderr,group=type), height=0,
+                 position=position_dodge(width = 0.9),linetype=1,size=0.6,color="gray30")+
+  theme_bw()+
+  scale_fill_manual(values=c("#009E73","#E69F00"))+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  theme(legend.position=c(0.725,0.905))+
+  labs(y="", x="Percent abundance (%)",fill="Assemblage type",color="Assemblage type") +
+  coord_cartesian(xlim = c(0, 65))+
+  theme(aspect.ratio=2)
+fig4A
+
+```
+
+### Fig 4B - production
+```{r}
+
+fig4B <- assemblages_combined %>% 
+  filter(Family %in% examplar_families) %>% 
+ggplot(aes(y=reorder(Family, -production_mean), x=production_mean))+
+  geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
+  geom_errorbarh(aes(xmin=production_mean-production_stderr, xmax=production_mean+production_stderr,group=type), height=0,
+                 position=position_dodge(width = 0.9),linetype=1,size=0.6,color="gray30")+
+  theme_bw()+
+  scale_fill_manual(values=c("#009E73","#E69F00"))+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  theme(legend.position="none")+
+  labs(y="", x="Percent production (%)",fill="Assemblage type",color="Assemblage type") +
+  coord_cartesian(xlim = c(0, 65))+
+  theme(aspect.ratio=2)
+fig4B
+
+```
+
+### Fig 4C - size-frequency distributions
+
+Combine modern and fossil reconstructions
+```{r}
+
+#Format in the same way
+fish_surveys_to_merge <- fish_combined %>% 
+  filter(iteration==1) %>% #plot 1st iteration only
+  select(site_name,Family,TL_cm) %>% 
+  rename(fish_length_cm=TL_cm) %>%
+  mutate(assemblage_type = "living") 
+
+
+otolith_surveys_to_merge <- oto_carib_size_length %>% 
+  select(locality,family,fish_length_cm) %>% 
+  rename(site_name=locality,
+         Family=family) %>% 
+  mutate(assemblage_type = "death")
+
+
+#Combine
+sizes_combined <- rbind(fish_surveys_to_merge,otolith_surveys_to_merge)
+
+```
+
+Plot reconstructed fish lengths
+```{r}
+
+#Calculate means for each assemblage type
+length_means_plot_combined <- sizes_combined %>%
+  group_by(assemblage_type) %>% 
+  summarize(fish_length_mean = mean(fish_length_cm,na.rm=T),
+            fish_length_sd = sd(fish_length_cm,na.rm=T)) %>% 
+  mutate(y_pos = case_when(
+    assemblage_type == "death" ~ -0.155,
+    assemblage_type == "living" ~ -0.065))
+length_means_plot_combined
+
+
+#Raw data for jittering
+raw_lengths <- sizes_combined %>%
+  mutate(y_pos = case_when(
+    assemblage_type == "death" ~ -0.155,
+    assemblage_type == "living" ~ -0.065))
+
+#Annotation
+annotation_n <- data.frame(
+  x = c(8,8),
+  y = c(0.25,0.5),  
+  label = c("Death\n(N=1,551)","Living\n(N=37,748)"),
+  assemblage_type = c("death","living"))
+
+
+
+#Plot
+fig4C <- sizes_combined %>%
+  ggplot(aes(x=fish_length_cm))+
+  geom_density(aes(color=assemblage_type, fill=assemblage_type),alpha=0.3,linewidth=0.8,adjust=2.5)+ 
+   geom_jitter(data=raw_lengths,aes(x=fish_length_cm,y=y_pos,fill=assemblage_type,color=assemblage_type),
+               size=2,
+               shape=21,
+                color="gray40",
+               alpha=0.4,
+               position = position_jitterdodge(jitter.height = 0.03, jitter.width = 0.8, dodge.width = 0.2))+
+  geom_pointrange(data=length_means_plot_combined,aes(y=y_pos, x=fish_length_mean,xmin=fish_length_mean-fish_length_sd, xmax=fish_length_mean+fish_length_sd, fill=assemblage_type),color="gray5",size=1,fatten=3.5,position=position_dodge(width = 0.2),shape=21)+
+  geom_text(data = annotation_n, aes(x = x, y = y, label = label,color=assemblage_type,inherit.aes = FALSE), size = 4,fontface = "bold",hjust=0)+
+  scale_color_manual(values=c("#009E73","#E69F00"))+
+  scale_fill_manual(values=c("#009E73","#E69F00"))+
+  labs(y="Density",x="Fish total length (cm)",fill="Assemblage type",color="Assemblage type") +
+  theme_bw()+
+  scale_x_continuous(trans='log2')+ #to deal with long tail
+  theme(legend.position = "none")+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  coord_cartesian(ylim = c(-0.2, 0.75))+
+  theme(aspect.ratio=2)
+fig4C
+
+
+```
+
+K-S test
+```{r}
+
+#subset
+death <- sizes_combined %>% 
+  filter(assemblage_type=="death")
+
+living <- sizes_combined %>% 
+  filter(assemblage_type=="living")
+
+#k-s test whether distributions are different
+ks.test(death$fish_length_cm, living$fish_length_cm)
+
+#whether death<living
+ks.test(death$fish_length_cm, living$fish_length_cm, alternative="greater")
+
+#t-test
+t.test(death$fish_length_cm, living$fish_length_cm,var.equal = FALSE)
+
+```
+
+### Combine panels
+```{r fig.width=10}
+
+#Individual panel adjustments
+fig4A <- fig4A+
+  ggtitle("(a) Abundance")
+  
+  
+fig4B <- fig4B +
+  theme(axis.text.y = element_blank())+ #Remove y-axis from panel B
+  ggtitle("(b) Production")
+
+
+fig4C <- fig4C+
+  ggtitle("(c) Fish total length")
+
+  
+
+#Combine
+fig4 <- fig4A+fig4B+fig4C
+fig4
+
+
+#Save figure
+ggsave("outputs/fig4.png",plot=fig4,device="png",width=10, height=6)
+
+```
+
+## Supplementary figures
+
+### Fig S3
+```{r}
+
+#Format in the same way, all iterations
+fish_surveys_to_merge_all <- fish_combined %>% 
+  select(site_name,Family,TL_cm,iteration) %>% 
+  rename(fish_length_cm=TL_cm) %>%
+  mutate(assemblage_type = "Living") 
+
+#Keep formatting the same
+otolith_surveys_to_merge_all <- oto_carib_size_length %>% 
+  select(locality,family,fish_length_cm) %>% 
+  rename(site_name=locality,
+         Family=family) %>% 
+  mutate(assemblage_type = "Death")%>%
+  #Copy 10 times so it serves as a reference vs each iteration
+  slice(rep(1:n(), times = 10)) %>%
+  mutate(iteration = rep(1:10, each = n() / 10))
+
+#Combine
+sizes_combined_all <- rbind(fish_surveys_to_merge_all,otolith_surveys_to_merge_all)
+
+#Plot
+figS3 <- ggplot(sizes_combined_all, aes(x=fish_length_cm))+
+  geom_density(aes(color=assemblage_type, fill=assemblage_type),alpha=0.3,linewidth=0.8,adjust=2.5)+ 
+  scale_color_manual(values=c("#009E73","#E69F00"))+
+  scale_fill_manual(values=c("#009E73","#E69F00"))+
+  labs(y="Density",x="Fish total length (cm)",fill="Assemblage type",color="Assemblage type") +
+  theme_bw()+
+  scale_x_continuous(trans='log2')+ #to deal with long tail
+  theme(legend.position = "bottom")+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  coord_cartesian(ylim = c(0, 0.75))+
+  theme(aspect.ratio=2)+
+  facet_wrap(~iteration,nrow=2)  
+figS3
+
+
+#Save figure
+ggsave("outputs/figS3.png",plot=figS3,device="png",width=7, height=6)
+
+```
+
+### Fig S4
+```{r}
+
+
+#filter to just the families shared in common
+shared_families <- intersect(unique(fish_surveys_to_merge$Family), unique(otolith_surveys_to_merge$Family))
+
+
+#Calculate means for each assemblage type
+length_means_plot_combined_shared <- sizes_combined %>%
+  filter(Family %in% shared_families) %>% 
+  group_by(assemblage_type) %>% 
+  summarize(fish_length_mean = mean(fish_length_cm,na.rm=T),
+            fish_length_sd = sd(fish_length_cm,na.rm=T)) %>% 
+  mutate(y_pos = case_when(
+    assemblage_type == "death" ~ -0.155,
+    assemblage_type == "living" ~ -0.065))
+length_means_plot_combined_shared
+
+
+#Raw data for jittering
+raw_lengths_shared <- sizes_combined %>%
+  filter(Family %in% shared_families) %>% 
+  mutate(y_pos = case_when(
+    assemblage_type == "death" ~ -0.155,
+    assemblage_type == "living" ~ -0.065))
+
+
+#Plot
+figS4 <- sizes_combined %>%
+  filter(Family %in% shared_families) %>% 
+  ggplot(aes(x=fish_length_cm))+
+  geom_density(aes(color=assemblage_type, fill=assemblage_type),alpha=0.3,linewidth=0.8,adjust=2.5)+ 
+   geom_jitter(data=raw_lengths_shared,aes(x=fish_length_cm,y=y_pos,fill=assemblage_type,color=assemblage_type),
+               size=2,
+               shape=21,
+                color="gray40",
+               alpha=0.4,
+               position = position_jitterdodge(jitter.height = 0.03, jitter.width = 0.8, dodge.width = 0.2))+
+  geom_pointrange(data=length_means_plot_combined_shared,aes(y=y_pos, x=fish_length_mean,xmin=fish_length_mean-fish_length_sd, xmax=fish_length_mean+fish_length_sd, fill=assemblage_type),color="gray5",size=1,fatten=3.5,position=position_dodge(width = 0.2),shape=21)+
+  scale_color_manual(values=c("#009E73","#E69F00"),labels=c("Death","Living"))+
+  scale_fill_manual(values=c("#009E73","#E69F00"),labels=c("Death","Living"))+
+  labs(y="Density",x="Fish total length (cm)",fill="Assemblage type",color="Assemblage type") +
+  theme_bw()+
+  scale_x_continuous(trans='log2')+ #to deal with long tail
+  theme(legend.position = "right")+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  coord_cartesian(ylim = c(-0.2, 0.85))+
+  theme(aspect.ratio=2)
+figS4
+
+
+#Save figure
+ggsave("outputs/figS4.png",plot=figS4,device="png",height=5,width=5)
+
+```
+
+### Fig S5
+```{r}
+
+#even bars
+pd <- position_dodge2(width = 0.9, preserve = "single")
+
+#abundance
+figS5A <- assemblages_combined %>% 
+ggplot(aes(y=reorder(Family, -production_mean), x=abundance_mean))+
+  geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
+  geom_errorbarh(aes(xmin=abundance_mean-abundance_stderr, xmax=abundance_mean+abundance_stderr,group=type), height=0,
+                 position=position_dodge(width = 0.9),linetype=1,size=0.6,color="gray30")+
+  theme_bw()+
+  scale_fill_manual(values=c("#009E73","#E69F00"))+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  theme(legend.position=c(0.726,0.926))+
+  labs(y="", x="Percent abundance (%)",fill="Assemblage type",color="Assemblage type") +
+  coord_cartesian(xlim = c(0, 65))+
+  theme(aspect.ratio=2.5)
+figS5A
+
+#production
+figS5B <- assemblages_combined %>% 
+ggplot(aes(y=reorder(Family, -production_mean), x=production_mean))+
+  geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
+  geom_errorbarh(aes(xmin=production_mean-production_stderr, xmax=production_mean+production_stderr,group=type), height=0,
+                 position=position_dodge(width = 0.9),linetype=1,size=0.6,color="gray30")+
+  theme_bw()+
+  scale_fill_manual(values=c("#009E73","#E69F00"))+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  theme(legend.position="none")+
+  labs(y="", x="Percent production (%)",fill="Assemblage type",color="Assemblage type") +
+  coord_cartesian(xlim = c(0, 65))+
+  theme(aspect.ratio=2.5)
+figS5B
+
+
+#Individual panel adjustments
+figS5A <- figS5A+
+  ggtitle("(a) Abundance")
+  
+  
+figS5B <- figS5B +
+  theme(axis.text.y = element_blank())+ #Remove y-axis from panel B
+  ggtitle("(b) Production")
+
+
+#Combine
+figS5 <- figS5A+figS5B
+figS5
+
+
+#Save figure
+ggsave("outputs/figS5.png",plot=figS5,device="png",width=7, height=7)
+
+```

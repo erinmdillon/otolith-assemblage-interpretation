@@ -1,0 +1,815 @@
+---
+title: "example_1_otoliths"
+author: "Erin Dillon"
+date: "2026-08-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+```{r}
+library(rfishbase)
+library(tidyverse)
+library(ggplot2)
+library(patchwork)
+library(janitor)
+library(hydroGOF)
+library(plotrix)
+```
+
+## 1. Otolith size - fish size relationships
+
+Fish families in sediment assemblages
+```{r}
+
+#all fish families found in Bocas del Toro otolith assemblage dataset
+all_families <- c("Acanthuridae","Apogonidae","Atherinidae","Batrachoididae","Bregmacerotidae","Bythitidae","Carangidae","Clupeidae","Engraulidae","Gerreidae","Gobiidae","Haemulidae","Labridae","Mugilidae","Muraenidae","Ophidiidae","Opistognathidae","Pomacentridae","Scaridae","Sciaenidae","Serranidae","Synodontidae")
+
+```
+
+### Reference collection
+
+In-house reference collection data
+```{r}
+
+#Load in-house reference collection
+oto_size_raw <- read.csv("data/oto_reference_collection_main.csv",header=T)
+
+#Load additional Lutjanus samples from the Atlantic
+extra_lutjanus_raw <- read.csv("data/oto_reference_collection_lutjanus.csv",header=T)
+
+```
+
+Clean and combine datasets
+```{r}
+
+#Format to be consistent with other data inputs
+oto_size <- oto_size_raw %>%
+  #use left oto measurement when available, otherwise right
+  mutate(otolith_length_mm = ifelse(
+    is.na(left.otolith.length.mm)==F, left.otolith.length.mm,right.otolith.length.mm)) %>%
+  filter(!Complete_name %in% c("Pomadasys panamensis", "Microspathodon bairdii")) %>% #unusual
+  select(Collection_Number,Ocean,Region,Locality,Order,Family,genus,species,Complete_name,total_length_cm,standard_length_cm,otolith_length_mm)
+
+
+#Lutjanus samples to supplement reference collection
+extra_lutjanus <- extra_lutjanus_raw %>% 
+  rename(Region=Site,
+         otolith_length_mm=Otolith_length_mm) %>% #these are all right otoliths
+  mutate(total_length_cm = total_length_mm/10,
+         standard_length_cm = standard_length_mm/10) %>% 
+  select(Collection_Number,Ocean,Region,Locality,Order,Family,genus,species,Complete_name,total_length_cm,standard_length_cm,otolith_length_mm) 
+
+
+#Merge datasets and clean header names
+oto_ref_col <- rbind(oto_size,extra_lutjanus) %>% 
+  filter(!is.na(total_length_cm) & !is.na(otolith_length_mm)) %>% #just keep paired fish-oto measurements
+  clean_names()
+
+```
+
+Check available sample sizes
+```{r}
+
+#Family-level sample sizes for which both otolith and fish size data are available
+oto_ref_col_n <- oto_ref_col %>% 
+  group_by(family) %>%
+  filter(is.na(otolith_length_mm)==F & is.na(total_length_cm)==F) %>% 
+  tally()
+oto_ref_col_n
+
+
+#Add column to clean dataset with family-level sample sizes, for later filtering
+oto_ref_col <- oto_ref_col %>% 
+  left_join(oto_ref_col_n,by="family")
+
+```
+
+Add AFORO database, source: http://aforo.cmima.csic.es/ (downloaded April 2025)
+```{r}
+
+#Load AFORO data
+aforo_raw <- read.csv("data/aforo_morphometrics.csv",header=T)
+
+```
+
+Clean AFORO data
+```{r}
+
+#Clean and format for consistency with our reference collection data
+aforo_clean <- aforo_raw %>% 
+  filter(length_type == "TL") %>% #constrain to total length for consistency
+  filter(!is.na(fish_length) & !is.na(otolith_length)) %>% #just keep rows with paired fish and oto length data
+  mutate(total_length_cm=fish_length/10) %>% #fish length is measured in mm, converting to cm
+  rename(otolith_length_mm=otolith_length,
+         otolith_width_mm=otolith_width) %>% #oto length & width measured in mm (right)
+  mutate(source = "AFORO",.before=family) #adding a source column
+
+
+#Sample sizes
+aforo_n <- aforo_clean %>% 
+  group_by(family) %>%
+  tally()
+aforo_n
+
+
+#Add column with family-level sample sizes
+aforo_clean <- aforo_clean %>% 
+  left_join(aforo_n,by="family")
+
+```
+
+Combine size-size dataset
+```{r}
+
+#Clean ref col data to be consistent format
+oto_ref_col_to_merge <- oto_ref_col %>% 
+  mutate(source = "Reference Collection",.before=collection_number) %>% #add source column
+  select(-c(order,standard_length_cm)) #remove unneeded columns
+
+
+#Clean aforo data to match
+aforo_to_merge <- aforo_clean %>% 
+  rename(collection_number=inst_code) %>% 
+  mutate(ocean = NA, #this info was not extracted
+         region = NA,
+         locality = NA,
+         genus = NA,
+         species = NA,
+         complete_name = NA) %>% 
+  select(c("source","collection_number","ocean","region","locality","family","genus","species","complete_name","total_length_cm","otolith_length_mm","n")) #keep the same columns, same order
+
+
+#Merge datasets
+size_size_merged <- rbind(oto_ref_col_to_merge,aforo_to_merge)
+
+
+#Filter to just include families found in the sediment samples
+size_size_merged_corefam <- size_size_merged %>% 
+   filter(family %in% all_families)
+
+```
+
+Check available sample sizes in full size-size dataset
+```{r}
+
+#sample N for all families
+table(size_size_merged$family)
+n_distinct(size_size_merged$family)
+
+
+#sample N for families found in the sediment samples
+table(size_size_merged_corefam$source) #n per source
+table(size_size_merged_corefam$family) #n per family
+length(size_size_merged_corefam$family) #total n
+n_distinct(size_size_merged_corefam$family) #n families
+
+
+size_size_merged_corefam %>% 
+  group_by(family,source) %>% 
+  tally()
+
+
+#Sample size comparison
+sample_n <- aforo_n %>% 
+  full_join(oto_ref_col_n,by="family") %>% 
+  rename(aforo_n=n.x,
+         ref_col_n=n.y) %>% 
+  mutate(aforo_n = replace_na(aforo_n, 0), #replace NA = 0
+         ref_col_n = replace_na(ref_col_n, 0)) %>% 
+  mutate(total_n = aforo_n+ref_col_n)
+sample_n
+
+#Add total_n to combined dataset for filtering
+size_size_merged_corefam <- size_size_merged_corefam %>% 
+  left_join(sample_n[,c(1,4)],by="family") %>% 
+  mutate(family_label = paste0(family," (N=",total_n,")"))
+
+```
+
+### Plot size-size relationships
+
+Fig S2
+```{r}
+
+figS2 <- size_size_merged_corefam %>%
+  filter(total_n>14) %>% #remove families with n<15
+ggplot(aes(y=total_length_cm,x=otolith_length_mm))+
+  geom_smooth(aes(color=family_label,fill=family_label),method=lm,se=T,linewidth=0.8,alpha=0.3)+ #family-level model
+  geom_smooth(method=lm,color="black",se=T,linewidth=2)+ #overall model
+  labs(x="Otolith length (mm)",y="Fish total length (cm)",color="Family",fill="Family")+
+  theme_bw()+
+   scale_y_continuous(trans='log2')+ 
+   scale_x_continuous(trans='log2')+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=16))+
+  theme(legend.text = element_text(size=12),legend.title = element_text(size=16))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  theme(aspect.ratio=1)
+figS2
+
+ggsave("outputs/figS2.png",plot=figS2,device="png",height=6)
+
+```
+
+### Power models
+
+#### Otolith length - fish TL
+```{r}
+
+#Families to exclude (n<15 data points)
+to_exclude <- c("Albulidae","Atherinopsidae","Bregmacerotidae","Hemiramphidae","Labrisomidae","Malacanthidae","Opistognathidae","Paralichthyidae","Priacanthidae")
+
+#List to build family-level models
+family_list <- all_families[!(all_families %in% to_exclude)]
+
+```
+
+Aggregate power model (all families with sufficient data)
+```{r}
+
+#Exclude families with low n
+size_size_merged_corefam2 <- size_size_merged_corefam %>% 
+  filter(family %in% family_list)
+
+#Build nls power model
+power_fit_all <- nls(total_length_cm~a*otolith_length_mm^b,data=size_size_merged_corefam2, start = list(a=1, b=1))
+
+#View summary and coefficients
+summary(power_fit_all)
+a_est <- coef(power_fit_all)["a"]
+b_est <- coef(power_fit_all)["b"]
+
+#NSE to assess model fit (pseudo r square values)
+nse_length_overall <- NSE(sim = fitted(power_fit_all), obs = power_fit_all$m$lhs())
+
+```
+
+Family-level power models
+```{r}
+
+#initialize empty list & matrix to store model outputs
+allometric_models <- list()
+model_coeff <- matrix(NA,nrow=length(family_list),ncol=3)
+model_coeff <- as.data.frame(model_coeff)
+names(model_coeff) <- c("family","a","b")
+
+#row counter to populate the matrix
+counter <- 1
+
+#filter data to include only the specified families with sufficient data
+size_size_filtered <- size_size_merged %>% 
+   filter(family %in% family_list)
+table(size_size_filtered$family) #which families represented, consistent with overall NLS model above
+n_distinct(size_size_filtered$family)
+
+#loop through each family to fit a model for each
+for (fam in family_list) {
+  data_family <- subset(size_size_filtered, family == fam)
+  
+  #fit an allometric model using nls and store in the allometric_models list
+  allometric_model <- nls(total_length_cm~a*otolith_length_mm^b, data = data_family, start = list(a = 1, b = 1))
+  allometric_models[[fam]] <- allometric_model
+  
+  #print the summary of the allometric model for each family
+  cat("Allometric model for family:", fam, "\n")
+  print(summary(allometric_model))
+  cat("\n\n")  #add space between model summaries
+  
+  #store coefficients in the data frame
+  model_coeff[counter,1] <- fam
+  model_coeff[counter,2] <- coef(allometric_model)["a"]
+  model_coeff[counter,3] <- coef(allometric_model)["b"]
+  counter <- counter + 1 #update row counter
+}
+
+
+#check outputs
+allometric_models
+model_coeff
+
+```
+
+NSE for family-level models to assess fit
+```{r}
+
+#initialize an empty vector to store NSE values
+nse_values <- numeric(length(allometric_models))
+nse_family_length <- numeric(length(allometric_models))
+
+#calculate and store NSE for each model
+for (i in seq_along(allometric_models)) {
+  family <- names(allometric_models)[i]
+  model <- allometric_models[[i]]
+  
+  #get observed and predicted values
+  observed <- model$m$lhs() # observed values
+  predicted <- fitted(model) # predicted values
+  
+  #calculate NSE and print
+  nse_values[i] <- NSE(sim = predicted, obs = observed) 
+  nse_family_length[i] <- family
+  cat("Pseudo R-squared (NSE) for family:", family, "is", nse_values[i], "\n")
+}
+
+nse_values
+
+#compile
+nse_length <- as.data.frame(cbind(nse_family_length,nse_values)) %>% 
+  rename(family = nse_family_length,
+         nse_length = nse_values) %>% 
+  mutate(nse_length=as.numeric(nse_length)) %>% 
+  mutate(nse_length=round(nse_length,3))
+
+```
+
+#### Otolith width - fish TL
+
+Aforo only given data availability
+```{r}
+
+aforo_width_corefam <- aforo_clean %>% 
+  filter(family %in% family_list) #just families with sufficient data
+
+```
+
+Build aggregate power model
+```{r}
+
+#nls power model
+power_fit_all_width <- nls(total_length_cm~a*otolith_width_mm^b,data=aforo_width_corefam, start = list(a=1, b=1))
+
+#model summary and coefficients
+summary(power_fit_all_width)
+a_est_width <- coef(power_fit_all_width)["a"]
+b_est_width <- coef(power_fit_all_width)["b"]
+
+#NSE
+nse_width_overall <- NSE(sim = fitted(power_fit_all_width), obs = power_fit_all_width$m$lhs())
+
+```
+
+Family-level power models
+```{r}
+
+#initialize empty list & matrix to store model outputs
+allometric_models_width <- list()
+model_coeff_width <- matrix(NA,nrow=length(family_list),ncol=3)
+model_coeff_width <- as.data.frame(model_coeff_width)
+names(model_coeff_width) <- c("family","a","b")
+
+#row counter to populate the matrix
+counter <- 1
+
+#loop through each family to fit a model for each
+for (fam in family_list) {
+  data_family <- subset(aforo_width_corefam, family == fam)
+  
+  #fit an allometric model using nls and store in the allometric_models list
+  allometric_model_width <- nls(total_length_cm~a*otolith_width_mm^b, data = data_family, start = list(a = 1, b = 1))
+  allometric_models_width[[fam]] <- allometric_model_width
+  
+  #print the summary of the allometric model for each family
+  cat("Allometric model for family:", fam, "\n")
+  print(summary(allometric_model_width))
+  cat("\n\n")  #add space between model summaries
+  
+  #store coefficients in the data frame
+  model_coeff_width[counter,1] <- fam
+  model_coeff_width[counter,2] <- coef(allometric_model_width)["a"]
+  model_coeff_width[counter,3] <- coef(allometric_model_width)["b"]
+  counter <- counter + 1 #update row counter
+}
+
+#check outputs
+allometric_models_width
+model_coeff_width
+
+```
+
+NSE for family-level models to assess fit
+```{r}
+
+#initialize an empty vector to store NSE values
+nse_values_width <- numeric(length(allometric_models_width))
+nse_family_width <- numeric(length(allometric_models_width))
+
+#calculate and store NSE for each model
+for (i in seq_along(allometric_models_width)) {
+  family <- names(allometric_models_width)[i]
+  model <- allometric_models_width[[i]]
+  
+  #get observed and predicted values
+  observed <- model$m$lhs() # Observed values
+  predicted <- fitted(model) # Predicted values
+  
+  #calculate NSE and print
+  nse_values_width[i] <- NSE(sim = predicted, obs = observed) 
+  nse_family_width[i] <- family
+  cat("Pseudo R-squared (NSE) for family:", family, "is", nse_values_width[i], "\n")
+}
+
+#compile
+nse_width <- as.data.frame(cbind(nse_family_width,nse_values_width)) %>% 
+  rename(family = nse_family_width,
+         nse_width = nse_values_width) %>% 
+  mutate(nse_width=as.numeric(nse_width)) %>% 
+  mutate(nse_width=round(nse_width,3))
+
+```
+## 2. Bocas fish biomass reconstruction
+
+families with low NSE
+```{r}
+
+#remove families with low NSE values = using aggregate model instead
+low_NSE <- c("Acanthuridae", "Carangidae", "Clupeidae", "Synodontidae")
+
+low_NSE_width <- c("Acanthuridae", "Batrachoididae", "Carangidae", "Clupeidae", "Gerreidae", "Haemulidae", "Pomacentridae", "Scaridae", "Synodontidae")
+
+```
+
+source functions to predict fish size from otolith size
+```{r}
+
+source("functions/oto_fish_pred.R")
+
+```
+
+### Load and clean Caribbean otolith assemblage data
+
+Size data were collected in stages (r1, r2, r3) so require some cleaning and harmonizing
+```{r}
+
+#read in raw data, data collection round 1
+oto_carib_size_r1_raw <- read.csv("data/carib_oto_meas_r1.csv",header=T)
+
+#cleaning and filter to sites of interest
+oto_carib_size_r1_clean <- oto_carib_size_r1_raw %>% 
+  clean_names() %>% 
+  filter(region=="Bocas") %>% #constrain to Bocas del Toro
+  filter(type_age=="Sub Recent") %>% #constrain to modern reefs 
+  filter(!locality %in% c('Airport Point','Playa Estrella','SW Bocas Island','Crawl Cay')) #remove, either don't have all otoliths measured or represent diff habitats
+
+```
+
+```{r}
+
+#data collection round 2
+oto_carib_size_r2_raw <- read.csv("data/carib_oto_meas_r2.csv",header=T)
+
+#cleaning
+oto_carib_r2_to_merge <- oto_carib_size_r2_raw %>%
+  clean_names() %>% 
+  filter(region=="Bocas") %>% #constrain to Bocas
+  filter(type_age=="Sub Recent") %>% #constrain to modern reefs 
+  filter(!locality %in% c('Airport Point','Playa Estrella','SW Bocas Island','Crawl Cay')) %>% #remove
+  filter(!sample=="AFH12-1-2-3-R") %>% 
+  #keep same headers for merging
+  select(names(oto_carib_size_r1_clean))
+
+#to track which measurements were added in the combined df
+samples_merged  <- oto_carib_size_r1_clean %>% 
+  mutate(source="orig_df") %>% 
+  select(family,sample,oto_length_mm,source)
+
+#combine and just keep the non-duplicate rows
+oto_carib_size_clean_combined <- bind_rows(oto_carib_size_r1_clean,oto_carib_r2_to_merge) %>% 
+  distinct() %>% #remove duplicates
+  left_join(samples_merged, by=c("family","sample","oto_length_mm")) %>%  #to track what was added
+  mutate(oto_width_mm = minor_axis_length/100) %>% #make variable for otolith width
+  select(-c(major_axis_length,minor_axis_length)) #remove a couple of extraneous columns
+
+```
+
+```{r}
+
+#data collection round 3
+oto_carib_size_r3_raw <- read.csv("data/carib_oto_meas_r3.csv",header=T)
+
+#make 'N/A' values read as actual NAs (currently they are being read as character values)
+oto_carib_size_r3_raw$length_um <- oto_carib_size_r3_raw$length_um %>%
+  na_if("N/A") %>%      
+  as.numeric()
+
+oto_carib_size_r3_raw$width_um <- oto_carib_size_r3_raw$width_um %>%
+  na_if("N/A") %>%      
+  as.numeric()
+
+
+#filter and format to match other dfs
+oto_carib_clean_r3 <- oto_carib_size_r3_raw %>%
+  mutate(region=case_when(
+    region=="Bocas del Toro" ~ "Bocas"),
+    source="new_2025",
+    oto_length_mm=length_um/1000,
+    oto_width_mm=width_um/1000,
+    type_age=case_when(
+      age_group == "modern_bulk" ~ "Sub Recent",
+      age_group == "Holocene_bulk" ~ "Holocene")) %>% #to make columns consistent with other df
+  rename(locality=site_name,
+         oto_length_um=length_um,
+         oto_width_um=width_um) %>% 
+  mutate(family = case_when( #correcting spelling
+    family=="Egraulidae" ~ "Engraulidae",
+    TRUE ~ family)) %>% 
+  filter(type_age=="Sub Recent") %>% #constrain to modern reefs 
+  filter(!locality %in% c('Airport Point','Playa Estrella','SW Bocas Island','Crawl Cay')) %>% #remove
+  select(names(oto_carib_size_clean_combined))
+  
+```
+
+combine datasets
+```{r}
+
+#merge datasets
+oto_carib_size_clean_combined2 <- rbind(oto_carib_size_clean_combined,oto_carib_clean_r3) %>% 
+  mutate(family = case_when( #correcting one more spelling error
+    family=="Scianidae" ~ "Sciaenidae",
+    TRUE ~ family)) %>% 
+  #streamline site names for comparison
+  mutate(locality = case_when(
+    locality == "Casa Blanca new" ~ "Casa Blanca",
+    TRUE ~ locality))%>% 
+  #remove a couple families with problematic IDs which were changed during later taxonomic verification
+  filter(!family %in% c("Muraenidae","Carangidae","Sphyraenidae","Cynoglossidae","Macrouridae","Mugilidae","Sciaenidae"))
+
+```
+
+clean Caribbean data
+```{r}
+
+oto_carib_size_clean <- oto_carib_size_clean_combined2
+
+#sample sizes
+nrow(oto_carib_size_clean) #N=1557 otos
+length(unique(oto_carib_size_clean$sample)) #42
+
+```
+
+save file
+```{r}
+
+write.csv(oto_carib_size_clean,"data_processed/oto_carib_size_clean.csv")
+
+```
+
+### Predict fish length
+```{r}
+
+oto_carib_size_length <- oto_carib_size_clean %>%
+  #create variable for the predicted fish total lengths
+mutate(fish_length_cm = case_when(
+  !is.na(oto_length_mm) ~ mapply(predict_allometric,
+                                  fam = .data$family,
+                                  oto = .data$oto_length_mm),
+  is.na(oto_length_mm) ~mapply(predict_allometric_width, #predicts from width if length is not available
+                                  fam = .data$family,
+                                  oto = .data$oto_width_mm))) %>%
+  filter(!is.na(fish_length_cm)) #remove any other broken otoliths for which size could not be reconstructed
+
+#correct taxonomy
+oto_carib_size_length <- oto_carib_size_length %>% 
+  mutate(family = case_when(
+    family=="Scaridae" ~ "Labridae",
+    TRUE ~ family))
+
+```
+
+save file
+```{r}
+
+write.csv(oto_carib_size_length,"data_processed/oto_carib_size_length.csv")
+
+```
+
+### Predict fish biomass
+
+Compile species list for Caribbean Panama: https://biogeodb.stri.si.edu/caribbean/en/pages
+```{r}
+
+#Caribbean species list (SW Caribbean Ecoregion, downloaded 6/11/25)
+caribbean_species <- read.csv("data/species_list_caribbean_swecoregion.csv",header=T)
+
+caribbean_species <- caribbean_species %>% 
+  mutate(basin="Caribbean")
+
+```
+
+Add higher level taxonomic info from FishBase, using `rfishbase` package
+```{r}
+
+#load taxonomic data from fishbase (takes a bit of time to load)
+taxa_data <- load_taxa()
+
+#now add family info for each species in our list
+caribbean_species <- caribbean_species %>% 
+  rename(Species=species_name) %>% 
+  left_join(taxa_data[,c(2,3,5)],by="Species") %>% 
+  select(Family, Genus, everything())
+
+```
+
+Filter list to families present in sediment assemblages
+```{r}
+
+species_list_filtered <- caribbean_species %>% 
+  filter(Family %in% c(all_families,"Dorosomatidae")) #adding Dorosomatidae since taxonomy has been updated from Clupeidae
+
+```
+
+Compile length-weight scaling coefficients from FishBase, from power model W=aL^b (units: cm-g)
+```{r}
+
+#add scaling at the family level, pull from rfishbase using length_weight() function
+lwr_data <- length_weight(species_list_filtered$Species)
+
+
+#filter for valid non-NA coefficients and TL (total length) values to be consistent with fish length predictions
+lwr_data <- subset(lwr_data, !is.na(a) & !is.na(b))
+lwr_data <- subset(lwr_data, Type == "TL") #just keep coeff for total length measurements
+
+
+#check available data
+length(unique(lwr_data$Species)) 
+length(species_list_filtered$Species)
+
+
+#merge dfs to keep both demographic info with taxonomic metadata
+lwr_data <- lwr_data %>% 
+  left_join(species_list_filtered[,c(1:3)],by="Species") %>% #add metadata
+  select(Family,Species,Type,Locality,a,b) %>% #keep just relevant data
+  distinct() #keep unique rows
+
+
+#Calculate family-level mean coefficients (a,b) 
+family_lwr <- lwr_data %>%
+  group_by(Family) %>%
+  summarize(
+    n_species = n_distinct(Species),
+    n_estimates = n(),
+    mean_a = mean(a, na.rm = TRUE),
+    mean_b = mean(b, na.rm = TRUE),
+    .groups = "drop"
+  ) %>% 
+  rename(family=Family) %>%  #for merging
+  mutate(family = ifelse(family == "Dorosomatidae", "Clupeidae", family))  #revert taxonomy so it lines up with the otolith classifications
+
+
+#add data for Bythitidae, see KULBICKI et al. 2005, "A general approach to length-weight relationships for New Caledonian lagoon fishes" https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-09/010067956.pdf
+
+bythid <- tibble(
+  family = "Bythitidae",
+  n_species = 1, #Dinematichthys spp.
+  n_estimates = 55,
+  mean_a = 0.0072,
+  mean_b = 3.155)
+
+  
+#combine with other family-level data  
+family_lwr <- rbind(family_lwr, bythid)
+
+```
+
+Pull sample metadata and group
+```{r}
+
+#load data
+oto_sample_metadata_raw <- read.csv("data/oto_sample_groups.csv",header=T,na.strings=".")
+
+#extract metadata
+oto_sample_metadata <- oto_sample_metadata_raw %>% 
+  select(unique,group_name,sed_weight_500_kg,sed_weight_whole_sample_kg,total_oto_count) %>% 
+  rename(sample=unique) %>% 
+  distinct()
+
+#pooled weights
+sample_weight_summed <- oto_sample_metadata %>% 
+  group_by(group_name) %>% 
+  summarize(sed_weight_group = sum(sed_weight_whole_sample_kg,na.rm=T),
+            sed_weight500_group = sum(sed_weight_500_kg,na.rm=T)) 
+
+```
+
+Calculate fish biomass
+```{r}
+
+#Use mean length-weight coefficients to predict biomass for each otolith
+oto_biomass_merged_pre <- oto_carib_size_length %>%
+  left_join(family_lwr, by = "family") %>%  #add coefficients for each family
+  left_join(oto_sample_metadata,by="sample") %>%  #add sample metadata
+  mutate(group_name = case_when( #fix two samples with a missing group name
+    sample=="AT13-10-5" ~ "AT13-10_9",
+    TRUE ~ group_name)) %>% 
+  mutate(fish_weight_g = mean_a * fish_length_cm^mean_b) #estimate biomass
+  
+
+#Calculate per capita biomass and production  
+oto_biomass_merged <- oto_biomass_merged_pre %>%
+  left_join(sample_weight_summed) %>% 
+  group_by(locality,group_name) %>% #calculate per sample group
+  summarize(biomass_summed = sum(fish_weight_g,na.rm=T), #calculate total biomass per sample
+            n_otoliths = sum(!is.na(fish_weight_g)), #total oto count with data, i.e. number of "individuals"
+            per_capita_biomass = biomass_summed/n_otoliths, #mean per-capita biomass
+            
+            #sample-standardized
+            sed_weight_summed = unique(sed_weight_group),
+            sed_weight500_summed = unique(sed_weight500_group),
+            biomass_kg_summed = biomass_summed/sed_weight_summed, #standardized by sample weight (whole sample)
+            biomass500_kg_summed = biomass_summed/sed_weight500_summed) %>%  #standardized by sample weight (500um)
+  distinct()
+
+
+#By family
+oto_biomass_merged_fam <- oto_biomass_merged_pre %>% 
+  group_by(locality,group_name,family) %>% #calculate per sample group and family
+  summarize(biomass_summed_fam = sum(fish_weight_g,na.rm=T), #calculate total biomass per sample/family
+            n_otoliths_fam = sum(!is.na(fish_weight_g)), #total oto count with data, i.e. number of "individuals"
+            per_capita_biomass_fam = biomass_summed_fam/n_otoliths_fam) %>%  #mean per-capita biomass
+  distinct() %>% 
+  #add overall biomass estimates for each sample group
+  left_join(oto_biomass_merged %>% select(group_name,biomass_summed),by=c("group_name","locality")) %>% 
+  mutate(perc_biomass_fam = (biomass_summed_fam/biomass_summed)*100) #% contribution of each family to the overall biomass
+oto_biomass_merged_fam
+
+```
+
+Save file
+```{r}
+
+write.csv(oto_biomass_merged_pre,"data_processed/oto_biomass_merged_pre.csv")
+
+```
+
+#### Proportional biomass by family
+```{r}
+
+#Summarize by family across all samples
+perc_biomass_fam_summary <- oto_biomass_merged_fam %>% 
+group_by(family) %>% 
+  summarize(biomass_mean=mean(perc_biomass_fam, na.rm=T), 
+            biomass_sd=sd(perc_biomass_fam, na.rm=T),
+            biomass_stderr=std.error(perc_biomass_fam, na.rm=T)) 
+perc_biomass_fam_summary
+
+```
+
+Save file
+```{r}
+
+write.csv(perc_biomass_fam_summary,"data_processed/perc_biomass_fam_summary.csv")
+
+```
+
+## 3. Rank abundance of each family
+```{r}
+
+#Load abundance data
+oto_families_raw <- read.csv("data/oto_family.csv",header=T,na.strings=".")
+
+
+#Filter and clean as above
+oto_families <- oto_families_raw %>% 
+  filter(type=="modern_bulk") %>%
+  filter(!site_name %in% c('Airport Point','Playa Estrella','SW Bocas Island','Crawl Cay')) %>% 
+  filter(!unique=="AFH12-1-2-3-R") %>%
+  mutate(site_name = case_when(
+    site_name == "Casa Blanca new" ~ "Casa Blanca",
+    TRUE ~ site_name)) %>% 
+  #correct Scaridae taxonomy
+  mutate(family = case_when(
+    family=="Scaridae" ~ "Labridae",
+    TRUE ~ family))
+
+#Add grouping
+oto_sample_counts <- oto_sample_metadata_raw %>% 
+  select(unique,group_name,total_oto_count) %>%
+  distinct() %>% 
+  group_by(group_name) %>% 
+  mutate(oto_grouped = sum(total_oto_count))
+  
+
+#First calculate relative abundance per grouped sample
+oto_families_sample_summary <- oto_families %>%
+  left_join(oto_sample_counts) %>% 
+  group_by(group_name,family) %>% 
+  summarize(fam_count_grouped = sum(family_count),
+            rel_abund = fam_count_grouped/first(oto_grouped)*100) 
+  
+
+#Then take the mean for each family
+oto_families_summary <-oto_families_sample_summary %>% 
+  group_by(family) %>% 
+  summarize(abund_mean = mean(rel_abund,na.rm=T),
+            abund_stderr=std.error(rel_abund,na.rm=T))
+
+```
+
+Save file
+```{r}
+
+write.csv(oto_families_summary,"data_processed/oto_families_summary.csv")
+
+```
