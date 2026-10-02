@@ -98,7 +98,11 @@ assemblages_combined <- rbind(oto_merge,survey_merge)
 pd <- position_dodge2(width = 0.9, preserve = "single") #even bars
 
 fig4A <- assemblages_combined %>% 
-  filter(Family %in% examplar_families) %>% 
+  filter(Family %in% examplar_families) %>%
+  #update taxonomy for plotting
+  mutate(Family = case_when(
+    Family=="Clupeidae" ~ "Dorosomatidae",
+    TRUE ~ Family)) %>%
 ggplot(aes(y=reorder(Family, -production_mean), x=abundance_mean))+
   geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
   geom_errorbarh(aes(xmin=abundance_mean-abundance_stderr, xmax=abundance_mean+abundance_stderr,group=type), height=0,
@@ -120,7 +124,11 @@ fig4A
 ```{r}
 
 fig4B <- assemblages_combined %>% 
-  filter(Family %in% examplar_families) %>% 
+  filter(Family %in% examplar_families) %>%
+  #update taxonomy for plotting
+  mutate(Family = case_when(
+    Family=="Clupeidae" ~ "Dorosomatidae",
+    TRUE ~ Family)) %>%
 ggplot(aes(y=reorder(Family, -production_mean), x=production_mean))+
   geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
   geom_errorbarh(aes(xmin=production_mean-production_stderr, xmax=production_mean+production_stderr,group=type), height=0,
@@ -246,16 +254,16 @@ t.test(death$fish_length_cm, living$fish_length_cm,var.equal = FALSE)
 
 #Individual panel adjustments
 fig4A <- fig4A+
-  ggtitle("(a) Abundance")
+  ggtitle("A) Abundance")
   
   
 fig4B <- fig4B +
   theme(axis.text.y = element_blank())+ #Remove y-axis from panel B
-  ggtitle("(b) Production")
+  ggtitle("B) Production")
 
 
 fig4C <- fig4C+
-  ggtitle("(c) Fish total length")
+  ggtitle("C) Fish total length")
 
   
 
@@ -383,6 +391,10 @@ pd <- position_dodge2(width = 0.9, preserve = "single")
 
 #abundance
 figS5A <- assemblages_combined %>% 
+  #update taxonomy for plotting
+  mutate(Family = case_when(
+    Family=="Clupeidae" ~ "Dorosomatidae",
+    TRUE ~ Family)) %>%
 ggplot(aes(y=reorder(Family, -production_mean), x=abundance_mean))+
   geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
   geom_errorbarh(aes(xmin=abundance_mean-abundance_stderr, xmax=abundance_mean+abundance_stderr,group=type), height=0,
@@ -400,6 +412,10 @@ figS5A
 
 #production
 figS5B <- assemblages_combined %>% 
+  #update taxonomy for plotting
+  mutate(Family = case_when(
+    Family=="Clupeidae" ~ "Dorosomatidae",
+    TRUE ~ Family)) %>%
 ggplot(aes(y=reorder(Family, -production_mean), x=production_mean))+
   geom_col(aes(fill=type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
   geom_errorbarh(aes(xmin=production_mean-production_stderr, xmax=production_mean+production_stderr,group=type), height=0,
@@ -418,12 +434,12 @@ figS5B
 
 #Individual panel adjustments
 figS5A <- figS5A+
-  ggtitle("(a) Abundance")
+  ggtitle("A) Abundance")
   
   
 figS5B <- figS5B +
   theme(axis.text.y = element_blank())+ #Remove y-axis from panel B
-  ggtitle("(b) Production")
+  ggtitle("B) Production")
 
 
 #Combine
