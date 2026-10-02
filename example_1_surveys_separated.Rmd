@@ -1,0 +1,121 @@
+---
+title: "example_1_surveys_separated"
+author: "Erin Dillon"
+date: "2026-08-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+```{r}
+
+rls_fish_expanded <- read.csv("data_processed/rls_fish_expanded.csv",header=T,na.strings="NA") %>% 
+  select(-X)
+
+rotenone_fish <- read.csv("data_processed/rotenone_fish.csv",header=T,na.strings="NA") %>% 
+  select(-X)
+
+```
+
+## Combine datasets
+```{r}
+
+#Format column names consistently
+rotenone_merge <- rotenone_fish %>% 
+  mutate(survey_type="rotenone") %>% 
+  rename(survey_id=Group) %>% 
+  mutate(bin_lower=NA) %>%
+  select(Site,survey_id,survey_type,Family,Genus,Species,TL_cm,bin_lower) %>% 
+  rename(site_name=Site)
+
+
+rls_merge <- rls_fish_expanded %>%
+  mutate(survey_type="RLS") %>%
+  select(site_name,survey_id,survey_type,family,genus,species_name,TL_cm,bin_lower) %>% 
+  rename(Family=family,
+         Genus=genus,
+         Species=species_name)
+
+
+#Merge
+fish_combined_raw <- rbind(rotenone_merge,rls_merge)
+
+```
+
+## Summarize
+```{r}
+
+#total count per survey
+fish_survey_totals <- fish_combined_raw %>% 
+  group_by(site_name,survey_id,survey_type) %>% 
+  summarize(n_fish_tot = sum(!is.na(TL_cm)))
+
+#by family across surveys
+fish_summarized_survey <- fish_combined_raw %>%
+  group_by(site_name,survey_id,survey_type,Family) %>% 
+  summarize(n_fish = sum(!is.na(TL_cm))) %>% 
+  left_join(fish_survey_totals) %>% 
+  mutate(perc_abundance_fam = (n_fish/n_fish_tot)*100)
+
+#summarized by family
+fish_summarized_fam <- fish_summarized_survey %>% 
+  group_by(survey_type,Family) %>% 
+  summarize(abundance_mean = mean(perc_abundance_fam,na.rm=T),
+            abundance_sd = sd(perc_abundance_fam,na.rm=T),
+            abundance_stderr = std.error(perc_abundance_fam,na.rm=T),
+            rank_mean = mean(n_fish,na.rm=T),
+            rank_stderr = std.error(n_fish,na.rm=T))
+
+```
+
+## Plot abundance
+```{r}
+
+pd <- position_dodge2(width = 0.9, preserve = "single") #even bars
+
+#percent abundance
+fish_summarized_fam %>% 
+ggplot(aes(y=reorder(Family, -abundance_mean), x=abundance_mean))+
+  geom_col(aes(fill=survey_type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
+  geom_errorbarh(aes(xmin=abundance_mean-abundance_stderr, xmax=abundance_mean+abundance_stderr,group=survey_type), height=0,
+                 position=position_dodge(width = 0.9),linetype=1,size=0.6,color="gray30")+
+  theme_bw()+
+  scale_fill_manual(values=c("#009E73","#E69F00"))+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  theme(legend.position=c(0.725,0.905))+
+  labs(y="", x="Percent abundance (%)",fill="Survey type",color="Survey type") +
+  coord_cartesian(xlim = c(0, 80))+
+  theme(aspect.ratio=2.5)
+
+
+#rank abundance
+figS6 <- fish_summarized_fam %>%
+  #update taxonomy for plotting
+  mutate(Family = case_when(
+    Family=="Clupeidae" ~ "Dorosomatidae",
+    TRUE ~ Family)) %>%
+ggplot(aes(y=reorder(Family, -rank_mean), x=rank_mean))+
+  geom_col(aes(fill=survey_type),stat="identity",position=pd,linewidth=0.8,alpha=0.8)+
+  geom_errorbarh(aes(xmin=rank_mean-rank_stderr, xmax=rank_mean+rank_stderr,group=survey_type), height=0,
+                 position=position_dodge(width = 0.9),linetype=1,size=0.6,color="gray30")+
+  theme_bw()+
+  scale_fill_manual(values=c("gray80","gray20"),labels=c("Visual","Rotenone"))+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  theme(legend.position=c(0.78,0.93))+
+  labs(y="", x="Abundance (log)",fill="Survey type",color="Survey type") +
+  scale_x_continuous(transform = "log1p",labels=c("0","1000","","","4000"))+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  theme(aspect.ratio=2.5)
+figS6
+
+#Save figure
+ggsave("outputs/figS6.png",plot=figS6,device="png",width=5, height=7)
+
+```
