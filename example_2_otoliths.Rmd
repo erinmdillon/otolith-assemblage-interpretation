@@ -1,0 +1,426 @@
+---
+title: "example_2_otoliths"
+author: "Sven Pallacks"
+date: "2026-09-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+```{r}
+library(ggplot2)
+library(readxl)
+library(dplyr)
+library(ggridges)
+library(patchwork)
+library(rfishbase)
+library(forcats)
+```
+
+## 1. Gatun Otolith size - fish biomass
+Gatun dataset and model coefficients
+```{r}
+#Load Gatun dataset
+df_Gatun <- read_excel("data/Otoliths_Gatun.xlsx")
+
+# Load otolith size- fish size relationships from Dillon et al. (2026)
+model_coefficients <- read.csv("data/size-size_relationship_Dillon_et_al-2026.csv")
+
+# Replace Clupeidae by Dorosomatidae (new family name)
+df_Gatun <- df_Gatun %>%
+  mutate(family = ifelse(family == "Clupeidae", "Dorosomatidae", family))
+model_coefficients <- model_coefficients %>%
+  mutate(family = ifelse(family == "Clupeidae", "Dorosomatidae", family))
+```
+
+Join Gatun dataset with model coefficients
+```{r}
+# Join Gatun dataset with model coefficients
+df_Gatun <- df_Gatun %>%
+  left_join(model_coefficients, by = "family")
+
+# For all families with no model coefficients (Paralichthyidae, Opistognathidae, Channidae), use model coefficients of "Aggregate Model"
+df_Gatun <- df_Gatun %>%
+  mutate(
+    length_a = ifelse(is.na(length_a), model_coefficients$length_a[model_coefficients$family == "Aggregate Model"], length_a),
+    length_b = ifelse(is.na(length_b), model_coefficients$length_b[model_coefficients$family == "Aggregate Model"], length_b),
+    width_a = ifelse(is.na(width_a), model_coefficients$width_a[model_coefficients$family == "Aggregate Model"], width_a),
+    width_b = ifelse(is.na(width_b), model_coefficients$width_b[model_coefficients$family == "Aggregate Model"], width_b),
+    nse_length = ifelse(is.na(nse_length), model_coefficients$nse_length[model_coefficients$family == "Aggregate Model"], nse_length),
+    nse_width = ifelse(is.na(nse_width), model_coefficients$nse_width[model_coefficients$family == "Aggregate Model"], nse_width)
+  )
+
+# Make Ot_length_mm and Ot_width_mm numeric
+df_Gatun <- df_Gatun %>%
+  mutate(
+    Ot_length_mm = as.numeric(Ot_length_mm),
+    Ot_width_mm = as.numeric(Ot_width_mm)
+  )
+```
+
+Calculate fish total length from otolith length (or width if length not available) using the model coefficients
+```{r}
+# Calculate Fish_total_length_cm
+df_Gatun <- df_Gatun %>%
+  mutate(Fish_total_length_cm = length_a * (Ot_length_mm ^ length_b)) %>%
+  mutate(Fish_total_length_cm = ifelse(is.na(Ot_length_mm), width_a * Ot_width_mm ^ width_b, Fish_total_length_cm))
+
+# Visualize otolith length vs. fish total length with a scatter plot and linear regression line
+ggplot(df_Gatun, aes(x = Ot_length_mm, y = Fish_total_length_cm, color = family)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Otolith Length vs. Fish Total Length",
+       x = "Otolith Length (mm)",
+       y = "Fish Total Length (cm)") +
+  theme_minimal()
+```
+
+Calcuate Gatun fish biomass
+```{r}
+# Get unique families from the Gatun dataset
+unique_fam_Gatun <- unique(df_Gatun$family)
+
+# Get species list for Pacific Panama and Caribbean Panama used in Dillon et al. 2026
+# TEP = Panamic Province, downloaded 5/28/25
+panamic_species <- read.csv("data/species_list_pacific_panamic.csv",header=T)
+panamic_species <- panamic_species %>% 
+  mutate(basin="Pacific")
+# Caribbean = SW Caribbean Ecoregion, downloaded 6/11/25
+caribbean_species <- read.csv("data/species_list_caribbean_swecoregion.csv",header=T)
+caribbean_species <- caribbean_species %>% 
+  mutate(basin="Caribbean")
+# Combine
+species_list <- rbind(panamic_species,caribbean_species)
+
+# Load taxonomic data from fishbase using rfishbase package
+taxa_data <- load_taxa()
+
+# Filter taxa data for the families in the Gatun dataset
+taxa_data_filtered <- taxa_data %>%
+  filter(Family %in% unique_fam_Gatun) %>%
+  filter(Species %in% species_list$species_name)
+
+# Download length weight data for the species in Panama coinciding with families in the Gatun dataset
+lwr_data <- length_weight(taxa_data_filtered$Species)
+lwr_data <- subset(lwr_data, !is.na(a) & !is.na(b)) # Delete NA values
+lwr_data <- subset(lwr_data, Type == "TL")  # Total Length only
+
+# Add to lwr_data a column for family by matching the species in lwr_data with the species in taxa_data_filtered
+lwr_family <- lwr_data %>%
+  left_join(taxa_data_filtered %>% select(Species, Family), by = "Species") %>%
+  select(Family, everything()) %>%
+  group_by(Family) %>%
+  summarise(mean_a = mean(a), mean_b = mean(b))
+
+# Join lwr_family with df_Gatun_fish_length based on family column
+df_Gatun <- df_Gatun %>%
+  left_join(lwr_family, by = c("family" = "Family"))
+
+# Calculate biomass using the length-weight relationship: W = a * L^b
+df_Gatun <- df_Gatun %>%
+  mutate(Biomass_g = mean_a * Fish_total_length_cm ^ mean_b)
+
+```
+
+## 2. Join Gatun dataset with middle Holocene dataset of Dillon et al. (2026)
+Load Caribbean middle Holocene dataset by Dillon et al. (2026) and clean to match Gatun dataset
+```{r}
+# Load middle Holocene dataset of Dillon et al. (2026)
+df_oto_biomass_Hol <- read.csv("data/oto_biomass_individual_Dillon_et_al-2026.csv", header = TRUE)
+
+# Delete Pacific rows and modern rows, and rename pre_exp to Mid-Holocene in age_group column
+df_HolCarib <- df_oto_biomass_Hol %>% 
+  filter(basin != "Pacific") %>%
+  filter(age_group != "modern") %>% 
+  mutate(age_group = ifelse(age_group == "pre_exp", "Middle Holocene", age_group))
+
+# Replace Clupeidae by Dorosomatidae (new family name)
+df_HolCarib <- df_HolCarib %>%
+  mutate(family = ifelse(family == "Clupeidae", "Dorosomatidae", family))
+
+# Delete unnecessary columns, rename and reorder columns in df_HolCarib to match df_Gatun
+df_HolCarib <- df_HolCarib %>% 
+  select(-X,
+         -basin, 
+         -region,
+         -site_name,
+         -unique,
+         -cryptobenthic,
+         -prey_of_harvested_fishes,
+         -harvested, 
+         -reef_associated,
+         -n_species,
+         -n_estimates,
+         -group_name,
+         -feeding,
+         -habit,
+         -mean_a,
+         -mean_b) %>% 
+  select(age_group, everything()) %>%
+  rename(Sample_ID = sample,
+         Ot_length_mm = oto_length_mm,
+         Ot_width_mm = oto_width_mm,
+         Fish_total_length_cm = fish_length_cm,
+         Biomass_g = fish_weight_g)
+```
+
+Clean Gatun dataset and merge with middle Holocene dataset
+```{r}
+# Clean Gatun dataset to match df_HolCarib
+df_Gatun_clean <- df_Gatun %>%
+  select(age_group, Sample_ID, family, Ot_length_mm, Ot_width_mm, Fish_total_length_cm, Biomass_g)
+
+# Merge Gatun dataset with middle Holocene dataset
+df_combined <- rbind(df_Gatun_clean, df_HolCarib)
+```
+
+Calculate fish trophic level for family using FishBase data
+```{r}
+# Get unique families from the Gatun dataset
+unique_fam_Comb <- unique(df_combined$family)
+
+# Filter taxa data for the families in the Gatun dataset
+taxa_data_filtered <- taxa_data %>%
+  filter(Family %in% unique_fam_Comb) %>%
+  filter(Species %in% species_list$species_name) # filter for species in the species list
+
+# Download ecological data for the species in Panama coinciding with families in the combined dataset
+troph_data <- ecology(taxa_data_filtered$Species)
+troph_data <- subset(troph_data, !is.na(FoodTroph)) # Delete NA values
+
+# Add to troph_data a column for family by matching the species in troph_data with the species in taxa_data_filtered
+troph_family <- troph_data %>%
+  left_join(taxa_data_filtered %>% select(Species, Family), by = "Species") %>%
+  select(Family, everything()) %>%
+  group_by(Family) %>%
+  summarise(mean_troph = mean(FoodTroph))
+
+# Calculate mean for mean trophic level of Scaridae and Labridae, delete Scaridae row, and add new mean TL value to Labridae row (as they are both in the family Labridae in Dillon et al. 2026 dataset)
+pooled_mean <- troph_family  %>%
+  filter(Family %in% c("Labridae", "Scaridae")) %>%
+  summarize(pooled_mean = mean(mean_troph, na.rm = TRUE)) %>%
+  pull(pooled_mean)
+
+troph_family <- troph_family %>%
+  mutate(mean_troph = ifelse(Family == "Labridae", pooled_mean, mean_troph)) %>%
+  filter(Family != "Scaridae")
+
+# Replace Scaridae by Labridae in df_combined (as they are both in the family Labridae in Dillon et al. 2026 dataset)
+df_combined <- df_combined %>% 
+  mutate(family = ifelse(family == "Scaridae", "Labridae", family))
+
+# Delete Channidae row in troph_family (as it is not present in df_combined)
+df_combined <- df_combined %>%
+  filter(family != "Channidae")
+
+# Join troph_family with df_combined based on family column
+df_combined <- df_combined %>%
+  left_join(troph_family, by = c("family" = "Family"))
+```
+
+Calculate percentage abundance
+```{r} 
+# calculate percentage abundance for each family within paleohabitat (age_group) in df_combined
+df_combined <- df_combined %>%
+  group_by(age_group) %>%
+  mutate(n_otoliths_by_ageGroup = n()) %>%
+  group_by(age_group, family) %>%
+  mutate(family_count_by_ageGroup = n()) %>%
+  ungroup() %>%
+  mutate(family_percentage_by_ageGroup = (family_count_by_ageGroup / n_otoliths_by_ageGroup) * 100)
+```
+
+Save df_combined to csv
+```{r}
+write.csv(df_combined, "data_processed/df_combined_Gatun_Holocene.csv", row.names = FALSE)
+```
+
+## 3. Description of otolith assemblage of both habitats Reef (Holocene) vs. Embayment (Miocene)
+Figure 5a: Abundance of families in both habitats (Holocene vs. Miocene)
+```{r}
+# Reorder families by percentage (lowest to highest, top to bottom) + add mean trophic level to family in plot
+plot_A <- df_combined %>%
+  mutate(plot_column = paste0(family, " (", round(mean_troph, 2), ")"))
+
+# Create a new dataframe for Holocene only (delete Late Miocene in age_group column in plot_A) and reorder families by percentage (lowest to highest, top to bottom)
+plot_A_Hol <- plot_A %>% 
+  filter(age_group != "Late Miocene") %>% 
+  filter(!is.na(Sample_ID)) %>% 
+  mutate(plot_column = fct_reorder(plot_column, desc(family_percentage_by_ageGroup), .fun = mean))
+
+# Plot Figure 5A: Reef (Holocene)
+Fig5_A1 <- ggplot(plot_A_Hol, aes(x = family_percentage_by_ageGroup, y = plot_column, fill = age_group)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("Late Miocene" = "#56B4E9", "Middle Holocene" = "#D55E00"), labels = c("Late Miocene" = "Soft-Botto\n(Miocene)", "Middle Holocene" = "Coral Reef\n(Holocene)")) +
+  theme_bw()+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_blank())+
+  theme(plot.title = element_text(size=14, hjust = 0.0)) +
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  labs(y="", 
+       x="Percent abundance (%)",
+       fill="Assemblage type",
+       color="Assemblage type",
+       title="A) Abundance") +
+  coord_cartesian(xlim = c(0, 65))+
+  theme(legend.position = "none")+
+  theme(aspect.ratio=1)
+Fig5_A1
+
+# Create a new dataframe for Miocene only (delete middle Holocene in age_group column in plot_A) and reorder families by percentage (lowest to highest, top to bottom)
+plot_A_Mio <- plot_A %>% 
+  filter(age_group != "Middle Holocene") %>%
+  filter(!is.na(Sample_ID)) %>% 
+  mutate(plot_column = fct_reorder(plot_column, desc(family_percentage_by_ageGroup), .fun = mean))
+
+# Plot Figure 5A: Embayment (Miocene)
+Fig5_A2 <- ggplot(plot_A_Mio, aes(x = family_percentage_by_ageGroup, y = plot_column, fill = age_group)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("Late Miocene" = "#56B4E9", "Middle Holocene" = "#D55E00"), labels = c("Late Miocene" = "Soft-Bottom\n(Miocene)", "Middle Holocene" = "Coral Reef\n(Holocene)")) +
+  labs(
+    x = "Percent abundance (%)",
+    y = "Family (mean TL)",
+    fill = "Assemblage"
+  ) +
+  theme_bw()+
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_blank())+
+  theme(plot.title = element_text(size=14, hjust = 0.0)) +
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5))+
+  labs(y="", 
+       x="Percent abundance (%)",
+       fill="Assemblage type",
+       color="Assemblage type") +
+  coord_cartesian(xlim = c(0, 65))+
+  theme(legend.position = "none")+
+  theme(aspect.ratio=1)
+Fig5_A2
+```
+Figure 5b: Fish biomass distribution in both habitats (Holocene vs. Miocene)
+```{r}
+# Calculate mean Biomass_g for each age_group
+mean_Hol <- plot_A %>% filter(age_group == "Middle Holocene") %>% pull(Biomass_g) %>% mean(na.rm = TRUE)
+mean_Mio <- plot_A %>% filter(age_group == "Late Miocene") %>% pull(Biomass_g) %>% mean(na.rm = TRUE)
+
+# Plot Figure 5B: Reef (Holocene)
+Fig5_B1 <- ggplot(plot_A_Hol, aes(x = Biomass_g, fill = age_group, color = age_group)) +
+  geom_density(aes(color = age_group), adjust = 1, alpha = 0.3, linewidth = 0.8) +   
+  geom_point(data = plot_A_Hol %>% filter(age_group == "Middle Holocene"), 
+             aes(y = -0.08), alpha = 0.25, size = 2, 
+             position = position_jitter(height = 0.03, width = 0), show.legend = FALSE) +
+   geom_point(aes(x = mean_Hol, y = -0.08), 
+              color = "gray5", size = 3, shape = 21, fill = "#D55E00", stroke = 0.5, show.legend = FALSE) +
+  scale_x_log10(limits = c(0.01, 100), labels = scales::label_number(accuracy = 0.01, trim = TRUE)) +
+  scale_y_continuous(limits = c(-0.14, 0.9), expand = c(0, 0)) +
+  labs(y = "Density", 
+       x = "Biomass (g)",
+       fill = "Basin", 
+       title = "B) Per-capita biomass") +
+  scale_fill_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), labels = c("Middle Holocene" = "Coral Reef (Holocene)","Late Miocene" = "Paralic Basin (Miocene)"), guide = "none") +
+  scale_color_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), labels = c("Middle Holocene" = "Coral Reef (Holocene)","Late Miocene" = "Paralic Basin (Miocene)"), guide = "none") +
+  theme_bw() +
+  theme(
+    plot.title = element_text(hjust = 0.0, size = 14),
+    legend.position = c(0.82, 0.90),
+    panel.grid.minor = element_blank(),
+    aspect.ratio=1,
+  ) +
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans"))
+Fig5_B1
+
+# Plot Figure 5B: Embayment (Miocene) 
+Fig5_B2 <- ggplot(plot_A_Mio, aes(x = Biomass_g, fill = age_group, color = age_group)) +
+  geom_density(aes(color = age_group), adjust = 1, alpha = 0.3, linewidth = 0.8) +
+  geom_point(data = plot_A %>% filter(age_group == "Late Miocene"), 
+             aes(y = -0.08), alpha = 0.25, size = 2, position = position_jitter(height = 0.03, width = 0), 
+             show.legend = FALSE) +
+  geom_point(aes(x = mean_Mio, y = -0.08), 
+             color = "gray5", size = 3, shape = 21, fill = "#56B4E9", stroke = 0.5, show.legend = FALSE) +
+  scale_x_log10(limits = c(0.01, 100), labels = scales::label_number(accuracy = 0.01, trim = TRUE)) +
+  scale_y_continuous(limits = c(-0.14, 0.9), expand = c(0, 0)) +
+  labs(x = "Biomass (g)", 
+       y = "Density", 
+       fill = "Basin") +
+  scale_fill_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), labels = c("Middle Holocene" = "Coral Reef (Holocene)","Late Miocene" = "Paralic Basin (Miocene)"), guide = "none") +
+  scale_color_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), labels = c("Middle Holocene" = "Coral Reef (Holocene)","Late Miocene" = "Paralic Basin (Miocene)"), guide = "none") +
+  theme_bw() +
+  theme(
+    plot.title = element_text(hjust = 0.0, size = 14),
+    legend.position = c(0.82, 0.90),
+    panel.grid.minor = element_blank(),
+    aspect.ratio=1,
+  ) +
+  theme(axis.text = element_text(size=12),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans"))
+Fig5_B2
+
+```
+Figure 5c: Trophic level distribution in both habitats (Holocene vs. Miocene)
+```{r}
+# Plot Figure 5C: Reef (Holocene) 
+Fig5_C1 <- ggplot(plot_A_Hol, aes(x = age_group, y = mean_troph, fill = age_group, color = age_group)) + 
+  geom_point(aes(size = family_percentage_by_ageGroup), shape = 21, alpha = 1) +
+  scale_size_area(name = "Abundance (%)", max_size = 8) +  
+  geom_violin(alpha = 0.3, linewidth = 0.6, adjust = 2) +
+  coord_cartesian(ylim = c(2.0, 4.5)) +
+  labs(y = "Mean trophic level",
+       x = "",
+       fill = "Palaeohabitat",
+       size = "Abundance (%)",
+       title = "C) Trophic organization") +
+  scale_fill_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), guide = "none") + 
+  scale_color_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), guide = "none") +
+  scale_x_discrete(labels = c("Late Miocene" = "", "Middle Holocene" = "")) +
+  theme_bw() +
+  theme(axis.text = element_text(size=14),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=8),legend.title = element_text(size=8))+
+  theme(plot.title = element_text(hjust = 0.0, size = 14), legend.position = c(0.82, 0.75)) +
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5)) +
+  theme(aspect.ratio=1)
+Fig5_C1
+
+# Plot Figure 5C: Embayment (Miocene) 
+Fig5_C2 <- ggplot(plot_A_Mio, aes(x = age_group, y = mean_troph, fill = age_group, color = age_group)) + 
+  geom_point(aes(size = family_percentage_by_ageGroup), shape = 21, alpha = 1) +
+  scale_size_area(name = "Abundance (%)", max_size = 8) +  
+  geom_violin(alpha = 0.3, linewidth = 0.6, width = 0.4, adjust = 2) +
+  coord_cartesian(ylim = c(2.0, 4.5)) +
+  labs(y = "Mean trophic level",
+       x = "",
+       fill = "Palaeohabitat",
+       size = "Abundance (%)") +
+  scale_fill_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), guide = "none") + 
+  scale_color_manual(values = c("Middle Holocene" = "#D55E00", "Late Miocene" = "#56B4E9"), guide = "none") +
+  scale_x_discrete(labels = c("Late Miocene" = "", "Middle Holocene" = "")) +
+  theme_bw() +
+  theme(axis.text = element_text(size=14),axis.title= element_text(size=14))+
+  theme(legend.text = element_text(size=8),legend.title = element_text(size=8))+
+  theme(plot.title = element_text(hjust = 0.0, size = 14), legend.position = c(0.82, 0.75)) +
+  theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5)) +
+  theme(aspect.ratio=1)
+Fig5_C2
+```
+
+Figure 5: Merge figures 5A to 5C and save
+```{r}
+# Merge Figures 3 at the top and 3 at the bottom 
+plot_top <- Fig5_A1 + Fig5_B1 + Fig5_C1 +
+  plot_layout(ncol = 3, widths = c(1, 1, 1))
+plot_bottom <- Fig5_A2 + Fig5_B2 + Fig5_C2 +
+  plot_layout(ncol = 3, widths = c(1, 1, 1))
+
+plot_combined <- plot_top / plot_bottom +
+  plot_layout(ncol = 1, heights = c(1, 1))
+plot_combined
+
+# Save to folder
+ggsave("output/Figure_5.tiff", plot = plot_combined, width = 12, height = 8, units = "in", dpi = 300, compression = "lzw")
+ggsave("output/Figure_5.pdf",plot=plot_combined,device="pdf",useDingbats=FALSE,width = 12, height = 8, units = "in")
+
+```
