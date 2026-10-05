@@ -26,9 +26,9 @@ Selin, Payne, and Bytnar Families
 
 This dataset is supplement to: Dillon et al. (in review) A framework for interpreting fossil fish otolith assemblages.
 
-Scripts for data analysis are available at https://github.com/erinmdillon/otolith-assemblage-interpretation and are archived on Zenodo (https://doi.org/10.5281/zenodo.23162560).
+Scripts for data analysis are available at https://github.com/erinmdillon/otolith-assemblage-interpretation and are archived on Zenodo (https://doi.org/10.5281/zenodo.23162559).
 
-Dataset citation: Dillon et al. (2026), Data from: A framework for interpreting fossil fish otolith assemblages, Zenodo, Dataset. https://doi.org/10.5281/zenodo.23162483.
+Dataset citation: Dillon et al. (2026), Data from: A framework for interpreting fossil fish otolith assemblages, Zenodo, Dataset. https://doi.org/10.5281/zenodo.23162482.
 
 
 ########## DATA & FILE OVERVIEW ##########
