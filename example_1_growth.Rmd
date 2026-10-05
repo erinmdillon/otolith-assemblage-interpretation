@@ -105,8 +105,8 @@ growth_data_ab[growth_data_ab$Species=="Gramma loreto","a_mean"] <- 0.01122
 growth_data_ab[growth_data_ab$Species=="Gramma loreto","b_mean"] <- 3.04
 
 ```
+
 Lmax (source: FishBase)
--4/22/26. this was updated from the popchar function (see v1 for that code)
 ```{r}
 
 #obtain Lmax at the species level when possible
