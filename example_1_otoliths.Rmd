@@ -5,6 +5,8 @@ date: "2026-08-23"
 output: html_document
 ---
 
+This script processes the otolith data.
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -186,7 +188,7 @@ sample_n
 #Add total_n to combined dataset for filtering
 size_size_merged_corefam <- size_size_merged_corefam %>% 
   left_join(sample_n[,c(1,4)],by="family") %>% 
-  mutate(family_label = paste0(family," (N=",total_n,")"))
+  mutate(family_label = paste0(family," (N=",total_n,")")) 
 
 ```
 
@@ -197,6 +199,10 @@ Fig S2
 
 figS2 <- size_size_merged_corefam %>%
   filter(total_n>14) %>% #remove families with n<15
+  #update taxonomy for Clupeidae
+   mutate(family_label = case_when(
+    family=="Clupeidae" ~ "Dorosomatidae (N=107)",
+    TRUE ~ family_label)) %>%
 ggplot(aes(y=total_length_cm,x=otolith_length_mm))+
   geom_smooth(aes(color=family_label,fill=family_label),method=lm,se=T,linewidth=0.8,alpha=0.3)+ #family-level model
   geom_smooth(method=lm,color="black",se=T,linewidth=2)+ #overall model
@@ -759,6 +765,7 @@ perc_biomass_fam_summary
 Save file
 ```{r}
 
+write.csv(oto_biomass_merged_fam,"data_processed/oto_biomass_merged_fam.csv")
 write.csv(perc_biomass_fam_summary,"data_processed/perc_biomass_fam_summary.csv")
 
 ```
@@ -810,6 +817,7 @@ oto_families_summary <-oto_families_sample_summary %>%
 Save file
 ```{r}
 
+write.csv(oto_families_sample_summary,"data_processed/oto_families_sample_summary.csv")
 write.csv(oto_families_summary,"data_processed/oto_families_summary.csv")
 
 ```

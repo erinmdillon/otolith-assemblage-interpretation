@@ -5,6 +5,8 @@ date: "2026-08-23"
 output: html_document
 ---
 
+This script plots the processed otolith and survey data.
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```

@@ -5,6 +5,8 @@ date: "2026-08-23"
 output: html_document
 ---
 
+This script processes the rotenone and visual survey data.
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -146,6 +148,13 @@ rls_fish_expanded %>%
 
 ```
 
+Save files before resampling
+```{r}
+
+write.csv(rls_fish_expanded,"data_processed/rls_fish_expanded.csv")
+write.csv(rotenone_fish,"data_processed/rotenone_fish.csv")
+
+```
 
 ### Calculate expected number of fish
 
@@ -480,6 +489,7 @@ fish_productivity_fam_summary<- fish_productivity_fam_survey %>%
 Save file
 ```{r}
 
+write.csv(fish_productivity_fam_survey,"data_processed/fish_productivity_fam_survey.csv")
 write.csv(fish_productivity_fam_summary,"data_processed/fish_productivity_fam_summary.csv")
 
 ```

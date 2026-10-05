@@ -5,6 +5,8 @@ date: "2026-04-15"
 output: html_document
 ---
 
+This script gathers the growth data needed for rfishprod.
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
