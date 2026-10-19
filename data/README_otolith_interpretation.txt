@@ -33,7 +33,7 @@ Dataset citation: Dillon et al. (2026), Data from: A framework for interpreting 
 
 ########## DATA & FILE OVERVIEW ##########
 
-This project includes the following 16 csv files:
+This project includes the following 17 csv files:
 
 1) oto_biomass_individual_Dillon_et_al-2026.csv: fish biomass reconstructions from Dillon et al. 2026 Phil Trans B [EX 2]
 
@@ -66,6 +66,8 @@ This project includes the following 16 csv files:
 15) species_list_caribbean_swecoregion.csv: fish species list for Caribbean Panama (source: Robertson & Van Tassell 2023, "Shorefishes of the Greater Caribbean: online information system") [EX 1 & 2]
 
 16) species_list_pacific_panamic.csv: fish species list for Pacific Panama (source: Robertson & Allen 2024, "Shorefishes of the Tropical Eastern Pacific: online information system") [EX 2]
+
+17) species_list_myct.csv: myctophid species in Caribbean and Pacific Panama (source: FishBase) [EX 2]
 
 
 *Files #1 and #2 can be generated from Dillon et al. 2026 Phil Trans B. See https://doi.org/10.5281/zenodo.17576842 (data) and https://doi.org/10.5281/zenodo.17576829 (code).
@@ -105,7 +107,7 @@ g. nse_width: Nash–Sutcliffe efficiency value, model using otolith width
 
 
 3) Otoliths_Gatun.xlsx: otolith classifications from Gatun Fm, Panama
-(135 obs. from 6 variables)
+(183 obs. from 6 variables)
 a. age_group: age (Late Miocene)
 b. Sample_ID: sample, corresponding to a collection locality (collector-year-site)
 c. Otolith_ID: otolith number (per sample)
@@ -267,7 +269,7 @@ h. TL_mm: total length, in mm
 Reef Life Survey raw download, see metadata header and methods manual at reeflifesurvey.com
 
 
-14) species_traits.csv: ecological traits for species in assemblage [EX 1] 
+14) species_traits.csv: ecological traits for species in assemblage
 (118 obs. of 5 variables)
 a. Family: family name
 b. Genus: genus name
@@ -283,4 +285,8 @@ a. species_name: scientific name (genus species)
 
 16) species_list_pacific_panamic.csv: fish species list for Pacific Panama (source: Robertson & Allen 2024, "Shorefishes of the Tropical Eastern Pacific: online information system")
 (1036 obs. of 1 variable)
+a. species_name: scientific name (genus species)
+
+17) species_list_myct.csv: myctophid species in Caribbean and Pacific Panama (source: FishBase)
+(22 obs. of 1 variable)
 a. species_name: scientific name (genus species)
