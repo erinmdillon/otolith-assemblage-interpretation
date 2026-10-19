@@ -92,8 +92,12 @@ panamic_species <- panamic_species %>%
 caribbean_species <- read.csv("data/species_list_caribbean_swecoregion.csv",header=T)
 caribbean_species <- caribbean_species %>% 
   mutate(basin="Caribbean")
+# Caribbean and Panama Myctophidae compiled from FishBase 
+myct_species <- read.csv("data/species_list_myct.csv",header=T)
+myct_species <- myct_species %>% 
+  mutate(basin="cross_Isthmus")
 # Combine
-species_list <- rbind(panamic_species,caribbean_species)
+species_list <- rbind(panamic_species,caribbean_species, myct_species)
 
 # Load taxonomic data from fishbase using rfishbase package
 taxa_data <- load_taxa()
@@ -198,6 +202,10 @@ troph_family <- troph_data %>%
   group_by(Family) %>%
   summarise(mean_troph = mean(FoodTroph))
 
+# Add trophic level for Family "Chaunacidae" manually to troph_family as it is not present in species list downloaded from FishBase (mean trophic level = 4.08; FishBase: Chaunacops roseus (4.0), Chaunacops coloratus (4.0), Chaunax stimgmaeus (4.1, Chaunax suttkusi (4.1), Chaunax pictus (4.2))
+troph_family <- troph_family %>%
+  add_row(Family = "Chaunacidae", mean_troph = 4.08)
+
 # Calculate mean for mean trophic level of Scaridae and Labridae, delete Scaridae row, and add new mean TL value to Labridae row (as they are both in the family Labridae in Dillon et al. 2026 dataset)
 pooled_mean <- troph_family  %>%
   filter(Family %in% c("Labridae", "Scaridae")) %>%
@@ -211,10 +219,6 @@ troph_family <- troph_family %>%
 # Replace Scaridae by Labridae in df_combined (as they are both in the family Labridae in Dillon et al. 2026 dataset)
 df_combined <- df_combined %>% 
   mutate(family = ifelse(family == "Scaridae", "Labridae", family))
-
-# Delete Channidae row in troph_family (as it is not present in df_combined)
-df_combined <- df_combined %>%
-  filter(family != "Channidae")
 
 # Join troph_family with df_combined based on family column
 df_combined <- df_combined %>%
@@ -236,6 +240,11 @@ df_combined <- df_combined %>%
 Save df_combined to csv
 ```{r}
 write.csv(df_combined, "data_processed/df_combined_Gatun_Holocene.csv", row.names = FALSE)
+```
+
+Sample sizes
+```{r}
+table(df_combined$age_group)
 ```
 
 ## 3. Description of otolith assemblage of both habitats Reef (Holocene) vs. Embayment (Miocene)
@@ -307,13 +316,13 @@ mean_Mio <- plot_A %>% filter(age_group == "Late Miocene") %>% pull(Biomass_g) %
 
 # Plot Figure 5B: Reef (Holocene)
 Fig5_B1 <- ggplot(plot_A_Hol, aes(x = Biomass_g, fill = age_group, color = age_group)) +
-  geom_density(aes(color = age_group), adjust = 1, alpha = 0.3, linewidth = 0.8) +   
+  geom_density(aes(color = age_group), adjust = 1.5, alpha = 0.3, linewidth = 0.8) +   
   geom_point(data = plot_A_Hol %>% filter(age_group == "Middle Holocene"), 
              aes(y = -0.08), alpha = 0.25, size = 2, 
              position = position_jitter(height = 0.03, width = 0), show.legend = FALSE) +
    geom_point(aes(x = mean_Hol, y = -0.08), 
               color = "gray5", size = 3, shape = 21, fill = "#D55E00", stroke = 0.5, show.legend = FALSE) +
-  scale_x_log10(limits = c(0.01, 100), labels = scales::label_number(accuracy = 0.01, trim = TRUE)) +
+  scale_x_log10(limits = c(0.01, 100), labels = scales::label_number(accuracy = NULL, trim = TRUE)) +
   scale_y_continuous(limits = c(-0.14, 0.9), expand = c(0, 0)) +
   labs(y = "Density", 
        x = "Biomass (g)",
@@ -335,13 +344,13 @@ Fig5_B1
 
 # Plot Figure 5B: Embayment (Miocene) 
 Fig5_B2 <- ggplot(plot_A_Mio, aes(x = Biomass_g, fill = age_group, color = age_group)) +
-  geom_density(aes(color = age_group), adjust = 1, alpha = 0.3, linewidth = 0.8) +
+  geom_density(aes(color = age_group), adjust = 1.5, alpha = 0.3, linewidth = 0.8) +
   geom_point(data = plot_A %>% filter(age_group == "Late Miocene"), 
              aes(y = -0.08), alpha = 0.25, size = 2, position = position_jitter(height = 0.03, width = 0), 
              show.legend = FALSE) +
   geom_point(aes(x = mean_Mio, y = -0.08), 
              color = "gray5", size = 3, shape = 21, fill = "#56B4E9", stroke = 0.5, show.legend = FALSE) +
-  scale_x_log10(limits = c(0.01, 100), labels = scales::label_number(accuracy = 0.01, trim = TRUE)) +
+  scale_x_log10(limits = c(0.01, 100), labels = scales::label_number(accuracy = NULL, trim = TRUE)) +
   scale_y_continuous(limits = c(-0.14, 0.9), expand = c(0, 0)) +
   labs(x = "Biomass (g)", 
        y = "Density", 
@@ -379,8 +388,8 @@ Fig5_C1 <- ggplot(plot_A_Hol, aes(x = age_group, y = mean_troph, fill = age_grou
   scale_x_discrete(labels = c("Late Miocene" = "", "Middle Holocene" = "")) +
   theme_bw() +
   theme(axis.text = element_text(size=14),axis.title= element_text(size=14))+
-  theme(legend.text = element_text(size=8),legend.title = element_text(size=8))+
-  theme(plot.title = element_text(hjust = 0.0, size = 14), legend.position = c(0.82, 0.75)) +
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(plot.title = element_text(hjust = 0.0, size = 14), legend.position = c(0.795, 0.78)) +
   theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5)) +
   theme(aspect.ratio=1)
 Fig5_C1
@@ -400,8 +409,8 @@ Fig5_C2 <- ggplot(plot_A_Mio, aes(x = age_group, y = mean_troph, fill = age_grou
   scale_x_discrete(labels = c("Late Miocene" = "", "Middle Holocene" = "")) +
   theme_bw() +
   theme(axis.text = element_text(size=14),axis.title= element_text(size=14))+
-  theme(legend.text = element_text(size=8),legend.title = element_text(size=8))+
-  theme(plot.title = element_text(hjust = 0.0, size = 14), legend.position = c(0.82, 0.75)) +
+  theme(legend.text = element_text(size=10),legend.title = element_text(size=10))+
+  theme(plot.title = element_text(hjust = 0.0, size = 14), legend.position = c(0.795, 0.78)) +
   theme(axis.text=element_text(color="black",family="sans"),axis.title= element_text(color="black",family="sans",hjust=0.5)) +
   theme(aspect.ratio=1)
 Fig5_C2
